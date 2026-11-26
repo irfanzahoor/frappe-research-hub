@@ -77,7 +77,7 @@
     
     
     
-    <body dir="rtl" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -3362,13 +3362,24 @@
   "How we can use it" is standardised to
   "Hum isay kaise istemal kar sakte hain" across the Urdu version.
   CHANGELOG and ROADMAP stay in English (fallback) in the Urdu site.</li>
-<li><strong>Urdu site is RTL</strong> — the Roman Urdu version renders
-  right-to-left (<code>dir="rtl"</code>, sidebar and text mirrored), as Urdu
-  readers expect. Blockquotes use logical CSS so their accent bar
-  flips to the right side on RTL pages.</li>
+<li><strong>Urdu site is LTR, like English</strong> — the Roman Urdu version uses
+  the same left-to-right layout as English (<code>dir="ltr"</code> forced in
+  the theme config, overriding Material's automatic RTL for the <code>ur</code>
+  locale). Roman Urdu is Latin script, so it reads like English.
+  (It was briefly RTL; changed at the owner's request.)
+  Blockquotes use logical CSS, so their accent bar stays correct
+  in either direction.</li>
 <li><strong>Language switch, visible</strong> — both homepages now link to the other
   language at the top, and the header language selector has a gold
   outline so it is easy to spot on every page.</li>
+<li><strong>Fixed: Edit / View-source links</strong> — with the en/ + ur/ folder
+  layout, MkDocs built edit links as <code>.../edit/main/en/learn/...</code>
+  and <code>.../edit/main/ur/learn/...</code>, neither of which exists on main.
+  A build hook (<code>hooks/fix_edit_url.py</code>) now rewrites them per page:
+  English pages point at <code>learn/...</code>, Roman Urdu pages at
+  <code>i18n/ur/learn/...</code>. The View-source (raw) links are derived from
+  the same URL, so they are fixed too. Verified: 0 broken GitHub
+  links left across all 119 pages.</li>
 </ul>
 <h2 id="v10-2026-11-26">v1.0 — 2026-11-26<a class="headerlink" href="#v10-2026-11-26" title="Permanent link">&para;</a></h2>
 <p>The full path is written: all 21 Framework topics, all 14 ERPNext

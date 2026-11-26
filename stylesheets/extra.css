@@ -145,7 +145,7 @@
   box-shadow: 0 1px 3px rgba(10, 36, 83, 0.1);
 }
 
-/* Logical property, so the bar flips to the right side on RTL pages. */
+/* Logical property, so the bar stays on the reading side in any direction. */
 .md-typeset blockquote {
   border-inline-start: 3px solid var(--md-accent-fg-color);
   color: inherit;
