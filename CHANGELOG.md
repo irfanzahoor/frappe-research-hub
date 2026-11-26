@@ -40,6 +40,14 @@ All notable changes to the Frappe Research Hub. Dates are in Asia/Karachi.
 - **Language switch, visible** — both homepages now link to the other
   language at the top, and the header language selector has a gold
   outline so it is easy to spot on every page.
+- **Fixed: Edit / View-source links** — with the en/ + ur/ folder
+  layout, MkDocs built edit links as `.../edit/main/en/learn/...`
+  and `.../edit/main/ur/learn/...`, neither of which exists on main.
+  A build hook (`hooks/fix_edit_url.py`) now rewrites them per page:
+  English pages point at `learn/...`, Roman Urdu pages at
+  `i18n/ur/learn/...`. The View-source (raw) links are derived from
+  the same URL, so they are fixed too. Verified: 0 broken GitHub
+  links left across all 119 pages.
 
 ## v1.0 — 2026-11-26
 

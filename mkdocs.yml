@@ -70,6 +70,10 @@ markdown_extensions:
   - toc:
       permalink: true
 
+# Hooks run from the repo root (config file location), not docs_dir.
+hooks:
+  - hooks/fix_edit_url.py
+
 plugins:
   - search
   - i18n:
