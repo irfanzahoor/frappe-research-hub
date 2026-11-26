@@ -6,3 +6,4 @@ NexTash ke asal projects se li gayi opinionated guides. Mukhtasar, concrete, koi
 - [Go-live checklist — data import, permissions, training, cutover](go-live-checklist.md)
 - [Aam ghaltiyan](common-mistakes.md) — field layout, hooks, permissions, performance
 - [Apps chunna — kab app install karni hai aur kab khud banana hai](choosing-apps.md)
+- [Practice project — masala factory banayein, shuru se end tak](practice-project.md)

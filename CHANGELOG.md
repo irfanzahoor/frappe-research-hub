@@ -40,6 +40,16 @@ All notable changes to the Frappe Research Hub. Dates are in Asia/Karachi.
   (It was briefly RTL; changed at the owner's request.)
   Blockquotes use logical CSS, so their accent bar stays correct
   in either direction.
+- **Practice project / capstone guide** — `guides/practice-project.md`
+  (English + Roman Urdu): build a spice factory end to end in 8 phases
+  — bench/site/app and masters, Gate Pass register, BOM + Work Order +
+  Stock Entry (Manufacture), Sales Order → Delivery Note → Sales
+  Invoice, Quality Inspection gate before dispatch, Payment Entry +
+  Gate Pass approval workflow, Order-to-Cash Script Report + invoice
+  print format, then permissions, backup and go-live. Every phase names
+  the lessons it uses, has concrete steps with real code and bench
+  commands, a checkpoint, and common mistakes. DocType fields verified
+  against ERPNext v16 source; the Gate Pass matches Lesson 03 exactly.
 - **Language switch, visible** — both homepages now link to the other
   language at the top, and the header language selector has a gold
   outline so it is easy to spot on every page.
