@@ -9,6 +9,7 @@ site_description: Learn Frappe Framework and ERPNext from Noob to Pro — guides
 site_author: Muhammad Irfaan
 repo_url: https://github.com/irfanzahoor/frappe-research-hub
 repo_name: irfanzahoor/frappe-research-hub
+edit_uri: edit/main/
 copyright: Copyright &copy; 2026 Muhammad Irfaan
 
 # The site is built from docs/, which scripts/sync-docs.sh copies from
@@ -22,6 +23,11 @@ theme:
   language: en
   # Dark blue + white, Irfaan's brand (see stylesheets/extra.css).
   # Light mode by default, with a dark-mode toggle in the header.
+  logo: stylesheets/logo.svg
+  favicon: stylesheets/favicon.svg
+  font:
+    text: Inter
+    code: JetBrains Mono
   palette:
     - scheme: default
       primary: custom
@@ -40,6 +46,9 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.top
+    - navigation.instant
+    - content.action.edit
+    - content.action.view
     - content.code.copy
     - search.suggest
     - search.highlight

@@ -17,6 +17,11 @@ All notable changes to the Frappe Research Hub. Dates are in Asia/Karachi.
   permission, when `.github/workflows/docs.yml` (already written, not
   yet pushed — GitHub blocks workflow files for tokens without that
   permission) can take over auto-deploy.
+- **Docs UI polish** — Inter for text, JetBrains Mono for code; custom
+  dark-blue logo + favicon; bolder headings with dark-blue titles;
+  dark-blue table headers with zebra rows; rounded code blocks and
+  admonitions; instant navigation; "Edit this page" / "View source"
+  links on every page (GitHub edit).
 
 ## v1.0 — 2026-11-26
 
