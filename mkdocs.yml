@@ -12,10 +12,11 @@ repo_name: irfanzahoor/frappe-research-hub
 edit_uri: edit/main/
 copyright: Copyright &copy; 2026 Muhammad Irfaan
 
-# The site is built from docs/, which scripts/sync-docs.sh copies from
-# the repo root before every build (lessons, guides, research, root
-# pages, stylesheets). The markdown in the repo stays the single
+# The site is built from docs/, which scripts/sync-docs.sh copies before
+# every build: docs/en/ from the repo root (English) and docs/ur/ from
+# i18n/ur/ (Roman Urdu). The markdown in the repo stays the single
 # source of truth — docs/ is generated and never committed.
+# Files missing in ur/ (CHANGELOG, ROADMAP) fall back to English.
 docs_dir: docs
 
 theme:
@@ -46,7 +47,6 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.top
-    - navigation.instant
     - content.action.edit
     - content.action.view
     - content.code.copy
@@ -72,6 +72,16 @@ markdown_extensions:
 
 plugins:
   - search
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: en
+          name: English
+          default: true
+          build: true
+        - locale: ur
+          name: Roman Urdu
+          build: true
 
 nav:
   - Home: README.md

@@ -20,8 +20,19 @@ All notable changes to the Frappe Research Hub. Dates are in Asia/Karachi.
 - **Docs UI polish** — Inter for text, JetBrains Mono for code; custom
   dark-blue logo + favicon; bolder headings with dark-blue titles;
   dark-blue table headers with zebra rows; rounded code blocks and
-  admonitions; instant navigation; "Edit this page" / "View source"
-  links on every page (GitHub edit).
+  admonitions; "Edit this page" / "View source" links on every page
+  (GitHub edit).
+- **Docs theme** — navy / gold / teal (the LinkedIn banner colours):
+  navy gradient header with a gold rule, teal links, gold title bar
+  under every page heading. Dark mode included.
+- **Roman Urdu version** — the whole hub translated into Roman Urdu
+  (57 files: all 21 Framework lessons, 14 ERPNext modules, 4 guides,
+  research, root pages). Code, commands, DocType/field names and URLs
+  stay in English; prose is Roman Urdu. Switch languages from the
+  header: English at `/`, Roman Urdu at `/ur/`. The label
+  "How we can use it" is standardised to
+  "Hum isay kaise istemal kar sakte hain" across the Urdu version.
+  CHANGELOG and ROADMAP stay in English (fallback) in the Urdu site.
 
 ## v1.0 — 2026-11-26
 
