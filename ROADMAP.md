@@ -15,19 +15,20 @@ lessons are real, not outlines.
 - [x] **Research:** history of the last 2 years (18 items) + 66-app catalog
   in 11 per-category files.
 
-## Beta — v0.2.0 (next)
+## Beta — v0.2.0 (done, 26 Nov 2026)
 
-- **Levels 2–3 — Framework (12 lessons):** Server Scripts & Document
+- [x] **Levels 2–3 — Framework (12 lessons):** Server Scripts & Document
   Events, Client Scripts, APIs, Reports & Print Formats, Permissions &
   Roles, Workflows, Scheduler & Background Jobs, Notifications & Email,
   Testing, Performance, Security, Debugging.
-- **Remaining ERPNext modules (10 lessons):** Manufacturing, Quality,
+- [x] **Remaining ERPNext modules (10 lessons):** Manufacturing, Quality,
   Projects, Assets, HR, CRM, Helpdesk, Support & Portal, Studio/Flow/
   Insights in v16, cross-module flows (forecast → MPS → MRP).
-- **Guides:** Upgrade guide (v14 → v15 → v16 readiness check) and Go-live
+- [x] **Guides:** Upgrade guide (v14 → v15 → v16 readiness check) and Go-live
   checklist (data import, permissions, training, cutover).
-- **Polish:** every lesson reviewed against frappe_core_skills and the
-  official docs; broken links checked.
+- [x] **Polish:** every lesson reviewed against frappe_core_skills and the
+  official docs; link check run (104 links, 1 intentional forward
+  reference to Level 4, which is v1.0 scope).
 
 ## v1.0
 

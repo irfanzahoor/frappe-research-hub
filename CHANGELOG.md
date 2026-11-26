@@ -2,7 +2,7 @@
 
 All notable changes to the Frappe Research Hub. Dates are in Asia/Karachi.
 
-## Unreleased — Beta v0.2.0 in progress
+## v0.2.0-beta — 2026-11-26
 
 ### Added
 
