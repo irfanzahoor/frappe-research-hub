@@ -6,6 +6,8 @@
 
 📖 **Is ko website ke tor par parhein:** [irfanzahoor.github.io/frappe-research-hub](https://irfanzahoor.github.io/frappe-research-hub/) — search, navigation, dark mode. Wahi content jo is repo mein hai.
 
+🌐 **English mein parhein:** [irfanzahoor.github.io/frappe-research-hub](https://irfanzahoor.github.io/frappe-research-hub/) — poora hub English mein. Upar header mein language switcher se bhi badal sakte hain.
+
 ## Yahan se shuru karein
 
 | Path | Kis ke liye hai | Shuruaat |
