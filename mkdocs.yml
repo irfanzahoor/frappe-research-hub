@@ -1,0 +1,140 @@
+# Docs site for the Frappe Research Hub — built by MkDocs Material,
+# deployed to GitHub Pages by .github/workflows/docs.yml.
+# The markdown files are the hub itself; this file only adds the
+# navigation, theme and search on top. No content is duplicated here.
+
+site_name: Frappe & ERPNext Research Hub
+site_url: https://irfanzahoor.github.io/frappe-research-hub/
+site_description: Learn Frappe Framework and ERPNext from Noob to Pro — guides, research, new apps & real-world use cases.
+site_author: Muhammad Irfaan
+repo_url: https://github.com/irfanzahoor/frappe-research-hub
+repo_name: irfanzahoor/frappe-research-hub
+copyright: Copyright &copy; 2026 Muhammad Irfaan
+
+# The site is built from docs/, which scripts/sync-docs.sh copies from
+# the repo root before every build (lessons, guides, research, root
+# pages, stylesheets). The markdown in the repo stays the single
+# source of truth — docs/ is generated and never committed.
+docs_dir: docs
+
+theme:
+  name: material
+  language: en
+  # Dark blue + white, Irfaan's brand (see stylesheets/extra.css).
+  # Light mode by default, with a dark-mode toggle in the header.
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+nav:
+  - Home: README.md
+  - "Learn: Frappe Framework":
+      - Overview: learn/framework/README.md
+      - Level 1 — Start:
+          - 01 — What is Frappe: learn/framework/level-1/01-what-is-frappe.md
+          - 02 — Bench, Sites & Apps: learn/framework/level-1/02-bench-sites-apps.md
+          - 03 — Your First DocType: learn/framework/level-1/03-first-doctype.md
+          - 04 — Desk, List & Form: learn/framework/level-1/04-desk-list-form.md
+      - Level 2 — Build:
+          - 05 — Server Scripts & Document Events: learn/framework/level-2/05-server-scripts-events.md
+          - 06 — Client Scripts: learn/framework/level-2/06-client-scripts.md
+          - 07 — APIs: learn/framework/level-2/07-apis.md
+          - 08 — Reports & Print Formats: learn/framework/level-2/08-reports-print-formats.md
+          - 09 — Permissions & Roles: learn/framework/level-2/09-permissions-roles.md
+          - 10 — Workflows & Assignments: learn/framework/level-2/10-workflows-assignments.md
+      - Level 3 — Ship:
+          - 11 — Scheduler & Background Jobs: learn/framework/level-3/11-scheduler-jobs.md
+          - 12 — Notifications, Email & Integrations: learn/framework/level-3/12-notifications-email.md
+          - 13 — Testing: learn/framework/level-3/13-testing.md
+          - 14 — Performance: learn/framework/level-3/14-performance.md
+          - 15 — Security: learn/framework/level-3/15-security.md
+          - 16 — Debugging: learn/framework/level-3/16-debugging.md
+      - Level 4 — Advanced:
+          - 17 — Studio & Flow: learn/framework/level-4/17-studio-flow.md
+          - 18 — Insights: learn/framework/level-4/18-insights.md
+          - 19 — Website & Portal: learn/framework/level-4/19-website-portal.md
+          - 20 — Upgrades: learn/framework/level-4/20-upgrades.md
+          - 21 — Ops: learn/framework/level-4/21-ops.md
+  - "Learn: ERPNext Modules":
+      - Overview: learn/erpnext/README.md
+      - Core:
+          - 01 — Accounting: learn/erpnext/core/01-accounting.md
+          - 02 — Stock & Inventory: learn/erpnext/core/02-stock-inventory.md
+          - 03 — Selling: learn/erpnext/core/03-selling.md
+          - 04 — Buying: learn/erpnext/core/04-buying.md
+      - Operations:
+          - 05 — Manufacturing: learn/erpnext/operations/05-manufacturing.md
+          - 06 — Quality: learn/erpnext/operations/06-quality.md
+          - 07 — Projects: learn/erpnext/operations/07-projects.md
+          - 08 — Assets: learn/erpnext/operations/08-assets.md
+      - People:
+          - 09 — HR: learn/erpnext/people/09-hr.md
+          - 10 — CRM: learn/erpnext/people/10-crm.md
+          - 11 — Helpdesk: learn/erpnext/people/11-helpdesk.md
+          - 12 — Support & Portal: learn/erpnext/people/12-support-portal.md
+      - v16:
+          - 13 — Studio, Flow & Insights: learn/erpnext/v16/13-studio-flow-insights.md
+          - 14 — Cross-Module Flows: learn/erpnext/v16/14-cross-module-flows.md
+  - Guides:
+      - Overview: guides/README.md
+      - Common Mistakes: guides/common-mistakes.md
+      - Upgrade v14 → v15 → v16: guides/upgrade-v14-v15-v16.md
+      - Go-Live Checklist: guides/go-live-checklist.md
+      - Choosing Apps: guides/choosing-apps.md
+  - Research:
+      - What Changed 2024–2026: research/history-2024-2026.md
+      - Apps Catalog:
+          - Overview: research/apps-catalog.md
+          - AI: research/apps-catalog/ai.md
+          - POS & Retail: research/apps-catalog/pos-retail.md
+          - Invoicing & OCR: research/apps-catalog/invoicing-ocr.md
+          - HR: research/apps-catalog/hr.md
+          - CRM & Support: research/apps-catalog/crm-support.md
+          - Manufacturing: research/apps-catalog/manufacturing.md
+          - E-Commerce: research/apps-catalog/ecommerce.md
+          - Integrations: research/apps-catalog/integrations.md
+          - Localisations: research/apps-catalog/localisations.md
+          - Developer Tools: research/apps-catalog/developer-tools.md
+          - Productivity: research/apps-catalog/productivity.md
+  - About:
+      - Changelog: CHANGELOG.md
+      - Roadmap: ROADMAP.md
+      - Contributing: CONTRIBUTING.md
