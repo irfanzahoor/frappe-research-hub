@@ -19,6 +19,19 @@ All notable changes to the Frappe Research Hub. Dates are in Asia/Karachi.
     field-level permissions, User Permissions, sharing.
   - `learn/framework/level-2/10-workflows-assignments.md` — Workflows
     (states, transitions, docstatus rules) and Assignment Rules.
+- **Learn: Frappe Framework — Level 3 (6 lessons)**
+  - `learn/framework/level-3/11-scheduler-jobs.md` — Scheduler,
+    background jobs, queues (`frappe.enqueue`, `scheduler_events`).
+  - `learn/framework/level-3/12-notifications-email.md` — Notifications,
+    `frappe.sendmail`, realtime, webhooks.
+  - `learn/framework/level-3/13-testing.md` — unit/integration tests,
+    test data, UI tests (Cypress).
+  - `learn/framework/level-3/14-performance.md` — N+1 queries, indexes,
+    caching, denormalizing.
+  - `learn/framework/level-3/15-security.md` — SQL injection, XSS,
+    permissions, secrets, files, audit.
+  - `learn/framework/level-3/16-debugging.md` — tracebacks, logs,
+    `bench console`, common errors, asking for help.
 
 ## v0.1.0-alpha — 2026-11-26
 

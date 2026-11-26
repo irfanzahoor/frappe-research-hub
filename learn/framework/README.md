@@ -17,12 +17,12 @@ Ordered path: beginner first, advanced later. Each topic: what it is, when to us
 10. [Workflows & Assignments](level-2/10-workflows-assignments.md)
 
 ## Level 3 — Run it well
-11. Scheduler, Background Jobs & Queues
-12. Notifications, Email & Integrations
-13. Testing — unit tests, UI tests
-14. Performance — indexes, query patterns, caching
-15. Security — what to never do, permission hardening
-16. Debugging — logs, common errors, how to read a traceback
+11. [Scheduler, Background Jobs & Queues](level-3/11-scheduler-jobs.md)
+12. [Notifications, Email & Integrations](level-3/12-notifications-email.md)
+13. [Testing — unit tests, UI tests](level-3/13-testing.md)
+14. [Performance — indexes, query patterns, caching](level-3/14-performance.md)
+15. [Security — what to never do, permission hardening](level-3/15-security.md)
+16. [Debugging — logs, common errors, how to read a traceback](level-3/16-debugging.md)
 
 ## Level 4 — Advanced
 17. Studio & Flow — no-code apps, AI in Desk (v16.60+)
