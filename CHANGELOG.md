@@ -60,6 +60,13 @@ All notable changes to the Frappe Research Hub. Dates are in Asia/Karachi.
   removal in **v17**, not v16 (ERPNext docs, Frappe Blog Nov 2026).
   Fixed in `learn/erpnext/people/10-crm.md` and
   `research/history-2024-2026.md`.
+- **Guides**
+  - `guides/upgrade-v14-v15-v16.md` — upgrade rules, readiness check,
+    backup + restore test, upgrade order, breaking changes v14→v15 and
+    v15→v16, patches, staging test plan, rollback, checklists.
+  - `guides/go-live-checklist.md` — data import order, opening balances,
+    permissions, training, cutover, backups, monitoring, rollback,
+    go-live day runbook, tickable checklist.
 
 ## v0.1.0-alpha — 2026-11-26
 
