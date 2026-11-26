@@ -1,6 +1,6 @@
 # Frappe Research Hub
 
-> Learn Frappe Framework and ERPNext A to Z — from first bench setup to production ERP. Guides, research, new apps, and real-world use cases, in one place.
+> Learn Frappe Framework and ERPNext from Noob to Pro — from first bench setup to production ERP. Guides, research, new apps, and real-world use cases, in one place.
 
 By [Muhammad Irfaan](https://www.linkedin.com/in/irfan-zahoor555/) — Full-Stack Developer & ERP Specialist, NexTash, Lahore. Building ERP systems businesses actually rely on.
 

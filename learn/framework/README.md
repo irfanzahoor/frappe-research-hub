@@ -1,4 +1,4 @@
-# Learn: Frappe Framework — A to Z
+# Learn: Frappe Framework — Noob to Pro
 
 Ordered path: beginner first, advanced later. Each topic: what it is, when to use it, a minimal example, common mistakes.
 

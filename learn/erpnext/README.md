@@ -1,4 +1,4 @@
-# Learn: ERPNext Modules — A to Z
+# Learn: ERPNext Modules — Noob to Pro
 
 Each module: what it does, the core DocTypes, the end-to-end flow, and a real use case with a "How we can use it" line for NexTash / client work.
 
