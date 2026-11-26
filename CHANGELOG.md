@@ -2,6 +2,24 @@
 
 All notable changes to the Frappe Research Hub. Dates are in Asia/Karachi.
 
+## Unreleased — Beta v0.2.0 in progress
+
+### Added
+
+- **Learn: Frappe Framework — Level 2 (6 lessons)**
+  - `learn/framework/level-2/05-server-scripts-events.md` — controller
+    hooks, Server Scripts, `doc_events` in hooks.py.
+  - `learn/framework/level-2/06-client-scripts.md` — form behaviour,
+    validation hints, UX (`frm` events, `set_query`, buttons).
+  - `learn/framework/level-2/07-apis.md` — `frappe.call`, whitelisted
+    methods, REST API, `bench execute`.
+  - `learn/framework/level-2/08-reports-print-formats.md` — Script Reports,
+    Query Reports, Jinja print formats.
+  - `learn/framework/level-2/09-permissions-roles.md` — Role Permissions,
+    field-level permissions, User Permissions, sharing.
+  - `learn/framework/level-2/10-workflows-assignments.md` — Workflows
+    (states, transitions, docstatus rules) and Assignment Rules.
+
 ## v0.1.0-alpha — 2026-11-26
 
 First real content. The beginner path is no longer an outline — it has

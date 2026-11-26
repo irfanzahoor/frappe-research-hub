@@ -9,12 +9,12 @@ Ordered path: beginner first, advanced later. Each topic: what it is, when to us
 4. [Desk, List View, Form View — how users actually work](level-1/04-desk-list-form.md)
 
 ## Level 2 — Build
-5. Server Scripts & Document Events — where logic belongs
-6. Client Scripts — form behaviour, validation, UX
-7. APIs — `frappe.call`, REST, whitelisted methods
-8. Reports — Script Reports, Query Reports, Print Formats
-9. Permissions & Roles — Role Permissions, field-level, User Permissions
-10. Workflows & Assignments
+5. [Server Scripts & Document Events — where logic belongs](level-2/05-server-scripts-events.md)
+6. [Client Scripts — form behaviour, validation, UX](level-2/06-client-scripts.md)
+7. [APIs — `frappe.call`, REST, whitelisted methods](level-2/07-apis.md)
+8. [Reports — Script Reports, Query Reports, Print Formats](level-2/08-reports-print-formats.md)
+9. [Permissions & Roles — Role Permissions, field-level, User Permissions](level-2/09-permissions-roles.md)
+10. [Workflows & Assignments](level-2/10-workflows-assignments.md)
 
 ## Level 3 — Run it well
 11. Scheduler, Background Jobs & Queues
