@@ -39,8 +39,9 @@ This hub is public so anyone can learn from it. Changes only via fork + pull req
 ![v1.0](https://img.shields.io/badge/status-v1.0-brightgreen)
 
 **v1.0** — the full path is written: Framework Levels 1–4 (21 lessons),
-all 14 ERPNext modules, and 5 guides (Common mistakes, Upgrade
-v14 → v15 → v16, Go-live checklist, Choosing apps, Practice project).
+all 14 ERPNext modules, and 6 guides (Common mistakes, Upgrade
+v14 → v15 → v16, Go-live checklist, Choosing apps, Practice project,
+Troubleshooting).
 Research (history +
 66-app catalog) is complete as of 26 Nov 2026. See
 [CHANGELOG.md](CHANGELOG.md) and [ROADMAP.md](ROADMAP.md).

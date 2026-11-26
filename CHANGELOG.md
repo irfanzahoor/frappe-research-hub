@@ -26,7 +26,7 @@ All notable changes to the Frappe Research Hub. Dates are in Asia/Karachi.
   navy gradient header with a gold rule, teal links, gold title bar
   under every page heading. Dark mode included.
 - **Roman Urdu version** — the whole hub translated into Roman Urdu
-  (57 files: all 21 Framework lessons, 14 ERPNext modules, 4 guides,
+  (59 files: all 21 Framework lessons, 14 ERPNext modules, 6 guides,
   research, root pages). Code, commands, DocType/field names and URLs
   stay in English; prose is Roman Urdu. Switch languages from the
   header: English at `/`, Roman Urdu at `/ur/`. The label
@@ -40,6 +40,22 @@ All notable changes to the Frappe Research Hub. Dates are in Asia/Karachi.
   (It was briefly RTL; changed at the owner's request.)
   Blockquotes use logical CSS, so their accent bar stays correct
   in either direction.
+- **Troubleshooting / error library** — `guides/troubleshooting.md`
+  (English + Roman Urdu): 22 real, common Frappe/ERPNext errors in
+  three stages — Setup & Install (wrong versions, MariaDB access
+  denied / not running, Redis refused, `bench build`, missing
+  `frappe` module, port in use), Development (migrate patch failures,
+  Unknown column, Not Permitted, Data too long, link validation,
+  mandatory-but-hidden field, scripts not running, stale print
+  format), and Production & Go-live (Something went wrong, scheduler
+  not running, email queue stuck, `bench update` merge conflicts,
+  restore version mismatch, 504 timeouts, blank Desk after update).
+  Every entry has the same format — exact error, when it happens,
+  why, the fix in order, and prevention — plus a "first 3 checks"
+  section and a "still stuck?" section pointing at Lesson 16 and the
+  Frappe Forum. Error text and fixes verified against Frappe docs,
+  Frappe Cloud docs and the Forum; v16 requirements (Python 3.14,
+  Node 24, MariaDB 11.8) from the `pyproject.toml` ranges.
 - **Practice project / capstone guide** — `guides/practice-project.md`
   (English + Roman Urdu): build a spice factory end to end in 8 phases
   — bench/site/app and masters, Gate Pass register, BOM + Work Order +
