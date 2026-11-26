@@ -57,6 +57,13 @@
         <xhtml:link rel="alternate" hreflang="ur" href="https://irfanzahoor.github.io/frappe-research-hub/ur/guides/go-live-checklist/"/>
     </url>
     <url>
+        <loc>https://irfanzahoor.github.io/frappe-research-hub/guides/practice-project/</loc>
+        <lastmod>2026-11-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://irfanzahoor.github.io/frappe-research-hub/guides/practice-project/"/>
+        <xhtml:link rel="alternate" hreflang="ur" href="https://irfanzahoor.github.io/frappe-research-hub/ur/guides/practice-project/"/>
+    </url>
+    <url>
         <loc>https://irfanzahoor.github.io/frappe-research-hub/guides/upgrade-v14-v15-v16/</loc>
         <lastmod>2026-11-26</lastmod>
         <changefreq>daily</changefreq>
@@ -468,6 +475,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ur" href="https://irfanzahoor.github.io/frappe-research-hub/ur/guides/go-live-checklist/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://irfanzahoor.github.io/frappe-research-hub/guides/go-live-checklist/"/>
+    </url>
+    <url>
+        <loc>https://irfanzahoor.github.io/frappe-research-hub/ur/guides/practice-project/</loc>
+        <lastmod>2026-11-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ur" href="https://irfanzahoor.github.io/frappe-research-hub/ur/guides/practice-project/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://irfanzahoor.github.io/frappe-research-hub/guides/practice-project/"/>
     </url>
     <url>
         <loc>https://irfanzahoor.github.io/frappe-research-hub/ur/guides/upgrade-v14-v15-v16/</loc>

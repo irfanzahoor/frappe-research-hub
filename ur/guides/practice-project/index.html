@@ -1,0 +1,4729 @@
+
+<!doctype html>
+<html lang="ur" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Learn Frappe Framework and ERPNext from Noob to Pro — guides, research, new apps & real-world use cases.">
+      
+      
+        <meta name="author" content="Muhammad Irfaan">
+      
+      
+        <link rel="canonical" href="https://irfanzahoor.github.io/frappe-research-hub/ur/guides/practice-project/">
+      
+      
+        <link rel="prev" href="../choosing-apps/">
+      
+      
+        <link rel="next" href="../../research/history-2024-2026/">
+      
+      
+        
+          <link rel="alternate" href="../../../guides/practice-project/" hreflang="en">
+        
+          <link rel="alternate" href="./" hreflang="ur">
+        
+      
+      
+      <link rel="icon" href="../../../stylesheets/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
+    
+    
+      
+        <title>Practice Project - Frappe & ERPNext Research Hub</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#practice-project-masala-factory" class="md-skip">
+          براہِ راست مواد پر جائیں
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="سر تحریر">
+    <a href="../../" title="Frappe &amp; ERPNext Research Hub" class="md-header__button md-logo" aria-label="Frappe & ERPNext Research Hub" data-md-component="logo">
+      
+  <img src="../../../stylesheets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Frappe & ERPNext Research Hub
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Practice Project
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="زبان کا انتخاب کریں">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../guides/practice-project/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="ur" class="md-select__link">
+              Roman Urdu
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="تلاش کریں" placeholder="تلاش کریں" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="تلاش">
+        
+        <button type="reset" class="md-search__icon md-icon" title="صاف کریں" aria-label="صاف کریں" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            تلاش کا آغاز ہو رہا ہے
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/irfanzahoor/frappe-research-hub" title="ریپازٹری پر جائیں" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    irfanzahoor/frappe-research-hub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="ٹیبز" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../learn/framework/" class="md-tabs__link">
+          
+  
+  
+  Learn: Frappe Framework
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../learn/erpnext/" class="md-tabs__link">
+          
+  
+  
+  Learn: ERPNext Modules
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Guides
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../research/history-2024-2026/" class="md-tabs__link">
+          
+  
+  
+  Research
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../CHANGELOG/" class="md-tabs__link">
+          
+  
+  
+  About
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="رہنمائی" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../" title="Frappe &amp; ERPNext Research Hub" class="md-nav__button md-logo" aria-label="Frappe & ERPNext Research Hub" data-md-component="logo">
+      
+  <img src="../../../stylesheets/logo.svg" alt="logo">
+
+    </a>
+    Frappe & ERPNext Research Hub
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/irfanzahoor/frappe-research-hub" title="ریپازٹری پر جائیں" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    irfanzahoor/frappe-research-hub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learn: Frappe Framework
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Learn: Frappe Framework
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 1 — Start
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 1 — Start
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-1/01-what-is-frappe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 — What is Frappe
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-1/02-bench-sites-apps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 — Bench, Sites & Apps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-1/03-first-doctype/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 — Your First DocType
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-1/04-desk-list-form/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 — Desk, List & Form
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 2 — Build
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 2 — Build
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-2/05-server-scripts-events/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 — Server Scripts & Document Events
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-2/06-client-scripts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 — Client Scripts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-2/07-apis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 — APIs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-2/08-reports-print-formats/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 — Reports & Print Formats
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-2/09-permissions-roles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 — Permissions & Roles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-2/10-workflows-assignments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 — Workflows & Assignments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 3 — Ship
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 3 — Ship
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-3/11-scheduler-jobs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11 — Scheduler & Background Jobs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-3/12-notifications-email/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12 — Notifications, Email & Integrations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-3/13-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13 — Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-3/14-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14 — Performance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-3/15-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    15 — Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-3/16-debugging/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    16 — Debugging
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 4 — Advanced
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 4 — Advanced
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-4/17-studio-flow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    17 — Studio & Flow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-4/18-insights/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    18 — Insights
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-4/19-website-portal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    19 — Website & Portal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-4/20-upgrades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    20 — Upgrades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-4/21-ops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    21 — Ops
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learn: ERPNext Modules
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Learn: ERPNext Modules
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Core
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/core/01-accounting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 — Accounting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/core/02-stock-inventory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 — Stock & Inventory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/core/03-selling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 — Selling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/core/04-buying/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 — Buying
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operations
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Operations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/operations/05-manufacturing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 — Manufacturing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/operations/06-quality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 — Quality
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/operations/07-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 — Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/operations/08-assets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 — Assets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    People
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    People
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/people/09-hr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 — HR
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/people/10-crm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 — CRM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/people/11-helpdesk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11 — Helpdesk
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/people/12-support-portal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12 — Support & Portal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v16
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    v16
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/v16/13-studio-flow-insights/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13 — Studio, Flow & Insights
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/v16/14-cross-module-flows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14 — Cross-Module Flows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common-mistakes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Common Mistakes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../upgrade-v14-v15-v16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Upgrade v14 → v15 → v16
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../go-live-checklist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Go-Live Checklist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../choosing-apps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choosing Apps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Practice Project
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Practice Project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="فہرست">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      فہرست
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#shuru-karne-se-pehle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shuru karne se pehle
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-1-bench-site-app-aur-masters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 1 — Bench, site, app aur masters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 1 — Bench, site, app aur masters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-mistakes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common mistakes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-2-gate-pass-register" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 2 — Gate Pass register
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 2 — Gate Pass register">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkpoint_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-mistakes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common mistakes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-3-banayein-bom-work-order-stock-entry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 3 — Banayein: BOM, Work Order, Stock Entry
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 3 — Banayein: BOM, Work Order, Stock Entry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkpoint_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-mistakes_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common mistakes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-4-bechna-sales-order-delivery-note-sales-invoice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 4 — Bechna: Sales Order → Delivery Note → Sales Invoice
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 4 — Bechna: Sales Order → Delivery Note → Sales Invoice">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkpoint_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-mistakes_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common mistakes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-5-dispatch-se-pehle-quality-gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 5 — Dispatch se pehle quality gate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 5 — Dispatch se pehle quality gate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkpoint_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-mistakes_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common mistakes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-6-payment-lein-aur-gate-pass-approve-karwayein" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 6 — Payment lein, aur gate pass approve karwayein
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 6 — Payment lein, aur gate pass approve karwayein">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkpoint_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-mistakes_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common mistakes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-7-dekhein-order-to-cash-report-invoice-print-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 7 — Dekhein: Order-to-Cash report + invoice print format
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 7 — Dekhein: Order-to-Cash report + invoice print format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkpoint_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-mistakes_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common mistakes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-8-lock-karein-permissions-backup-go-live" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 8 — Lock karein: permissions, backup, go-live
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 8 — Lock karein: permissions, backup, go-live">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkpoint_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-mistakes_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common mistakes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aage-kya-banayein" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aage kya banayein
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hum-isay-kaise-istemal-kar-sakte-hain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hum isay kaise istemal kar sakte hain
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Research
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/history-2024-2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What Changed 2024–2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apps Catalog
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Apps Catalog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/pos-retail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    POS & Retail
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/invoicing-ocr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Invoicing & OCR
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/hr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HR
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/crm-support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CRM & Support
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/manufacturing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manufacturing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/ecommerce/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    E-Commerce
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/integrations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integrations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/localisations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Localisations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/developer-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Developer Tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/productivity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Productivity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    About
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ROADMAP/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CONTRIBUTING/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="فہرست">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      فہرست
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#shuru-karne-se-pehle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shuru karne se pehle
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-1-bench-site-app-aur-masters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 1 — Bench, site, app aur masters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 1 — Bench, site, app aur masters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-mistakes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common mistakes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-2-gate-pass-register" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 2 — Gate Pass register
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 2 — Gate Pass register">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkpoint_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-mistakes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common mistakes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-3-banayein-bom-work-order-stock-entry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 3 — Banayein: BOM, Work Order, Stock Entry
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 3 — Banayein: BOM, Work Order, Stock Entry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkpoint_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-mistakes_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common mistakes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-4-bechna-sales-order-delivery-note-sales-invoice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 4 — Bechna: Sales Order → Delivery Note → Sales Invoice
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 4 — Bechna: Sales Order → Delivery Note → Sales Invoice">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkpoint_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-mistakes_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common mistakes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-5-dispatch-se-pehle-quality-gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 5 — Dispatch se pehle quality gate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 5 — Dispatch se pehle quality gate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkpoint_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-mistakes_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common mistakes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-6-payment-lein-aur-gate-pass-approve-karwayein" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 6 — Payment lein, aur gate pass approve karwayein
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 6 — Payment lein, aur gate pass approve karwayein">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkpoint_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-mistakes_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common mistakes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-7-dekhein-order-to-cash-report-invoice-print-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 7 — Dekhein: Order-to-Cash report + invoice print format
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 7 — Dekhein: Order-to-Cash report + invoice print format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkpoint_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-mistakes_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common mistakes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-8-lock-karein-permissions-backup-go-live" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 8 — Lock karein: permissions, backup, go-live
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 8 — Lock karein: permissions, backup, go-live">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkpoint_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-mistakes_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common mistakes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aage-kya-banayein" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aage kya banayein
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hum-isay-kaise-istemal-kar-sakte-hain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hum isay kaise istemal kar sakte hain
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/irfanzahoor/frappe-research-hub/edit/main/i18n/ur/guides/practice-project.md" title="اس صفحے میں ترمیم کریں" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/irfanzahoor/frappe-research-hub/raw/main/i18n/ur/guides/practice-project.md" title="اس صفحہ کا ماخذ دیکھیں" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="practice-project-masala-factory">Practice Project — Masala Factory<a class="headerlink" href="#practice-project-masala-factory" title="Permanent link">&para;</a></h1>
+<p>Lessons parhne se aap ko pieces samajh aate hain. Yeh project aap ko
+sikhata hai ke woh pieces aik saath kaise fit hote hain. Aap aik chhoti
+masala manufacturer — <strong>Lal Mirch Foods</strong> — ke liye aik working ERP
+banayenge: khaali bench se live order-to-cash flow tak, apni app mein,
+apni site par.</p>
+<p>Factory kachchi mirch khareedti hai, use pees kar 1 kg ke pack mein Red
+Chilli Powder banati hai, distributors ko bechti hai, dispatch se pehle
+quality check karti hai, invoice banati hai, aur payment leti hai. Har
+step mein aik real ERPNext document use hota hai — wohi jo lessons
+sikhate hain — plus aik custom DocType aap ka apna (Lesson 03 wala Gate
+Pass).</p>
+<p><strong>Waqt:</strong> taqreeban 3–4 shaamein, har phase taqreeban aik ghanta.
+<strong>Nateeja:</strong> aik site jo aap client ko demo kar sakte hain, aur yeh
+confidence ke agla project aap scratch se bana sakte hain.</p>
+<h2 id="shuru-karne-se-pehle">Shuru karne se pehle<a class="headerlink" href="#shuru-karne-se-pehle" title="Permanent link">&para;</a></h2>
+<p><strong>Aap ko chahiye:</strong> ERPNext v16 ke saath aik working bench (dekhein
+<a href="../../learn/framework/level-1/02-bench-sites-apps/">Lesson 02 — Bench, Sites &amp; Apps</a>).
+Phase 2 se pehle <a href="../../learn/framework/level-1/03-first-doctype/">Lesson 03 — Your First DocType</a>
+parh lein — wahan wala Gate Pass hi woh hai jis par aap kaam karenge.</p>
+<p><strong>Demo data</strong> — yeh names har jagah exactly aise hi use karein, taa ke
+har phase agle se mil jaye:</p>
+<table>
+<thead>
+<tr>
+<th>Master</th>
+<th>Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Company</td>
+<td>Lal Mirch Foods</td>
+</tr>
+<tr>
+<td>Items</td>
+<td><code>RAW-CHILLI</code> — Raw Chilli (Whole), Kg, valuation rate 400</td>
+</tr>
+<tr>
+<td></td>
+<td><code>RCP-1KG</code> — Red Chilli Powder 1 Kg Pack, Nos, standard rate 650</td>
+</tr>
+<tr>
+<td>Warehouses</td>
+<td>Stores, Work In Progress, Finished Goods</td>
+</tr>
+<tr>
+<td>Customer</td>
+<td>Karachi Spice Traders</td>
+</tr>
+<tr>
+<td>Price List</td>
+<td>Standard Selling (default)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Flow jo aap bana rahe hain:</strong></p>
+<div class="highlight"><pre><span></span><code>Gate Pass → BOM → Work Order → Stock Entry (Manufacture)
+    → Sales Order → Delivery Note → Quality Inspection
+    → Sales Invoice → Payment Entry → Report + Print Format
+</code></pre></div>
+<p>Har phase ke end par aik <strong>checkpoint</strong> hai — kuch aisa jo aap ko aage
+barhne se pehle karna aana chahiye. Checkpoints skip na karein; agar
+Phase 3 ka stock ghalat hai to Phase 4 chup chaap toot jayega.</p>
+<hr />
+<h2 id="phase-1-bench-site-app-aur-masters">Phase 1 — Bench, site, app aur masters<a class="headerlink" href="#phase-1-bench-site-app-aur-masters" title="Permanent link">&para;</a></h2>
+<p><strong>Uses:</strong> <a href="../../learn/framework/level-1/02-bench-sites-apps/">Lesson 02 — Bench, Sites &amp; Apps</a></p>
+<h3 id="steps">Steps<a class="headerlink" href="#steps" title="Permanent link">&para;</a></h3>
+<ol>
+<li>App aur site banayein:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/frappe-bench
+bench<span class="w"> </span>new-app<span class="w"> </span>spice_factory
+bench<span class="w"> </span>new-site<span class="w"> </span>spice.local<span class="w"> </span>--install-app<span class="w"> </span>erpnext
+bench<span class="w"> </span>--site<span class="w"> </span>spice.local<span class="w"> </span>install-app<span class="w"> </span>spice_factory
+</code></pre></div>
+<ol>
+<li>Is site ke liye developer mode on karein, taa ke Desk mein banaye
+   gaye DocTypes aap ki app mein save hon:</li>
+</ol>
+<div class="highlight"><pre><span></span><code>bench<span class="w"> </span>--site<span class="w"> </span>spice.local<span class="w"> </span>set-config<span class="w"> </span>developer_mode<span class="w"> </span><span class="m">1</span>
+bench<span class="w"> </span>--site<span class="w"> </span>spice.local<span class="w"> </span>migrate
+bench<span class="w"> </span>start
+</code></pre></div>
+<ol>
+<li>
+<p>Desk mein upar wali table ke masters banayein:
+   <strong>Company</strong> (Lal Mirch Foods), <strong>Item</strong> <code>RAW-CHILLI</code> (Item Group
+   Raw Material, UOM Kg) aur <code>RCP-1KG</code> (Item Group Products, UOM Nos,
+   Standard Selling Rate 650), <strong>Warehouses</strong> (Stores, Work In
+   Progress, Finished Goods), <strong>Customer</strong> (Karachi Spice Traders).</p>
+</li>
+<li>
+<p>Aik <strong>Stock Entry</strong>, purpose <strong>Material Receipt</strong>, <code>t_warehouse</code>
+   Stores, valuation rate 400 se 200 kg <code>RAW-CHILLI</code> Stores mein
+   daal dein. Submit karein. Yeh aap ka opening stock hai — is ke
+   baghair Phase 3 ke paas consume karne ko kuch nahi hoga.</p>
+</li>
+</ol>
+<h3 id="checkpoint">Checkpoint<a class="headerlink" href="#checkpoint" title="Permanent link">&para;</a></h3>
+<p>Ab aap ko browser mein <code>spice.local</code> khol kar apni app installed nazar
+aani chahiye, aur Stock Balance report mein Stores mein 200 kg
+<code>RAW-CHILLI</code> milna chahiye.</p>
+<h3 id="common-mistakes">Common mistakes<a class="headerlink" href="#common-mistakes" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>App install karne ke baad <code>migrate</code> skip karna.</strong> App listed to
+  ho jati hai, lekin us ki tables tab tak nahi banti jab tak aap
+  migrate na karein.</li>
+<li><strong>Masters ghalat site par banana.</strong> URL bar mein site ka naam check
+  karein — <code>spice.local</code>, koi doosri dev site nahi.</li>
+<li><strong>Developer mode bhool jana.</strong> Is ke baghair Phase 2 ka Gate Pass
+  sirf database mein save hota hai, app mein nahi, aur aap use ship
+  nahi kar sakte.</li>
+</ul>
+<hr />
+<h2 id="phase-2-gate-pass-register">Phase 2 — Gate Pass register<a class="headerlink" href="#phase-2-gate-pass-register" title="Permanent link">&para;</a></h2>
+<p><strong>Uses:</strong> <a href="../../learn/framework/level-1/03-first-doctype/">Lesson 03 — Your First DocType</a>,
+<a href="../../learn/framework/level-1/04-desk-list-form/">Lesson 04 — Desk, List View, Form View</a>,
+<a href="../../learn/framework/level-2/06-client-scripts/">Lesson 06 — Client Scripts</a></p>
+<h3 id="steps_1">Steps<a class="headerlink" href="#steps_1" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Gate Pass</strong> DocType bilkul Lesson 03 jaisa banayein — wohi fields,
+   wohi order:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Fieldname</th>
+<th>Label</th>
+<th>Type</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>naming_series</code></td>
+<td>Series</td>
+<td>Select</td>
+<td>Options: <code>GP-.YYYY.-.####</code></td>
+</tr>
+<tr>
+<td><code>gate_pass_date</code></td>
+<td>Date</td>
+<td>Date</td>
+<td>Default: Today</td>
+</tr>
+<tr>
+<td><code>visitor_name</code></td>
+<td>Visitor</td>
+<td>Data</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><code>company</code></td>
+<td>Company</td>
+<td>Link</td>
+<td>Options: Company</td>
+</tr>
+<tr>
+<td><code>purpose</code></td>
+<td>Purpose</td>
+<td>Select</td>
+<td>Visit / Delivery / Pickup</td>
+</tr>
+<tr>
+<td><code>items</code></td>
+<td>Items</td>
+<td>Table</td>
+<td>Options: Gate Pass Item</td>
+</tr>
+<tr>
+<td><code>remarks</code></td>
+<td>Remarks</td>
+<td>Small Text</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Child table <strong>Gate Pass Item</strong>: <code>item_name</code> (Data, In List View),
+   <code>qty</code> (Int, In List View), <code>direction</code> (Select: In / Out).
+   Autoname ko <code>naming_series</code> par set karein.</p>
+<ol>
+<li>Aik Client Script add karein — date khud bhar jaye, aur Delivery
+   ya Pickup pass baghair items ke refuse ho jaye:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="c1">// spice_factory/spice_factory/doctype/gate_pass/gate_pass.js</span>
+<span class="nx">frappe</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">"Gate Pass"</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">refresh</span><span class="p">(</span><span class="nx">frm</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// New passes always start with today — the guard should not type it.</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">frm</span><span class="p">.</span><span class="nx">is_new</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nx">frm</span><span class="p">.</span><span class="nx">set_value</span><span class="p">(</span><span class="s2">"gate_pass_date"</span><span class="p">,</span><span class="w"> </span><span class="nx">frappe</span><span class="p">.</span><span class="nx">datetime</span><span class="p">.</span><span class="nx">nowdate</span><span class="p">());</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nx">validate</span><span class="p">(</span><span class="nx">frm</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span>
+<span class="w">            </span><span class="p">(</span><span class="nx">frm</span><span class="p">.</span><span class="nx">doc</span><span class="p">.</span><span class="nx">purpose</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">"Delivery"</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nx">frm</span><span class="p">.</span><span class="nx">doc</span><span class="p">.</span><span class="nx">purpose</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">"Pickup"</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<span class="w">            </span><span class="o">!</span><span class="nx">frm</span><span class="p">.</span><span class="nx">doc</span><span class="p">.</span><span class="nx">items</span><span class="p">.</span><span class="nx">length</span>
+<span class="w">        </span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nx">frappe</span><span class="p">.</span><span class="k">throw</span><span class="p">(</span><span class="nx">__</span><span class="p">(</span><span class="s2">"Add at least one item for a Delivery or Pickup pass."</span><span class="p">));</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="p">});</span>
+</code></pre></div>
+<p><code>bench --site spice.local migrate</code> chalakar Desk reload karein.</p>
+<ol>
+<li>Do passes banayein: aik <strong>Delivery</strong> (supplier 50 kg <code>RAW-CHILLI</code>
+   lata hai, direction In) aur aik <strong>Visit</strong> (aik buyer, koi items
+   nahi). Dono submit karein.</li>
+</ol>
+<h3 id="checkpoint_1">Checkpoint<a class="headerlink" href="#checkpoint_1" title="Permanent link">&para;</a></h3>
+<p>Ab aap ko aik minute se kam mein Gate Pass banana aana chahiye, list
+mein woh <code>GP-2026-0001</code> nazar aana chahiye, aur agar aap baghair items
+ke Delivery pass save karne ki koshish karein to saaf error milna
+chahiye.</p>
+<h3 id="common-mistakes_1">Common mistakes<a class="headerlink" href="#common-mistakes_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Client Script ghalat file mein daalna.</strong> Form behaviour
+   <code>gate_pass.js</code> mein rehta hai, DocType folder ke andar — Server
+   Script mein nahi, hooks.py mein nahi.</li>
+<li><strong>Script add karne ke baad <code>migrate</code> bhool jana.</strong> <code>.js</code> file tab
+   hi pick hoti hai jab DocType app se dobara load ho.</li>
+<li><strong><code>refresh</code> mein validate karna, <code>validate</code> mein nahi.</strong> <code>refresh</code>
+   har dafa chalta hai jab form khulta hai; wahan check lagane se
+   error tab bhi aata hai jab user sirf dekh raha ho.</li>
+</ul>
+<hr />
+<h2 id="phase-3-banayein-bom-work-order-stock-entry">Phase 3 — Banayein: BOM, Work Order, Stock Entry<a class="headerlink" href="#phase-3-banayein-bom-work-order-stock-entry" title="Permanent link">&para;</a></h2>
+<p><strong>Uses:</strong> <a href="../../learn/erpnext/operations/05-manufacturing/">Manufacturing</a>,
+<a href="../../learn/erpnext/core/02-stock-inventory/">Stock &amp; Inventory</a></p>
+<h3 id="steps_2">Steps<a class="headerlink" href="#steps_2" title="Permanent link">&para;</a></h3>
+<ol>
+<li><code>RCP-1KG</code> ke liye aik <strong>BOM</strong> banayein, quantity 1:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Qty</th>
+<th>UOM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>RAW-CHILLI</code></td>
+<td>1.05</td>
+<td>Kg</td>
+</tr>
+</tbody>
+</table>
+<p>(1 kg powder ke liye 1.05 kg kachchi mirch chahiye — peesne mein
+   taqreeban 5% waste hota hai. BOM submit karein.)</p>
+<ol>
+<li>
+<p>Aik <strong>Work Order</strong> banayein: <code>production_item</code> <code>RCP-1KG</code>, qty
+   <strong>100</strong>, <code>bom_no</code> (BOM se fetch hoga), <code>fg_warehouse</code> Finished
+   Goods, <code>wip_warehouse</code> Work In Progress. Submit karein. Ab Work
+   Order plan reserve kar chuka hai: 105 kg kachchi mirch andar, 100
+   pack bahar.</p>
+</li>
+<li>
+<p>Work Order ke against aik <strong>Stock Entry</strong>, purpose
+   <strong>Manufacture</strong>, post karein:</p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Row</th>
+<th>Item</th>
+<th>Qty</th>
+<th>Source</th>
+<th>Target</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>RAW-CHILLI</code></td>
+<td>105</td>
+<td>Stores</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>RCP-1KG</code></td>
+<td>100</td>
+<td>—</td>
+<td>Finished Goods</td>
+</tr>
+</tbody>
+</table>
+<p>Submit karein. Stock Balance mein ab Stores mein 95 kg
+   <code>RAW-CHILLI</code> aur Finished Goods mein 100 pack <code>RCP-1KG</code> hone
+   chahiye.</p>
+<h3 id="checkpoint_2">Checkpoint<a class="headerlink" href="#checkpoint_2" title="Permanent link">&para;</a></h3>
+<p>Ab aap ko Stock Ledger se bata sakhna chahiye ke har kilo kahan gaya:
+200 andar, 105 consume, 100 pack produce. Agar numbers match nahi kar
+rahe to aage na barhein — Phase 4 wohi stock bechta hai jo Phase 3 ne
+banaya hai.</p>
+<h3 id="common-mistakes_2">Common mistakes<a class="headerlink" href="#common-mistakes_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Work Order submit karne se pehle Stock Entry post karna.</strong>
+   Manufacture entry ko link karne ke liye submitted Work Order
+   chahiye.</li>
+<li><strong>Ghalat purpose.</strong> Purpose Material Receipt wali Manufacture entry
+   stock to move kar deti hai, lekin raw material kabhi consume nahi
+   karti — ledger balance nahi karega.</li>
+<li><strong>Submitted Work Order ko qty badalne ke liye edit karna.</strong> Cancel
+   karke amend karein — woh pehle hi stock reserve aur move kar chuka
+   hai.</li>
+</ul>
+<hr />
+<h2 id="phase-4-bechna-sales-order-delivery-note-sales-invoice">Phase 4 — Bechna: Sales Order → Delivery Note → Sales Invoice<a class="headerlink" href="#phase-4-bechna-sales-order-delivery-note-sales-invoice" title="Permanent link">&para;</a></h2>
+<p><strong>Uses:</strong> <a href="../../learn/erpnext/core/03-selling/">Selling</a>,
+<a href="../../learn/erpnext/core/02-stock-inventory/">Stock &amp; Inventory</a>,
+<a href="../../learn/erpnext/core/01-accounting/">Accounting</a>,
+<a href="../../learn/framework/level-2/05-server-scripts-events/">Lesson 05 — Server Scripts &amp; Document Events</a></p>
+<h3 id="steps_3">Steps<a class="headerlink" href="#steps_3" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>Karachi Spice Traders ke liye aik <strong>Sales Order</strong> banayein: item
+   <code>RCP-1KG</code>, qty <strong>50</strong>, rate 650, <code>delivery_date</code> agle hafte,
+   warehouse Finished Goods. Submit karein. (Order-to-cash hamesha
+   Quotation → Sales Order → Delivery Note → Sales Invoice →
+   Payment Entry hota hai.)</p>
+</li>
+<li>
+<p>Sales Order se <strong>Create → Delivery Note</strong> banayein. Item row check
+   karein: us mein <code>against_sales_order</code> wapas order ki taraf point
+   karta hai, aur warehouse Finished Goods hai. Submit karein — stock
+   50 pack reh jayega.</p>
+</li>
+<li>
+<p>Delivery Note se <strong>Create → Sales Invoice</strong> banayein. Totals check
+   karein (50 × 650 = 32,500), phir submit karein.</p>
+</li>
+<li>
+<p>Aik guard lagayein taa ke yeh kabhi oversell na ho. <code>validate</code> hook
+   drafts ko bhi block kar dega, is liye <code>on_submit</code> hook karein:</p>
+</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="c1"># spice_factory/hooks.py</span>
+<span class="n">doc_events</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"Sales Order"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"on_submit"</span><span class="p">:</span> <span class="s2">"spice_factory.api.check_stock_before_submit"</span><span class="p">,</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># spice_factory/api.py</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">frappe</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">frappe</span><span class="w"> </span><span class="kn">import</span> <span class="n">_</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">check_stock_before_submit</span><span class="p">(</span><span class="n">doc</span><span class="p">,</span> <span class="n">method</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Block submitting a Sales Order we cannot fulfil from stock."""</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">doc</span><span class="o">.</span><span class="n">items</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">row</span><span class="o">.</span><span class="n">warehouse</span><span class="p">:</span>
+            <span class="k">continue</span>
+        <span class="n">available</span> <span class="o">=</span> <span class="n">frappe</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">get_value</span><span class="p">(</span>
+            <span class="s2">"Bin"</span><span class="p">,</span>
+            <span class="p">{</span><span class="s2">"item_code"</span><span class="p">:</span> <span class="n">row</span><span class="o">.</span><span class="n">item_code</span><span class="p">,</span> <span class="s2">"warehouse"</span><span class="p">:</span> <span class="n">row</span><span class="o">.</span><span class="n">warehouse</span><span class="p">},</span>
+            <span class="s2">"actual_qty"</span><span class="p">,</span>
+        <span class="p">)</span> <span class="ow">or</span> <span class="mi">0</span>
+        <span class="k">if</span> <span class="n">row</span><span class="o">.</span><span class="n">qty</span> <span class="o">&gt;</span> <span class="n">available</span><span class="p">:</span>
+            <span class="n">frappe</span><span class="o">.</span><span class="n">throw</span><span class="p">(</span>
+                <span class="n">_</span><span class="p">(</span><span class="s2">"Not enough stock for </span><span class="si">{0}</span><span class="s2"> in </span><span class="si">{1}</span><span class="s2">: need </span><span class="si">{2}</span><span class="s2">, have </span><span class="si">{3}</span><span class="s2">"</span><span class="p">)</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                    <span class="n">row</span><span class="o">.</span><span class="n">item_code</span><span class="p">,</span> <span class="n">row</span><span class="o">.</span><span class="n">warehouse</span><span class="p">,</span> <span class="n">row</span><span class="o">.</span><span class="n">qty</span><span class="p">,</span> <span class="n">available</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+</code></pre></div>
+<p><code>bench --site spice.local migrate</code> chalakar test karein: 60 pack ka
+   doosra Sales Order (sirf 50 bache hain) submit hone se refuse hona
+   chahiye; 40 pack wala pass hona chahiye.</p>
+<h3 id="checkpoint_3">Checkpoint<a class="headerlink" href="#checkpoint_3" title="Permanent link">&para;</a></h3>
+<p>Ab aap aik sale ko end to end trace kar sakhte hain: Sales Order
+<code>SO-0001</code> → Delivery Note → Sales Invoice <code>SINV-0001</code>, aur dikha
+sakhte hain ke invoice ka <code>outstanding_amount</code> payment tak 32,500 hai.</p>
+<h3 id="common-mistakes_3">Common mistakes<a class="headerlink" href="#common-mistakes_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Delivery se pehle invoice banana.</strong> Invoice money document hai;
+   Delivery Note stock document hai. Delivery Note skip karein to stock
+   kabhi move nahi hoga.</li>
+<li><strong>Submit-only rule ke liye <code>validate</code> hook karna.</strong> <code>validate</code> har
+   save par chalta hai, is liye drafts bhi block ho jate hain.
+   "Commit karne se mana karna" ke liye <code>on_submit</code> sahi event hai.</li>
+<li><strong>Stock check <code>frappe.db.sql</code> se karna.</strong> Bin par
+   <code>frappe.db.get_value</code> use karein — raw SQL yahan kuch bypass nahi
+   karta, lekin yeh aik aadat hai jo doosri jagah permissions torti
+   hai. (Lesson 08 dekhein.)</li>
+</ul>
+<hr />
+<h2 id="phase-5-dispatch-se-pehle-quality-gate">Phase 5 — Dispatch se pehle quality gate<a class="headerlink" href="#phase-5-dispatch-se-pehle-quality-gate" title="Permanent link">&para;</a></h2>
+<p><strong>Uses:</strong> <a href="../../learn/erpnext/operations/06-quality/">Quality</a></p>
+<h3 id="steps_4">Steps<a class="headerlink" href="#steps_4" title="Permanent link">&para;</a></h3>
+<ol>
+<li><code>RCP-1KG</code> ke liye aik <strong>Quality Inspection Template</strong> banayein,
+   do parameters ke saath:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Acceptance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Moisture %</td>
+<td>Numeric</td>
+<td>Minimum 0, Maximum 10</td>
+</tr>
+<tr>
+<td>Colour</td>
+<td>Value-based</td>
+<td>Accepted value: Red</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>
+<p><code>RCP-1KG</code> <strong>Item</strong> par <strong>Inspection Required before Delivery</strong>
+   tick karein aur Quality Inspection Template set karein. Ab se
+   ERPNext khud gate enforce karta hai: is item ka Delivery Note tab
+   tak submit nahi ho sakta jab tak passing inspection mojood na ho —
+   aur rejected inspection use poori tarah block kar deti hai.</p>
+</li>
+<li>
+<p>Doosra Delivery Note banayein (Phase 4 wale 40-pack Sales Order
+   se). Item row mein <strong>Quality Inspection</strong> field par click karke aik
+   inspection banayein: <code>inspection_type</code> <strong>Outgoing</strong>,
+   <code>reference_type</code> Delivery Note, <code>sample_size</code> 5. Readings daalein —
+   Moisture 8%, Colour Red — aur submit karein. <code>status</code>
+   <strong>Accepted</strong> ho jayega.</p>
+</li>
+<li>
+<p>Delivery Note submit karein. Yeh pass ho jayega, kyun ke gate pass
+   ho chuka hai.</p>
+</li>
+</ol>
+<h3 id="checkpoint_4">Checkpoint<a class="headerlink" href="#checkpoint_4" title="Permanent link">&para;</a></h3>
+<p>Ab aap aik Delivery Note dikha sakhte hain jo apni inspection pass
+hone tak blocked tha, aur bata sakhte hain ke kyun: inspection
+transaction ki precondition hai, parallel activity nahi.</p>
+<h3 id="common-mistakes_4">Common mistakes<a class="headerlink" href="#common-mistakes_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Inspection ghalat type ki banana.</strong> Outgoing dispatch ke liye hai;
+   Incoming purchases ke liye; In Process Job Cards ke liye. Ghalat
+   type ghalat gate pass karta hai.</li>
+<li><strong>Template set karna lekin Item checkbox tick na karna.</strong> Template
+   akele kuch nahi karta — Item ka inspection flag hi gate on karta
+   hai.</li>
+<li><strong>Dispatch ke baad inspect karna.</strong> Agar maal ja chuka hai to
+   inspection sirf paperwork hai. Check Delivery Note submit hone se
+   pehle hona chahiye.</li>
+</ul>
+<hr />
+<h2 id="phase-6-payment-lein-aur-gate-pass-approve-karwayein">Phase 6 — Payment lein, aur gate pass approve karwayein<a class="headerlink" href="#phase-6-payment-lein-aur-gate-pass-approve-karwayein" title="Permanent link">&para;</a></h2>
+<p><strong>Uses:</strong> <a href="../../learn/erpnext/core/01-accounting/">Accounting</a>,
+<a href="../../learn/framework/level-2/10-workflows-assignments/">Lesson 10 — Workflows &amp; Assignments</a></p>
+<h3 id="steps_5">Steps<a class="headerlink" href="#steps_5" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>Sales Invoice <code>SINV-0001</code> khol kar <strong>Create → Payment Entry</strong>
+   banayein. Fields check karein: <code>payment_type</code> <strong>Receive</strong>,
+   <code>party_type</code> <strong>Customer</strong>, <code>party</code> Karachi Spice Traders,
+   <code>paid_amount</code> 32,500. <strong>Get Outstanding Invoices</strong> par click
+   karein, poori amount <code>SINV-0001</code> ke against allocate karein
+   (<code>references</code> table: <code>reference_doctype</code> Sales Invoice,
+   <code>reference_name</code> invoice, <code>allocated_amount</code> 32,500), aur submit
+   karein. Invoice ka <code>outstanding_amount</code> ab 0 hai aur us ka <code>status</code>
+   Paid hai.</p>
+</li>
+<li>
+<p>Ab Gate Pass ko approval dein. Aik <strong>Workflow</strong> banayein,
+   Document Type <strong>Gate Pass</strong>, Is Active tick karein:</p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>State</th>
+<th>Docstatus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Draft</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Pending Approval</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Approved</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Rejected</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>Transitions: Draft → Pending Approval ("Send for Approval",
+   allowed role Gatekeeper), Pending Approval → Approved ("Approve",
+   allowed role Manufacturing Manager), Pending Approval → Rejected
+   ("Reject", allowed role Manufacturing Manager).</p>
+<ol>
+<li>Gatekeeper ke tor par aik Gate Pass banakar approval ke liye
+   bhejein. Manufacturing Manager user se log in karke use approve
+   karein. Dekhein ke Submit button gayab ho gaya hai — ab document
+   ko workflow chalata hai.</li>
+</ol>
+<h3 id="checkpoint_5">Checkpoint<a class="headerlink" href="#checkpoint_5" title="Permanent link">&para;</a></h3>
+<p>Ab aap aik Paid invoice dikha sakhte hain jis ka outstanding amount
+zero hai, aur aik Gate Pass dikha sakhte hain jisay aik hi shakhs bana
+aur approve nahi kar sakta.</p>
+<h3 id="common-mistakes_5">Common mistakes<a class="headerlink" href="#common-mistakes_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Get Outstanding Invoices par click kiye baghair payment allocate
+   karna.</strong> <code>references</code> table khaali rehti hai, paisa unallocated
+   advance ban kar gir jata hai, aur invoice Unpaid rehti hai.</li>
+<li><strong>Approver role sab ko de dena.</strong> Aik workflow jis mein creator
+   apna pass khud approve kar sake, woh control nahi, decoration hai.</li>
+<li><strong>Workflow inactive chhor dena.</strong> Inactive Workflow kuch nahi
+   badalta — purana Submit button rehta hai, aur approval kabhi hoti
+   hi nahi.</li>
+</ul>
+<hr />
+<h2 id="phase-7-dekhein-order-to-cash-report-invoice-print-format">Phase 7 — Dekhein: Order-to-Cash report + invoice print format<a class="headerlink" href="#phase-7-dekhein-order-to-cash-report-invoice-print-format" title="Permanent link">&para;</a></h2>
+<p><strong>Uses:</strong> <a href="../../learn/framework/level-2/08-reports-print-formats/">Lesson 08 — Reports &amp; Print Formats</a></p>
+<h3 id="steps_6">Steps<a class="headerlink" href="#steps_6" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Aik <strong>Script Report</strong> "Order to Cash" banayein (Report Type: Script
+   Report, Reference DocType: Sales Invoice, Module: aap ki app), is
+   code ke saath:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="c1"># spice_factory/spice_factory/report/order_to_cash/order_to_cash.py</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">frappe</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">frappe</span><span class="w"> </span><span class="kn">import</span> <span class="n">_</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">execute</span><span class="p">(</span><span class="n">filters</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="n">filters</span> <span class="o">=</span> <span class="n">frappe</span><span class="o">.</span><span class="n">_dict</span><span class="p">(</span><span class="n">filters</span> <span class="ow">or</span> <span class="p">{})</span>
+    <span class="k">return</span> <span class="n">get_columns</span><span class="p">(),</span> <span class="n">get_data</span><span class="p">(</span><span class="n">filters</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">get_columns</span><span class="p">():</span>
+    <span class="k">return</span> <span class="p">[</span>
+        <span class="p">{</span><span class="s2">"label"</span><span class="p">:</span> <span class="n">_</span><span class="p">(</span><span class="s2">"Invoice"</span><span class="p">),</span> <span class="s2">"fieldname"</span><span class="p">:</span> <span class="s2">"name"</span><span class="p">,</span> <span class="s2">"fieldtype"</span><span class="p">:</span> <span class="s2">"Link"</span><span class="p">,</span> <span class="s2">"options"</span><span class="p">:</span> <span class="s2">"Sales Invoice"</span><span class="p">,</span> <span class="s2">"width"</span><span class="p">:</span> <span class="mi">130</span><span class="p">},</span>
+        <span class="p">{</span><span class="s2">"label"</span><span class="p">:</span> <span class="n">_</span><span class="p">(</span><span class="s2">"Date"</span><span class="p">),</span> <span class="s2">"fieldname"</span><span class="p">:</span> <span class="s2">"posting_date"</span><span class="p">,</span> <span class="s2">"fieldtype"</span><span class="p">:</span> <span class="s2">"Date"</span><span class="p">,</span> <span class="s2">"width"</span><span class="p">:</span> <span class="mi">100</span><span class="p">},</span>
+        <span class="p">{</span><span class="s2">"label"</span><span class="p">:</span> <span class="n">_</span><span class="p">(</span><span class="s2">"Customer"</span><span class="p">),</span> <span class="s2">"fieldname"</span><span class="p">:</span> <span class="s2">"customer"</span><span class="p">,</span> <span class="s2">"fieldtype"</span><span class="p">:</span> <span class="s2">"Link"</span><span class="p">,</span> <span class="s2">"options"</span><span class="p">:</span> <span class="s2">"Customer"</span><span class="p">,</span> <span class="s2">"width"</span><span class="p">:</span> <span class="mi">180</span><span class="p">},</span>
+        <span class="p">{</span><span class="s2">"label"</span><span class="p">:</span> <span class="n">_</span><span class="p">(</span><span class="s2">"Grand Total"</span><span class="p">),</span> <span class="s2">"fieldname"</span><span class="p">:</span> <span class="s2">"grand_total"</span><span class="p">,</span> <span class="s2">"fieldtype"</span><span class="p">:</span> <span class="s2">"Currency"</span><span class="p">,</span> <span class="s2">"width"</span><span class="p">:</span> <span class="mi">120</span><span class="p">},</span>
+        <span class="p">{</span><span class="s2">"label"</span><span class="p">:</span> <span class="n">_</span><span class="p">(</span><span class="s2">"Outstanding"</span><span class="p">),</span> <span class="s2">"fieldname"</span><span class="p">:</span> <span class="s2">"outstanding_amount"</span><span class="p">,</span> <span class="s2">"fieldtype"</span><span class="p">:</span> <span class="s2">"Currency"</span><span class="p">,</span> <span class="s2">"width"</span><span class="p">:</span> <span class="mi">120</span><span class="p">},</span>
+        <span class="p">{</span><span class="s2">"label"</span><span class="p">:</span> <span class="n">_</span><span class="p">(</span><span class="s2">"Status"</span><span class="p">),</span> <span class="s2">"fieldname"</span><span class="p">:</span> <span class="s2">"status"</span><span class="p">,</span> <span class="s2">"fieldtype"</span><span class="p">:</span> <span class="s2">"Data"</span><span class="p">,</span> <span class="s2">"width"</span><span class="p">:</span> <span class="mi">100</span><span class="p">},</span>
+    <span class="p">]</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">get_data</span><span class="p">(</span><span class="n">filters</span><span class="p">):</span>
+    <span class="n">query_filters</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"docstatus"</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
+    <span class="k">if</span> <span class="n">filters</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"customer"</span><span class="p">):</span>
+        <span class="n">query_filters</span><span class="p">[</span><span class="s2">"customer"</span><span class="p">]</span> <span class="o">=</span> <span class="n">filters</span><span class="o">.</span><span class="n">customer</span>
+    <span class="k">if</span> <span class="n">filters</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"from_date"</span><span class="p">)</span> <span class="ow">and</span> <span class="n">filters</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"to_date"</span><span class="p">):</span>
+        <span class="n">query_filters</span><span class="p">[</span><span class="s2">"posting_date"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"between"</span><span class="p">,</span> <span class="p">[</span><span class="n">filters</span><span class="o">.</span><span class="n">from_date</span><span class="p">,</span> <span class="n">filters</span><span class="o">.</span><span class="n">to_date</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">frappe</span><span class="o">.</span><span class="n">get_list</span><span class="p">(</span>
+        <span class="s2">"Sales Invoice"</span><span class="p">,</span>
+        <span class="n">filters</span><span class="o">=</span><span class="n">query_filters</span><span class="p">,</span>
+        <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="s2">"name"</span><span class="p">,</span> <span class="s2">"posting_date"</span><span class="p">,</span> <span class="s2">"customer"</span><span class="p">,</span> <span class="s2">"grand_total"</span><span class="p">,</span> <span class="s2">"outstanding_amount"</span><span class="p">,</span> <span class="s2">"status"</span><span class="p">],</span>
+        <span class="n">order_by</span><span class="o">=</span><span class="s2">"posting_date desc"</span><span class="p">,</span>
+    <span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1">// spice_factory/spice_factory/report/order_to_cash/order_to_cash.js</span>
+<span class="nx">frappe</span><span class="p">.</span><span class="nx">query_reports</span><span class="p">[</span><span class="s2">"Order to Cash"</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">filters</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nx">fieldname</span><span class="o">:</span><span class="w"> </span><span class="s2">"from_date"</span><span class="p">,</span><span class="w"> </span><span class="nx">label</span><span class="o">:</span><span class="w"> </span><span class="nx">__</span><span class="p">(</span><span class="s2">"From Date"</span><span class="p">),</span><span class="w"> </span><span class="nx">fieldtype</span><span class="o">:</span><span class="w"> </span><span class="s2">"Date"</span><span class="p">,</span><span class="w"> </span><span class="k">default</span><span class="o">:</span><span class="w"> </span><span class="nx">frappe</span><span class="p">.</span><span class="nx">datetime</span><span class="p">.</span><span class="nx">month_start</span><span class="p">()</span><span class="w"> </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nx">fieldname</span><span class="o">:</span><span class="w"> </span><span class="s2">"to_date"</span><span class="p">,</span><span class="w"> </span><span class="nx">label</span><span class="o">:</span><span class="w"> </span><span class="nx">__</span><span class="p">(</span><span class="s2">"To Date"</span><span class="p">),</span><span class="w"> </span><span class="nx">fieldtype</span><span class="o">:</span><span class="w"> </span><span class="s2">"Date"</span><span class="p">,</span><span class="w"> </span><span class="k">default</span><span class="o">:</span><span class="w"> </span><span class="nx">frappe</span><span class="p">.</span><span class="nx">datetime</span><span class="p">.</span><span class="nx">month_end</span><span class="p">()</span><span class="w"> </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nx">fieldname</span><span class="o">:</span><span class="w"> </span><span class="s2">"customer"</span><span class="p">,</span><span class="w"> </span><span class="nx">label</span><span class="o">:</span><span class="w"> </span><span class="nx">__</span><span class="p">(</span><span class="s2">"Customer"</span><span class="p">),</span><span class="w"> </span><span class="nx">fieldtype</span><span class="o">:</span><span class="w"> </span><span class="s2">"Link"</span><span class="p">,</span><span class="w"> </span><span class="nx">options</span><span class="o">:</span><span class="w"> </span><span class="s2">"Customer"</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="p">};</span>
+</code></pre></div>
+<p>Ise chalakar dekhein: <code>SINV-0001</code> mein Grand Total 32,500,
+   Outstanding 0, Status Paid nazar aana chahiye.</p>
+<ol>
+<li>Sales Invoice ke liye aik <strong>Print Format</strong> banayein (Print Format
+   Type: Jinja), apni factory ke header aur items table ke saath:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="x">&lt;div style="text-align: center;"&gt;</span>
+<span class="x">  &lt;h2&gt;</span><span class="cp">{{</span> <span class="nv">doc.company</span> <span class="cp">}}</span><span class="x">&lt;/h2&gt;</span>
+<span class="x">  &lt;p&gt;Tax Invoice — </span><span class="cp">{{</span> <span class="nv">doc.name</span> <span class="cp">}}</span><span class="x">&lt;/p&gt;</span>
+<span class="x">&lt;/div&gt;</span>
+<span class="x">&lt;p&gt;&lt;strong&gt;Customer:&lt;/strong&gt; </span><span class="cp">{{</span> <span class="nv">doc.customer_name</span> <span class="cp">}}</span><span class="x">&lt;br&gt;</span>
+<span class="x">&lt;strong&gt;Date:&lt;/strong&gt; </span><span class="cp">{{</span> <span class="nv">frappe.utils.formatdate</span><span class="o">(</span><span class="nv">doc.posting_date</span><span class="o">)</span> <span class="cp">}}</span><span class="x">&lt;br&gt;</span>
+<span class="x">&lt;strong&gt;Due Date:&lt;/strong&gt; </span><span class="cp">{{</span> <span class="nv">frappe.utils.formatdate</span><span class="o">(</span><span class="nv">doc.due_date</span><span class="o">)</span> <span class="cp">}}</span><span class="x">&lt;/p&gt;</span>
+<span class="x">&lt;table style="width: 100%; border-collapse: collapse;"&gt;</span>
+<span class="x">  &lt;tr&gt;&lt;th style="text-align: left;"&gt;Item&lt;/th&gt;&lt;th&gt;Qty&lt;/th&gt;&lt;th&gt;Rate&lt;/th&gt;&lt;th&gt;Amount&lt;/th&gt;&lt;/tr&gt;</span>
+<span class="x">  </span><span class="cp">{%</span> <span class="k">for</span> <span class="nv">row</span> <span class="k">in</span> <span class="nv">doc.items</span> <span class="cp">%}</span>
+<span class="x">  &lt;tr&gt;</span>
+<span class="x">    &lt;td&gt;</span><span class="cp">{{</span> <span class="nv">row.item_name</span> <span class="cp">}}</span><span class="x">&lt;/td&gt;</span>
+<span class="x">    &lt;td&gt;</span><span class="cp">{{</span> <span class="nv">row.qty</span> <span class="cp">}}</span><span class="x">&lt;/td&gt;</span>
+<span class="x">    &lt;td&gt;</span><span class="cp">{{</span> <span class="nv">row.get_formatted</span><span class="o">(</span><span class="s2">"rate"</span><span class="o">)</span> <span class="cp">}}</span><span class="x">&lt;/td&gt;</span>
+<span class="x">    &lt;td&gt;</span><span class="cp">{{</span> <span class="nv">row.get_formatted</span><span class="o">(</span><span class="s2">"amount"</span><span class="o">)</span> <span class="cp">}}</span><span class="x">&lt;/td&gt;</span>
+<span class="x">  &lt;/tr&gt;</span>
+<span class="x">  </span><span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span>
+<span class="x">&lt;/table&gt;</span>
+<span class="x">&lt;p style="text-align: right;"&gt;&lt;strong&gt;Grand Total: </span><span class="cp">{{</span> <span class="nv">doc.get_formatted</span><span class="o">(</span><span class="s2">"grand_total"</span><span class="o">)</span> <span class="cp">}}</span><span class="x">&lt;/strong&gt;&lt;/p&gt;</span>
+</code></pre></div>
+<p><code>SINV-0001</code> ko is se print karke check karein ke totals Desk se
+   match karte hain.</p>
+<h3 id="checkpoint_6">Checkpoint<a class="headerlink" href="#checkpoint_6" title="Permanent link">&para;</a></h3>
+<p>Ab aap apni report se jawab de sakhte hain ke "kis se kitne paise
+lene hain" — aur customer ko aik printed invoice de sakhte hain jo aap
+ki factory ki lagti hai, default template ki nahi.</p>
+<h3 id="common-mistakes_6">Common mistakes<a class="headerlink" href="#common-mistakes_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Query mein filter karne ke bajaye Python mein filter karna.</strong>
+   Filters <code>query_filters</code> mein rehte hain — har invoice fetch karke
+   loop mein filter karna N+1 ghalti hai, report ki shakal mein
+   (Lesson 14 dekhein).</li>
+<li><strong>User-facing read ke liye <code>frappe.db.sql</code> use karna.</strong> Yeh tamam
+   permission checks bypass kar deta hai. <code>frappe.get_list</code> un ka
+   ehtram karta hai — wohi use karein.</li>
+<li><strong>Print format mein company ka naam hard-code karna.</strong>
+   <code>{{ doc.company }}</code> use karein — format har company par reuse hota
+   hai.</li>
+</ul>
+<hr />
+<h2 id="phase-8-lock-karein-permissions-backup-go-live">Phase 8 — Lock karein: permissions, backup, go-live<a class="headerlink" href="#phase-8-lock-karein-permissions-backup-go-live" title="Permanent link">&para;</a></h2>
+<p><strong>Uses:</strong> <a href="../../learn/framework/level-2/09-permissions-roles/">Lesson 09 — Permissions &amp; Roles</a>,
+<a href="../../learn/framework/level-4/21-ops/">Lesson 21 — Ops</a>,
+<a href="../go-live-checklist/">Go-Live Checklist</a></p>
+<h3 id="steps_7">Steps<a class="headerlink" href="#steps_7" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>Aik <strong>Role</strong> "Gatekeeper" banayein aur use sirf Gate Pass ki
+   permissions dein: read, write, create — submit nahi, delete nahi,
+   Sales Invoice ya Payment Entry tak access nahi. Ise guard ke user
+   ko assign karein. Us user se log in karke confirm karein: Gate Pass
+   chalta hai, Sales Invoice nahi khulti.</p>
+</li>
+<li>
+<p>Done kehne se pehle backup lein:</p>
+</li>
+</ol>
+<div class="highlight"><pre><span></span><code>bench<span class="w"> </span>--site<span class="w"> </span>spice.local<span class="w"> </span>backup
+</code></pre></div>
+<p>Check karein ke file <code>sites/spice.local/private/backups/</code> mein
+   mojood hai.</p>
+<ol>
+<li>Is site ke liye <a href="../go-live-checklist/">Go-Live Checklist</a> par
+   chalein: opening balances (aap ki 200 kg receipt), permissions
+   (step 1), training (guard ko Gate Pass dikhayein, manager ko
+   approval dikhayein), aur rollback plan (step 2 wale backup se
+   restore).</li>
+</ol>
+<h3 id="checkpoint_7">Checkpoint<a class="headerlink" href="#checkpoint_7" title="Permanent link">&para;</a></h3>
+<p>Ab aap site kisi aur ko de sakhte hain: woh apne role se log in karega,
+sirf apna kaam karega, aur agar bench mar jaye to sab kuch backup se
+restore ho sakta hai.</p>
+<h3 id="common-mistakes_7">Common mistakes<a class="headerlink" href="#common-mistakes_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Permissions ko Administrator ke tor par test karna.</strong>
+   Administrator ko sab kuch nazar aata hai. Asli user accounts se test
+   karein, warna aap ne kuch test hi nahi kiya.</li>
+<li><strong>Har kaam ke liye aik role.</strong> "Sab kuch karne wala" role hi woh
+   tareeqa hai jis se guard invoices cancel karne ke qabil ho jata hai.</li>
+<li><strong>Go-live se pehle backup na lena.</strong> Pehla backup hamesha disaster
+   ke agle din liya jata hai. Abhi lein.</li>
+</ul>
+<hr />
+<h2 id="aage-kya-banayein">Aage kya banayein<a class="headerlink" href="#aage-kya-banayein" title="Permanent link">&para;</a></h2>
+<p>Aap ki factory chal rahi hai. Yeh agle real features hain, usi order
+mein jis mein client inhein mangega:</p>
+<ol>
+<li><strong>Production Plan</strong> — open Sales Orders se Work Orders khud ba khud
+   banayein, haath se banane ke bajaye. Dekhein
+   <a href="../../learn/erpnext/operations/05-manufacturing/">Manufacturing</a>.</li>
+<li><strong>Batch tracking</strong> — har <code>RAW-CHILLI</code> receipt ko Batch No dein aur
+   sab se pehle purana stock bechein (FEFO). Dekhein
+   <a href="../../learn/erpnext/core/02-stock-inventory/">Stock &amp; Inventory</a>.</li>
+<li><strong>Low-stock alert</strong> — aik nightly Scheduler job jo email kare jab
+   <code>RAW-CHILLI</code> 50 kg se neeche jaye. Dekhein
+   <a href="../../learn/framework/level-3/11-scheduler-jobs/">Lesson 11 — Scheduler &amp; Background Jobs</a>.</li>
+<li><strong>Distributor portal</strong> — Karachi Spice Traders ko un ke apne orders
+   aur invoices dekhne dein, aur kuch nahi. Dekhein
+   <a href="../../learn/framework/level-4/19-website-portal/">Lesson 19 — Website &amp; Portal</a>.</li>
+<li><strong>Insights dashboard</strong> — monthly sales, outstanding amounts, aur
+   stock value aik page par. Dekhein
+   <a href="../../learn/framework/level-4/18-insights/">Lesson 18 — Insights</a>.</li>
+</ol>
+<h2 id="hum-isay-kaise-istemal-kar-sakte-hain">Hum isay kaise istemal kar sakte hain<a class="headerlink" href="#hum-isay-kaise-istemal-kar-sakte-hain" title="Permanent link">&para;</a></h2>
+<p>Yeh project woh demo hai jo NexTash pehli meeting mein aik
+manufacturing client ko dikhata hai: wohi Gate Pass, wohi masala flow,
+wohi quality gate — laptop par chal raha hai, client ke apne numbers
+daal kar. Aik prospect jo apna order das minute mein Sales Order se
+Paid invoice tak jata dekh le, woh "ERPNext yeh karta hai?" poochna
+band karke "hum kab shuru kar sakte hain?" poochne lagta hai.</p>
+<h2 id="sources">Sources<a class="headerlink" href="#sources" title="Permanent link">&para;</a></h2>
+<p>DocType fields ERPNext v16 source (Sales Order, Delivery Note Item,
+Stock Entry, Quality Inspection, Payment Entry) aur ERPNext docs
+(order-to-cash flow, Quality Inspection enforcement, Payment Entry
+references) se verify kiye gaye. Lesson links is hub ki apni lessons ki
+taraf point karte hain; Gate Pass fields bilkul
+<a href="../../learn/framework/level-1/03-first-doctype/">Lesson 03</a> jaisi hain.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  واپس اوپر جائیں
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Muhammad Irfaan
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "content.action.edit", "content.action.view", "content.code.copy", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "\u06a9\u0644\u0650\u067e \u0628\u0648\u0631\u0688 \u0645\u06cc\u06ba \u0646\u0642\u0644 \u06a9\u0631 \u062f\u06cc\u0627 \u06af\u06cc\u0627", "clipboard.copy": "\u06a9\u0644\u0650\u067e \u0628\u0648\u0631\u0688 \u0645\u06cc\u06ba \u0646\u0642\u0644 \u06a9\u0631\u06cc\u06ba", "search.result.more.one": "\u0627\u0650\u0633 \u0635\u0641\u062d\u06d2 \u067e\u0631 \u0645\u0632\u06cc\u062f \u06f1", "search.result.more.other": "\u0627\u0650\u0633 \u0635\u0641\u062d\u06d2 \u067e\u0631 \u0645\u0632\u06cc\u062f #", "search.result.none": "\u06a9\u0648\u0626\u06cc \u0645\u0644\u062a\u06cc \u062c\u0644\u062a\u06cc \u062f\u0633\u062a\u0627\u0648\u06cc\u0632\u0627\u062a \u0646\u06c1\u06cc\u06ba", "search.result.one": "\u06f1 \u0645\u0644\u062a\u06cc \u062c\u0644\u062a\u06cc \u062f\u0633\u062a\u0627\u0648\u06cc\u0632", "search.result.other": "# \u0645\u0644\u062a\u06cc \u062c\u0644\u062a\u06cc \u062f\u0633\u062a\u0627\u0648\u06cc\u0632\u0627\u062a", "search.result.placeholder": "\u062a\u0644\u0627\u0634 \u0634\u0631\u0648\u0639 \u06a9\u0631\u0646\u06d2 \u06a9\u06d2 \u0644\u0626\u06d2 \u0679\u0627\u0626\u067e \u06a9\u0631\u06cc\u06ba", "search.result.term.missing": "\u06af\u0645\u0634\u062f\u06c1", "select.version": "\u0648\u0631\u0698\u0646 \u06a9\u0627 \u0627\u0646\u062a\u062e\u0627\u0628 \u06a9\u0631\u06cc\u06ba"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+    
+  </body>
+</html>
