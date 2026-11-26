@@ -1,0 +1,46 @@
+# Changelog
+
+All notable changes to the Frappe Research Hub. Dates are in Asia/Karachi.
+
+## v0.1.0-alpha — 2026-11-26
+
+First real content. The beginner path is no longer an outline — it has
+lessons you can actually follow.
+
+### Added
+
+- **Learn: Frappe Framework — Level 1 (4 lessons)**
+  - `learn/framework/level-1/01-what-is-frappe.md` — Framework vs ERPNext
+    vs Frappe Cloud.
+  - `learn/framework/level-1/02-bench-sites-apps.md` — bench install, first
+    site, first app (v16 commands).
+  - `learn/framework/level-1/03-first-doctype.md` — your first DocType:
+    fields, field types, layout rules (Section / Column Breaks, 2 fields
+    per row, child table in its own section, max 4–5 list columns).
+  - `learn/framework/level-1/04-desk-list-form.md` — Desk, List View,
+    Form View: how users actually work.
+- **Learn: ERPNext — Core modules (4 lessons)**
+  - `learn/erpnext/core/01-accounting.md` — Chart of Accounts, GL,
+    invoicing, payments, tax.
+  - `learn/erpnext/core/02-stock-inventory.md` — warehouses, batches,
+    serials, FEFO, valuation.
+  - `learn/erpnext/core/03-selling.md` — quotations, sales orders,
+    delivery, pricing.
+  - `learn/erpnext/core/04-buying.md` — purchase orders, receipts,
+    supplier workflow (three-way match).
+  - Every module lesson ends with a real use case and a "How we can use it"
+    line for NexTash / client work.
+- **Guides**
+  - `guides/common-mistakes.md` — field layout, hooks in the wrong place,
+    permission mistakes, performance mistakes (N+1, missing indexes),
+    ledger/stock rules, plus a pre-ship checklist.
+- **Research — complete as of 26 Nov 2026**
+  - `research/history-2024-2026.md` — 18 major changes, Nov 2024–Nov 2026.
+  - `research/apps-catalog.md` — 66 useful apps in 11 categories, each
+    category in its own file under `research/apps-catalog/`.
+
+## v0.1.0 — 2026-11-26
+
+Skeleton live: README, learn outlines (21 framework topics, 14 ERPNext
+modules), guides outline, CONTRIBUTING, research history + 66-app catalog.
+No lessons yet — outlines only.

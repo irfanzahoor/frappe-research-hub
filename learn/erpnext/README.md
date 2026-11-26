@@ -3,10 +3,10 @@
 Each module: what it does, the core DocTypes, the end-to-end flow, and a real use case with a "How we can use it" line for NexTash / client work.
 
 ## Core
-1. Accounting — Chart of Accounts, GL, invoicing, payments, tax
-2. Stock & Inventory — warehouses, batches, serials, FEFO, valuation
-3. Selling — quotations, sales orders, delivery, pricing
-4. Buying — purchase orders, receipts, supplier workflow
+1. [Accounting — Chart of Accounts, GL, invoicing, payments, tax](core/01-accounting.md)
+2. [Stock & Inventory — warehouses, batches, serials, FEFO, valuation](core/02-stock-inventory.md)
+3. [Selling — quotations, sales orders, delivery, pricing](core/03-selling.md)
+4. [Buying — purchase orders, receipts, supplier workflow](core/04-buying.md)
 
 ## Operations
 5. Manufacturing — BOM, Work Orders, Job Cards, production, subcontracting

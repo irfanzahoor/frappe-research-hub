@@ -32,4 +32,9 @@ This hub is public so anyone can learn from it. Changes only via fork + pull req
 
 ## Status
 
-v0.1.0 — skeleton live. Learn paths are being written topic by topic, beginner first. Research (history + 66-app catalog) is complete as of 26 Nov 2026.
+![Alpha](https://img.shields.io/badge/status-v0.1.0--alpha-orange)
+
+**v0.1.0-alpha** — the beginner path is live: Level 1 Framework (4 lessons),
+Core ERPNext modules (4 lessons), and the Common mistakes guide. Research
+(history + 66-app catalog) is complete as of 26 Nov 2026. See
+[CHANGELOG.md](CHANGELOG.md) and [ROADMAP.md](ROADMAP.md).

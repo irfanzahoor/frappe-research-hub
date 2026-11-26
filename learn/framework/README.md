@@ -3,10 +3,10 @@
 Ordered path: beginner first, advanced later. Each topic: what it is, when to use it, a minimal example, common mistakes.
 
 ## Level 1 — Start here
-1. What Frappe is — Framework vs ERPNext vs Frappe Cloud
-2. Bench, sites & apps — install, setup, first site
-3. Your first DocType — fields, field types, layout (Section / Column Breaks)
-4. Desk, List View, Form View — how users actually work
+1. [What Frappe is — Framework vs ERPNext vs Frappe Cloud](level-1/01-what-is-frappe.md)
+2. [Bench, sites & apps — install, setup, first site](level-1/02-bench-sites-apps.md)
+3. [Your first DocType — fields, field types, layout (Section / Column Breaks)](level-1/03-first-doctype.md)
+4. [Desk, List View, Form View — how users actually work](level-1/04-desk-list-form.md)
 
 ## Level 2 — Build
 5. Server Scripts & Document Events — where logic belongs
