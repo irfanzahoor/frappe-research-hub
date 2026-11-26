@@ -1,32 +1,81 @@
-/* Frappe Research Hub brand: dark blue + white (Irfaan's style).
-   Material's "custom" palette reads these variables. */
+/* Frappe Research Hub theme — navy / gold / teal.
+   The same three colours as Irfaan's LinkedIn banner: deep navy,
+   warm gold, cool teal. Material's "custom" palette reads the
+   variables below; the rest is polish on top. */
 
 :root {
-  --md-primary-fg-color: #0b2a5b;
+  /* Primary — deep navy. */
+  --md-primary-fg-color: #0a2453;
   --md-primary-fg-color--light: #1e4a8a;
-  --md-primary-fg-color--dark: #071c3f;
+  --md-primary-fg-color--dark: #061733;
   --md-primary-bg-color: #ffffff;
   --md-primary-bg-color--light: #dbe7f7;
-  --md-accent-fg-color: #2f7de1;
-  --md-accent-fg-color--transparent: rgba(47, 125, 225, 0.1);
+  /* Accent — teal, for links and highlights. */
+  --md-accent-fg-color: #0e7c86;
+  --md-accent-fg-color--transparent: rgba(14, 124, 134, 0.12);
   --md-accent-bg-color: #ffffff;
+  /* Gold — decorative only: header rule, title bar, active marks. */
+  --md-gold: #d9a514;
+  --md-gold--light: #f0c94e;
   --md-code-font: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
 [data-md-color-scheme="slate"] {
-  --md-primary-fg-color: #123a75;
+  --md-primary-fg-color: #0d2b57;
   --md-primary-fg-color--light: #1e4a8a;
-  --md-primary-fg-color--dark: #0b2a5b;
-  --md-accent-fg-color: #6ea8f0;
+  --md-primary-fg-color--dark: #0a2453;
+  --md-accent-fg-color: #2dd4bf;
+  --md-accent-fg-color--transparent: rgba(45, 212, 191, 0.14);
+  --md-gold: #e3b341;
+  --md-gold--light: #f0c94e;
+}
+
+/* --- Header ------------------------------------------------------ */
+
+/* Navy gradient with a thin gold rule underneath — the banner look. */
+.md-header {
+  background: linear-gradient(90deg, #0a2453 0%, #123a75 70%, #14457f 100%);
+  border-bottom: 3px solid var(--md-gold);
+  box-shadow: 0 1px 8px rgba(6, 23, 51, 0.4);
+}
+
+[data-md-color-scheme="slate"] .md-header {
+  background: linear-gradient(90deg, #081c42 0%, #0d2b57 70%, #103463 100%);
+}
+
+/* The tab bar under the header stays solid navy. */
+.md-tabs {
+  background-color: #0a2453;
+}
+
+[data-md-color-scheme="slate"] .md-tabs {
+  background-color: #0d2b57;
+}
+
+/* The logo mark sits well next to the site title. */
+.md-header__button.md-logo img {
+  border-radius: 0.4rem;
 }
 
 /* --- Typography -------------------------------------------------- */
 
-/* Tighter, bolder headings; the page title reads as the brand. */
+/* Tighter, bolder headings; the page title in navy with a short
+   navy-to-gold bar underneath it. */
 .md-typeset h1 {
   font-weight: 800;
   letter-spacing: -0.02em;
   color: var(--md-primary-fg-color);
+  margin-bottom: 0.4em;
+}
+
+.md-typeset h1::after {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 4px;
+  margin-top: 0.5rem;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #0a2453, var(--md-gold));
 }
 
 .md-typeset h2 {
@@ -45,7 +94,7 @@
   color: #dbe7f7;
 }
 
-/* Links: accent blue, clear hover. */
+/* Links: teal accent, clear hover. */
 .md-typeset a {
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
@@ -57,11 +106,11 @@
 
 /* --- Tables ------------------------------------------------------ */
 
-/* Dark-blue header row, soft zebra rows, rounded frame. */
+/* Navy header row, soft zebra rows, rounded frame. */
 .md-typeset table:not([class]) {
   border-radius: 0.5rem;
   overflow: hidden;
-  box-shadow: 0 1px 3px rgba(11, 42, 91, 0.12);
+  box-shadow: 0 1px 3px rgba(10, 36, 83, 0.12);
 }
 
 .md-typeset table:not([class]) th {
@@ -71,7 +120,7 @@
 }
 
 .md-typeset table:not([class]) tr:nth-child(even) td {
-  background-color: rgba(11, 42, 91, 0.04);
+  background-color: rgba(10, 36, 83, 0.04);
 }
 
 [data-md-color-scheme="slate"] .md-typeset table:not([class]) tr:nth-child(even) td {
@@ -93,7 +142,7 @@
 .md-typeset .admonition,
 .md-typeset details {
   border-radius: 0.5rem;
-  box-shadow: 0 1px 3px rgba(11, 42, 91, 0.1);
+  box-shadow: 0 1px 3px rgba(10, 36, 83, 0.1);
 }
 
 .md-typeset blockquote {
@@ -103,20 +152,15 @@
   opacity: 0.9;
 }
 
-/* --- Header & navigation ----------------------------------------- */
-
-/* A little depth under the header; active nav item in brand blue. */
-.md-header {
-  box-shadow: 0 1px 6px rgba(7, 28, 63, 0.35);
-}
+/* --- Navigation -------------------------------------------------- */
 
 .md-nav__link--active {
   font-weight: 600;
 }
 
-/* The logo mark sits well next to the site title. */
-.md-header__button.md-logo img {
-  border-radius: 0.4rem;
+/* Active tab gets a gold underline instead of the default. */
+.md-tabs__link--active {
+  color: var(--md-gold--light);
 }
 
 /* --- Search ------------------------------------------------------ */
