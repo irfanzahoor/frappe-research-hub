@@ -1,0 +1,20 @@
+/* Frappe Research Hub brand: dark blue + white (Irfaan's style).
+   Material's "custom" palette reads these variables. */
+
+:root {
+  --md-primary-fg-color: #0b2a5b;
+  --md-primary-fg-color--light: #1e4a8a;
+  --md-primary-fg-color--dark: #071c3f;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: #dbe7f7;
+  --md-accent-fg-color: #2f7de1;
+  --md-accent-fg-color--transparent: rgba(47, 125, 225, 0.1);
+  --md-accent-bg-color: #ffffff;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #123a75;
+  --md-primary-fg-color--light: #1e4a8a;
+  --md-primary-fg-color--dark: #0b2a5b;
+  --md-accent-fg-color: #6ea8f0;
+}
