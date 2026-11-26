@@ -145,9 +145,9 @@
   box-shadow: 0 1px 3px rgba(10, 36, 83, 0.1);
 }
 
+/* Logical property, so the bar flips to the right side on RTL pages. */
 .md-typeset blockquote {
-  border-left-color: var(--md-accent-fg-color);
-  border-left-width: 3px;
+  border-inline-start: 3px solid var(--md-accent-fg-color);
   color: inherit;
   opacity: 0.9;
 }
@@ -167,4 +167,17 @@
 
 .md-search__input {
   border-radius: 0.5rem;
+}
+
+/* --- Language switcher ------------------------------------------- */
+
+/* The header language selector is the only way to switch languages
+   on inner pages — give it a gold outline so it is easy to spot. */
+.md-header__option .md-select {
+  border: 1px solid var(--md-gold);
+  border-radius: 0.5rem;
+}
+
+.md-header__option .md-select:hover {
+  border-color: var(--md-gold--light);
 }
