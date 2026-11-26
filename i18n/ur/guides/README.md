@@ -8,3 +8,4 @@ NexTash ke asal projects se li gayi opinionated guides. Mukhtasar, concrete, koi
 - [Apps chunna — kab app install karni hai aur kab khud banana hai](choosing-apps.md)
 - [Practice project — masala factory banayein, shuru se end tak](practice-project.md)
 - [Troubleshooting — error library](troubleshooting.md) — 22 aam errors, setup se go-live tak, har aik ka fix
+- [Case studies — ERPNext production mein](case-studies.md) — aik masala manufacturer, aik trading/distribution business, aur aik services company: kya banaya gaya, kya ghalat hua, aur is se kya seekhna hai

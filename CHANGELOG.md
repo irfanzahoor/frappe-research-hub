@@ -66,6 +66,18 @@ All notable changes to the Frappe Research Hub. Dates are in Asia/Karachi.
   the lessons it uses, has concrete steps with real code and bench
   commands, a checkpoint, and common mistakes. DocType fields verified
   against ERPNext v16 source; the Gate Pass matches Lesson 03 exactly.
+- **Case studies** — `guides/case-studies.md` (English + Roman Urdu):
+  three anonymised production case studies in the same shape
+  (background → problem → solution → what went wrong → results →
+  what to take from it): a spice manufacturer (batch-wise stock,
+  submit-blocking Quality Inspection gate, BOM costing), a
+  trading/distribution business (order-to-cash flow, credit limits,
+  delivery tracking, Gate Pass), and a services company (Projects +
+  Timesheets + invoicing, approval workflows, client portal). No
+  client names, company names, quotes or measured metrics — every
+  number is framed as approximate, by design — plus a shared
+  lessons section and an invitation to contribute your own case
+  study. Each case links to the hub lessons it uses.
 - **Language switch, visible** — both homepages now link to the other
   language at the top, and the header language selector has a gold
   outline so it is easy to spot on every page.
