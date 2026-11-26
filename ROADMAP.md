@@ -30,13 +30,13 @@ lessons are real, not outlines.
   official docs; link check run (104 links, 1 intentional forward
   reference to Level 4, which is v1.0 scope).
 
-## v1.0
+## v1.0 (done, 26 Nov 2026)
 
-- **All 21 framework topics** written (Levels 1–4, including Studio & Flow,
+- [x] **All 21 framework topics** written (Levels 1–4, including Studio & Flow,
   Insights, Website & Portal, Upgrades, Ops).
-- **All 14 ERPNext modules** written.
-- **All guides** written: upgrade, go-live, common mistakes, choosing apps.
-- **Research kept current:** history extended past Nov 2026, apps catalog
+- [x] **All 14 ERPNext modules** written.
+- [x] **All guides** written: upgrade, go-live, common mistakes, choosing apps.
+- [x] **Research kept current:** history extended past Nov 2026, apps catalog
   updated as new apps land (from frappe-updates).
 - A learner can go from zero to a production ERPNext implementation using
   only this hub plus the linked skills repo.

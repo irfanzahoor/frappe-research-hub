@@ -25,10 +25,10 @@ Ordered path: beginner first, advanced later. Each topic: what it is, when to us
 16. [Debugging — logs, common errors, how to read a traceback](level-3/16-debugging.md)
 
 ## Level 4 — Advanced
-17. Studio & Flow — no-code apps, AI in Desk (v16.60+)
-18. Insights — dashboards on live data
-19. Website & Portal — Frappe Website, Web Forms
-20. Upgrades — v14 → v15 → v16, readiness checks
-21. Ops — backups, monitoring, multi-site, Frappe Cloud vs self-hosted
+17. [Studio & Flow — no-code apps, AI in Desk (v16.60+)](level-4/17-studio-flow.md)
+18. [Insights — dashboards on live data](level-4/18-insights.md)
+19. [Website & Portal — Frappe Website, Web Forms](level-4/19-website-portal.md)
+20. [Upgrades — v14 → v15 → v16, readiness checks](level-4/20-upgrades.md)
+21. [Ops — backups, monitoring, multi-site, Frappe Cloud vs self-hosted](level-4/21-ops.md)
 
 Deep reference: [frappe_core_skills](https://github.com/irfanzahoor/frappe_core_skills) — 22 skills covering these topics in detail.

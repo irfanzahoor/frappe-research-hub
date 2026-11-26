@@ -5,4 +5,4 @@ Opinionated guides from real NexTash projects. Short, concrete, no theory withou
 - [Upgrade guide — v14 → v15 → v16 readiness check](upgrade-v14-v15-v16.md)
 - [Go-live checklist — data import, permissions, training, cutover](go-live-checklist.md)
 - [Common mistakes](common-mistakes.md) — field layout, hooks, permissions, performance
-- Choosing apps — when to install an app vs build it (see Research: Apps Catalog)
+- [Choosing apps — when to install an app vs build it](choosing-apps.md)

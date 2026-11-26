@@ -4,7 +4,7 @@
 
 v16.60 (17 Nov 2026) moved three things into the core Desk experience.
 **Studio** — the drag-and-drop app builder — merged into Framework, so
-small apps are built visually, without code. **Frappe Flow** (alpha) is
+small apps are built visually, without code. **Frappe Flow** (beta) is
 the AI harness inside Desk: an LLM that analyses your data and fills
 forms, permission-aware, using your own AI keys. **Insights** dashboards
 now embed in Desk, so managers see live charts where they work instead of
@@ -16,7 +16,7 @@ developer task to something an analyst can build in a day.
 | Piece | What it is |
 |---|---|
 | Studio | Build a mini-app visually: pages, layouts, data sources, CRUD — no code. Apps are standard Frappe apps under the hood. |
-| Frappe Flow | The AI harness in Desk (alpha): ask questions of your data, draft documents, fill forms — the AI only sees what the user may see. |
+| Frappe Flow | The AI harness in Desk (beta): ask questions of your data, draft documents, fill forms — the AI only sees what the user may see. |
 | Insights Dashboard | A live dashboard in Desk: charts and numbers from ERP data, refreshed on open. |
 | Insights Workbook | A set of related queries and charts, worked on like a spreadsheet of live data. |
 | Insights Query | One question against the data (SQL or visual builder). |

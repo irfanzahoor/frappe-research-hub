@@ -2,6 +2,41 @@
 
 All notable changes to the Frappe Research Hub. Dates are in Asia/Karachi.
 
+## v1.0 — 2026-11-26
+
+The full path is written: all 21 Framework topics, all 14 ERPNext
+modules, all 4 guides. A learner can go from zero to a production
+ERPNext implementation using only this hub plus the linked skills repo.
+
+### Added
+
+- **Learn: Frappe Framework — Level 4 (5 lessons)**
+  - `learn/framework/level-4/17-studio-flow.md` — Studio mini-app
+    (hands-on) and Flow (beta, permission-aware AI in Desk).
+  - `learn/framework/level-4/18-insights.md` — Insights dashboards in
+    Desk: Workbook, Query, Chart, Dashboard.
+  - `learn/framework/level-4/19-website-portal.md` — Frappe Website,
+    Web Forms, customer portal pages (`www/`, `get_context`).
+  - `learn/framework/level-4/20-upgrades.md` — upgrades, lesson-length
+    version (deep reference: upgrade guide).
+  - `learn/framework/level-4/21-ops.md` — backups, monitoring,
+    multi-site benches, Frappe Cloud vs self-hosted.
+- **Guides**
+  - `guides/choosing-apps.md` — when to install an app vs build it:
+    the 5 questions, install/build/extend, red flags, worked example,
+    upgrade cost of every app.
+
+### Fixed
+
+- Corrected the portal example in `learn/framework/level-4/19-website-portal.md`:
+  Contact has no direct `customer` field — the Customer link lives in
+  its Dynamic Link child table, resolved in two steps (verified against
+  the Contact DocType in Frappe v16).
+- Aligned Frappe Flow's status to **beta** (official docs) in
+  `learn/erpnext/v16/13-studio-flow-insights.md` — it was called alpha
+  in the v16.60 launch notes; the history entry for the launch keeps the
+  original wording.
+
 ## v0.2.0-beta — 2026-11-26
 
 ### Added
