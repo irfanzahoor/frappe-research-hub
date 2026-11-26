@@ -2320,6 +2320,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3383,7 +3411,7 @@
   navy gradient header with a gold rule, teal links, gold title bar
   under every page heading. Dark mode included.</li>
 <li><strong>Roman Urdu version</strong> — the whole hub translated into Roman Urdu
-  (57 files: all 21 Framework lessons, 14 ERPNext modules, 4 guides,
+  (59 files: all 21 Framework lessons, 14 ERPNext modules, 6 guides,
   research, root pages). Code, commands, DocType/field names and URLs
   stay in English; prose is Roman Urdu. Switch languages from the
   header: English at <code>/</code>, Roman Urdu at <code>/ur/</code>. The label
@@ -3397,6 +3425,22 @@
   (It was briefly RTL; changed at the owner's request.)
   Blockquotes use logical CSS, so their accent bar stays correct
   in either direction.</li>
+<li><strong>Troubleshooting / error library</strong> — <code>guides/troubleshooting.md</code>
+  (English + Roman Urdu): 22 real, common Frappe/ERPNext errors in
+  three stages — Setup &amp; Install (wrong versions, MariaDB access
+  denied / not running, Redis refused, <code>bench build</code>, missing
+  <code>frappe</code> module, port in use), Development (migrate patch failures,
+  Unknown column, Not Permitted, Data too long, link validation,
+  mandatory-but-hidden field, scripts not running, stale print
+  format), and Production &amp; Go-live (Something went wrong, scheduler
+  not running, email queue stuck, <code>bench update</code> merge conflicts,
+  restore version mismatch, 504 timeouts, blank Desk after update).
+  Every entry has the same format — exact error, when it happens,
+  why, the fix in order, and prevention — plus a "first 3 checks"
+  section and a "still stuck?" section pointing at Lesson 16 and the
+  Frappe Forum. Error text and fixes verified against Frappe docs,
+  Frappe Cloud docs and the Forum; v16 requirements (Python 3.14,
+  Node 24, MariaDB 11.8) from the <code>pyproject.toml</code> ranges.</li>
 <li><strong>Practice project / capstone guide</strong> — <code>guides/practice-project.md</code>
   (English + Roman Urdu): build a spice factory end to end in 8 phases
   — bench/site/app and masters, Gate Pass register, BOM + Work Order +

@@ -1,0 +1,4411 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Learn Frappe Framework and ERPNext from Noob to Pro — guides, research, new apps & real-world use cases.">
+      
+      
+        <meta name="author" content="Muhammad Irfaan">
+      
+      
+        <link rel="canonical" href="https://irfanzahoor.github.io/frappe-research-hub/guides/troubleshooting/">
+      
+      
+        <link rel="prev" href="../practice-project/">
+      
+      
+        <link rel="next" href="../../research/history-2024-2026/">
+      
+      
+        
+          <link rel="alternate" href="./" hreflang="en">
+        
+          <link rel="alternate" href="../../ur/guides/troubleshooting/" hreflang="ur">
+        
+      
+      
+      <link rel="icon" href="../../stylesheets/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
+    
+    
+      
+        <title>Troubleshooting - Frappe & ERPNext Research Hub</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#troubleshooting-the-error-library" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Frappe &amp; ERPNext Research Hub" class="md-header__button md-logo" aria-label="Frappe & ERPNext Research Hub" data-md-component="logo">
+      
+  <img src="../../stylesheets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Frappe & ERPNext Research Hub
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Troubleshooting
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../ur/guides/troubleshooting/" hreflang="ur" class="md-select__link">
+              Roman Urdu
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/irfanzahoor/frappe-research-hub" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    irfanzahoor/frappe-research-hub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../learn/framework/" class="md-tabs__link">
+          
+  
+  
+  Learn: Frappe Framework
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../learn/erpnext/" class="md-tabs__link">
+          
+  
+  
+  Learn: ERPNext Modules
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Guides
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../research/history-2024-2026/" class="md-tabs__link">
+          
+  
+  
+  Research
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../CHANGELOG/" class="md-tabs__link">
+          
+  
+  
+  About
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Frappe &amp; ERPNext Research Hub" class="md-nav__button md-logo" aria-label="Frappe & ERPNext Research Hub" data-md-component="logo">
+      
+  <img src="../../stylesheets/logo.svg" alt="logo">
+
+    </a>
+    Frappe & ERPNext Research Hub
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/irfanzahoor/frappe-research-hub" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    irfanzahoor/frappe-research-hub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learn: Frappe Framework
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Learn: Frappe Framework
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 1 — Start
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 1 — Start
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-1/01-what-is-frappe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 — What is Frappe
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-1/02-bench-sites-apps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 — Bench, Sites & Apps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-1/03-first-doctype/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 — Your First DocType
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-1/04-desk-list-form/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 — Desk, List & Form
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 2 — Build
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 2 — Build
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-2/05-server-scripts-events/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 — Server Scripts & Document Events
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-2/06-client-scripts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 — Client Scripts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-2/07-apis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 — APIs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-2/08-reports-print-formats/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 — Reports & Print Formats
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-2/09-permissions-roles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 — Permissions & Roles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-2/10-workflows-assignments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 — Workflows & Assignments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 3 — Ship
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 3 — Ship
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-3/11-scheduler-jobs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11 — Scheduler & Background Jobs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-3/12-notifications-email/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12 — Notifications, Email & Integrations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-3/13-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13 — Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-3/14-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14 — Performance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-3/15-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    15 — Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-3/16-debugging/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    16 — Debugging
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 4 — Advanced
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 4 — Advanced
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-4/17-studio-flow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    17 — Studio & Flow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-4/18-insights/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    18 — Insights
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-4/19-website-portal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    19 — Website & Portal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-4/20-upgrades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    20 — Upgrades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-4/21-ops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    21 — Ops
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learn: ERPNext Modules
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Learn: ERPNext Modules
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Core
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/core/01-accounting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 — Accounting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/core/02-stock-inventory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 — Stock & Inventory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/core/03-selling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 — Selling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/core/04-buying/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 — Buying
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operations
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Operations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/operations/05-manufacturing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 — Manufacturing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/operations/06-quality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 — Quality
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/operations/07-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 — Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/operations/08-assets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 — Assets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    People
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    People
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/people/09-hr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 — HR
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/people/10-crm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 — CRM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/people/11-helpdesk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11 — Helpdesk
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/people/12-support-portal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12 — Support & Portal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v16
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    v16
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/v16/13-studio-flow-insights/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13 — Studio, Flow & Insights
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/v16/14-cross-module-flows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14 — Cross-Module Flows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common-mistakes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Common Mistakes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../upgrade-v14-v15-v16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Upgrade v14 → v15 → v16
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../go-live-checklist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Go-Live Checklist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../choosing-apps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choosing Apps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice-project/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Practice Project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-fix-anything-the-first-3-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before you fix anything — the first 3 checks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stage-a-setup-install" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage A — Setup &amp; Install
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stage A — Setup &amp; Install">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a1-wrong-python-node-mariadb-version-for-v16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A1 — Wrong Python / Node / MariaDB version for v16
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a2-mariadb-access-denied-for-root" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A2 — MariaDB access denied for root
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a3-mariadb-is-not-running" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A3 — MariaDB is not running
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a4-redis-connection-refused" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A4 — Redis connection refused
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a5-bench-build-fails-on-assets-yarn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A5 — bench build fails on assets / Yarn
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a6-modulenotfounderror-no-module-named-frappe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A6 — ModuleNotFoundError: No module named 'frappe'
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a7-port-8000-already-in-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A7 — Port 8000 already in use
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stage-b-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage B — Development
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stage B — Development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#b1-bench-migrate-fails-on-a-patch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B1 — bench migrate fails on a patch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b2-unknown-column-after-a-code-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B2 — Unknown column after a code change
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b3-not-permitted-when-opening-a-doctype" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B3 — "Not Permitted" when opening a DocType
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b4-data-too-long-for-column" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B4 — "Data too long for column"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b5-link-validation-fails-could-not-find" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B5 — Link validation fails / "Could not find"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b6-mandatory-field-error-on-save" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B6 — Mandatory field error on save
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b7-server-script-client-script-does-not-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B7 — Server Script / Client Script does not run
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b8-print-format-shows-old-output-or-a-blank-pdf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B8 — Print format shows old output, or a blank PDF
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stage-c-production-go-live" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage C — Production &amp; Go-Live
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stage C — Production &amp; Go-Live">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c1-something-went-wrong-internal-server-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C1 — "Something went wrong" / Internal Server Error
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c2-scheduler-is-not-running" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C2 — Scheduler is not running
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c3-emails-stuck-in-the-email-queue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C3 — Emails stuck in the Email Queue
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c4-bench-update-fails-local-changes-would-be-overwritten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C4 — bench update fails: local changes would be overwritten
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c5-restored-backup-broken-site-version-mismatch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C5 — Restored backup, broken site / version mismatch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c6-504-gateway-timeout-on-big-reports" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C6 — 504 Gateway Timeout on big reports
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c7-desk-is-blank-assets-404-after-an-update" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C7 — Desk is blank / assets 404 after an update
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#still-stuck" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Still stuck?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-we-can-use-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How we can use it
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Research
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/history-2024-2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What Changed 2024–2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apps Catalog
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Apps Catalog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/pos-retail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    POS & Retail
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/invoicing-ocr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Invoicing & OCR
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/hr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HR
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/crm-support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CRM & Support
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/manufacturing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manufacturing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/ecommerce/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    E-Commerce
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/integrations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integrations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/localisations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Localisations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/developer-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Developer Tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/productivity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Productivity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    About
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ROADMAP/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CONTRIBUTING/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-fix-anything-the-first-3-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before you fix anything — the first 3 checks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stage-a-setup-install" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage A — Setup &amp; Install
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stage A — Setup &amp; Install">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a1-wrong-python-node-mariadb-version-for-v16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A1 — Wrong Python / Node / MariaDB version for v16
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a2-mariadb-access-denied-for-root" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A2 — MariaDB access denied for root
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a3-mariadb-is-not-running" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A3 — MariaDB is not running
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a4-redis-connection-refused" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A4 — Redis connection refused
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a5-bench-build-fails-on-assets-yarn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A5 — bench build fails on assets / Yarn
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a6-modulenotfounderror-no-module-named-frappe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A6 — ModuleNotFoundError: No module named 'frappe'
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a7-port-8000-already-in-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A7 — Port 8000 already in use
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stage-b-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage B — Development
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stage B — Development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#b1-bench-migrate-fails-on-a-patch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B1 — bench migrate fails on a patch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b2-unknown-column-after-a-code-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B2 — Unknown column after a code change
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b3-not-permitted-when-opening-a-doctype" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B3 — "Not Permitted" when opening a DocType
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b4-data-too-long-for-column" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B4 — "Data too long for column"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b5-link-validation-fails-could-not-find" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B5 — Link validation fails / "Could not find"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b6-mandatory-field-error-on-save" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B6 — Mandatory field error on save
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b7-server-script-client-script-does-not-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B7 — Server Script / Client Script does not run
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b8-print-format-shows-old-output-or-a-blank-pdf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B8 — Print format shows old output, or a blank PDF
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stage-c-production-go-live" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage C — Production &amp; Go-Live
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stage C — Production &amp; Go-Live">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c1-something-went-wrong-internal-server-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C1 — "Something went wrong" / Internal Server Error
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c2-scheduler-is-not-running" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C2 — Scheduler is not running
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c3-emails-stuck-in-the-email-queue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C3 — Emails stuck in the Email Queue
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c4-bench-update-fails-local-changes-would-be-overwritten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C4 — bench update fails: local changes would be overwritten
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c5-restored-backup-broken-site-version-mismatch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C5 — Restored backup, broken site / version mismatch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c6-504-gateway-timeout-on-big-reports" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C6 — 504 Gateway Timeout on big reports
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c7-desk-is-blank-assets-404-after-an-update" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C7 — Desk is blank / assets 404 after an update
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#still-stuck" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Still stuck?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-we-can-use-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How we can use it
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/irfanzahoor/frappe-research-hub/edit/main/guides/troubleshooting.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/irfanzahoor/frappe-research-hub/raw/main/guides/troubleshooting.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="troubleshooting-the-error-library">Troubleshooting — The Error Library<a class="headerlink" href="#troubleshooting-the-error-library" title="Permanent link">&para;</a></h1>
+<p>The page you open when something breaks. Every entry is a real error
+a beginner or intermediate developer actually hits, with the exact
+message, why it happens, and the fix — in order. No theory, just the
+steps.</p>
+<h2 id="before-you-fix-anything-the-first-3-checks">Before you fix anything — the first 3 checks<a class="headerlink" href="#before-you-fix-anything-the-first-3-checks" title="Permanent link">&para;</a></h2>
+<p>Most errors are solved by one of these, before you touch any code:</p>
+<ol>
+<li><strong>Read the LAST lines of the error, not the first.</strong> A traceback
+   is a stack: the first lines are where the code was called from,
+   the last line is the exception itself — <code>OperationalError</code>,
+   <code>LinkValidationError</code>, <code>ModuleNotFoundError</code>. That last line is
+   the name of your problem. Search for it, not for the whole trace.</li>
+<li><strong>Check the Error Log in Desk.</strong> Search "Error Log" in the
+   awesome bar — every server error is saved there with its full
+   traceback, even the ones the screen only shows as "Something went
+   wrong". If the same error repeats, read the newest entry.</li>
+<li><strong>Run <code>bench doctor</code>.</strong> One command, from the bench directory,
+   that shows the scheduler, background workers, Redis and Socket.IO
+   status. If any of them is down, half the errors in this guide
+   follow from that one fact.</li>
+</ol>
+<p>If you are mid-upgrade, back up first: <code>bench --site &lt;site&gt; backup</code>
+— a fix you can undo is a fix you can try.</p>
+<hr />
+<h2 id="stage-a-setup-install">Stage A — Setup &amp; Install<a class="headerlink" href="#stage-a-setup-install" title="Permanent link">&para;</a></h2>
+<h3 id="a1-wrong-python-node-mariadb-version-for-v16">A1 — Wrong Python / Node / MariaDB version for v16<a class="headerlink" href="#a1-wrong-python-node-mariadb-version-for-v16" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>ERROR: This version of Frappe requires Python 3.14 or newer
+</code></pre></div>
+<p>or the install just fails halfway with a version complaint.</p>
+<p><strong>When it happens:</strong> <code>bench init</code> on a fresh server, or an upgrade to
+v16 on an old bench.</p>
+<p><strong>Why it happens:</strong> v16 raised its floor: <strong>Python 3.14, Node 24,
+MariaDB 11.8, Redis/Valkey 6+, Yarn 1.22+</strong>. The old bench was built
+on Python 3.10 / Node 18, and v16 code will not even import on it.</p>
+<p><strong>Fix:</strong></p>
+<ol>
+<li>Check what you actually have:
+   <div class="highlight"><pre><span></span><code>python3<span class="w"> </span>--version<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>node<span class="w"> </span>-v<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>mariadb<span class="w"> </span>--version
+</code></pre></div></li>
+<li>Install the right Python and create the bench with it:
+   <div class="highlight"><pre><span></span><code>bench<span class="w"> </span>init<span class="w"> </span>--frappe-branch<span class="w"> </span>version-16<span class="w"> </span>--python<span class="w"> </span>python3.14<span class="w"> </span>frappe-bench
+</code></pre></div></li>
+<li>If the bench already exists on the wrong Python, do not try to
+   patch it in place — rebuild the virtualenv on Python 3.14 (see
+   the <a href="../upgrade-v14-v15-v16/">Upgrade guide</a>).</li>
+</ol>
+<p><strong>Prevention:</strong> before any install or upgrade, read the version
+matrix in the <a href="../upgrade-v14-v15-v16/">Upgrade guide</a> and match all
+five versions — Python, Node, MariaDB, Redis, Yarn — not just one.</p>
+<h3 id="a2-mariadb-access-denied-for-root">A2 — MariaDB access denied for root<a class="headerlink" href="#a2-mariadb-access-denied-for-root" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+</code></pre></div>
+<p><strong>When it happens:</strong> <code>bench new-site</code> or <code>bench migrate</code> on a fresh
+install.</p>
+<p><strong>Why it happens:</strong> bench logs into MariaDB with the password stored
+in the site's config, and it does not match the password MariaDB
+actually has for <code>root</code>. Usually the MariaDB root password was set
+during install and never given to bench — or it was changed later.</p>
+<p><strong>Fix:</strong></p>
+<ol>
+<li>Check what bench thinks the password is:
+   <div class="highlight"><pre><span></span><code>cat<span class="w"> </span>sites/&lt;site&gt;/site_config.json<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>db_password
+</code></pre></div></li>
+<li>Log into MariaDB as root and set the password to match:
+   <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>mysql<span class="w"> </span>-u<span class="w"> </span>root
+</code></pre></div>
+   <div class="highlight"><pre><span></span><code><span class="k">ALTER</span><span class="w"> </span><span class="k">USER</span><span class="w"> </span><span class="s1">'root'</span><span class="o">@</span><span class="s1">'localhost'</span><span class="w"> </span><span class="n">IDENTIFIED</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="s1">'the-password-from-site_config.json'</span><span class="p">;</span>
+<span class="n">FLUSH</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="p">;</span>
+</code></pre></div></li>
+<li>Test it:
+   <div class="highlight"><pre><span></span><code>bench<span class="w"> </span>--site<span class="w"> </span>&lt;site&gt;<span class="w"> </span>migrate
+</code></pre></div></li>
+</ol>
+<p><strong>Prevention:</strong> write the MariaDB root password down at install time
+and use the same one for every site on that server. One password per
+server, not one per site.</p>
+<h3 id="a3-mariadb-is-not-running">A3 — MariaDB is not running<a class="headerlink" href="#a3-mariadb-is-not-running" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>pymysql.err.OperationalError: (2002, "Can't connect to local MySQL server through socket '/run/mysqld/mysqld.sock'")
+</code></pre></div>
+<p><strong>When it happens:</strong> any bench command after a server reboot, or on a
+fresh install where MariaDB was never started.</p>
+<p><strong>Why it happens:</strong> MariaDB is a separate service. If it is stopped,
+nothing in Frappe can reach the database — the error is about the
+socket file, not about your site.</p>
+<p><strong>Fix:</strong></p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>mariadb
+sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>mariadb
+sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>mariadb<span class="w">   </span><span class="c1"># start it on every boot, not just now</span>
+bench<span class="w"> </span>--site<span class="w"> </span>&lt;site&gt;<span class="w"> </span>migrate<span class="w">     </span><span class="c1"># confirm the site connects again</span>
+</code></pre></div>
+<p><strong>Prevention:</strong> <code>enable</code> the service at install time (step 3 above),
+not just <code>start</code> it. After every reboot, <code>bench doctor</code> is the
+one-command check.</p>
+<h3 id="a4-redis-connection-refused">A4 — Redis connection refused<a class="headerlink" href="#a4-redis-connection-refused" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:13000. Connection refused.
+</code></pre></div>
+<p><strong>When it happens:</strong> <code>bench start</code>, or the site loads but background
+jobs and caching silently do nothing.</p>
+<p><strong>Why it happens:</strong> Frappe talks to Redis for the queue, the cache
+and Socket.IO. If Redis is stopped, the web process starts but
+nothing that needs the queue works — and the error names a port
+(11000, 12000 or 13000 on a dev bench, 6379 in production).</p>
+<p><strong>Fix:</strong></p>
+<div class="highlight"><pre><span></span><code>redis-cli<span class="w"> </span>ping<span class="w">        </span><span class="c1"># should answer PONG</span>
+sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>redis-server
+sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>redis-server
+sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>redis-server
+bench<span class="w"> </span>doctor<span class="w">          </span><span class="c1"># confirms Redis is back for all three queues</span>
+</code></pre></div>
+<p><strong>Prevention:</strong> same as MariaDB — enable the service at install time.
+On v16, Valkey is an accepted replacement for Redis; either way, one
+of them must be running before <code>bench start</code>.</p>
+<h3 id="a5-bench-build-fails-on-assets-yarn">A5 — <code>bench build</code> fails on assets / Yarn<a class="headerlink" href="#a5-bench-build-fails-on-assets-yarn" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>error Command failed.
+Exit code: 1
+Command: /usr/bin/node .../yarn install
+</code></pre></div>
+<p><strong>When it happens:</strong> after <code>bench update</code>, after installing an app,
+or on a fresh bench.</p>
+<p><strong>Why it happens:</strong> the JavaScript build needs the right Node version
+(v16 needs Node 24) and a working Yarn install. The two usual causes
+are the wrong Node version (see A1) and a half-installed or corrupted
+<code>node_modules</code>.</p>
+<p><strong>Fix:</strong></p>
+<ol>
+<li>Check Node first: <code>node -v</code> — v16 needs v24.</li>
+<li>Reinstall the bench's dependencies, then rebuild:
+   <div class="highlight"><pre><span></span><code>bench<span class="w"> </span>setup<span class="w"> </span>requirements
+bench<span class="w"> </span>build
+</code></pre></div></li>
+<li>If one app is the problem, build only it:
+   <div class="highlight"><pre><span></span><code>bench<span class="w"> </span>build<span class="w"> </span>--app<span class="w"> </span>&lt;app&gt;
+</code></pre></div>
+   and read the lines just above the failure — they name the file
+   that broke the build.</li>
+</ol>
+<p><strong>Prevention:</strong> never install a second Node version over the first
+with <code>apt</code> and forget which one is on the PATH. Use one Node manager
+for the whole server and pin the version in your install notes.</p>
+<h3 id="a6-modulenotfounderror-no-module-named-frappe">A6 — <code>ModuleNotFoundError: No module named 'frappe'</code><a class="headerlink" href="#a6-modulenotfounderror-no-module-named-frappe" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>ModuleNotFoundError: No module named 'frappe'
+</code></pre></div>
+<p><strong>When it happens:</strong> any <code>bench</code> command, or a Python script that
+imports frappe.</p>
+<p><strong>Why it happens:</strong> you are running the command from the wrong
+directory, or from a shell where the bench's virtualenv is not on the
+path. <code>frappe</code> only exists inside the bench's <code>env/</code>.</p>
+<p><strong>Fix:</strong></p>
+<ol>
+<li>Go to the bench directory and try again:
+   <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/frappe-bench
+bench<span class="w"> </span>--version
+</code></pre></div></li>
+<li>If it still fails, the virtualenv is broken — reinstall the
+   bench's requirements:
+   <div class="highlight"><pre><span></span><code>bench<span class="w"> </span>setup<span class="w"> </span>requirements
+</code></pre></div></li>
+</ol>
+<p><strong>Prevention:</strong> always <code>cd</code> into the bench directory before running
+bench commands. Put the bench path in your shell notes, not in your
+memory.</p>
+<h3 id="a7-port-8000-already-in-use">A7 — Port 8000 already in use<a class="headerlink" href="#a7-port-8000-already-in-use" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>OSError: [Errno 98] Address already in use
+</code></pre></div>
+<p><strong>When it happens:</strong> <code>bench start</code> when another bench (or an old,
+still-running one) already holds port 8000.</p>
+<p><strong>Why it happens:</strong> only one process can listen on a port. The usual
+cause is a <code>bench start</code> that was never stopped — its terminal was
+closed but the processes kept running.</p>
+<p><strong>Fix:</strong></p>
+<ol>
+<li>Find what holds the port:
+   <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>lsof<span class="w"> </span>-i<span class="w"> </span>:8000
+</code></pre></div></li>
+<li>Stop the old bench properly (<code>bench stop</code> from its directory), or
+   kill the process by its PID:
+   <div class="highlight"><pre><span></span><code><span class="nb">kill</span><span class="w"> </span>&lt;pid&gt;
+</code></pre></div></li>
+<li>Or give this bench a different port — add to
+   <code>sites/common_site_config.json</code>:
+   <div class="highlight"><pre><span></span><code><span class="nt">"webserver_port"</span><span class="p">:</span><span class="w"> </span><span class="mi">8001</span>
+</code></pre></div>
+   then restart the bench.</li>
+</ol>
+<p><strong>Prevention:</strong> one bench per port, written down. Stop a dev bench
+with Ctrl+C in its own terminal, not by closing the terminal window.</p>
+<hr />
+<h2 id="stage-b-development">Stage B — Development<a class="headerlink" href="#stage-b-development" title="Permanent link">&para;</a></h2>
+<h3 id="b1-bench-migrate-fails-on-a-patch">B1 — <code>bench migrate</code> fails on a patch<a class="headerlink" href="#b1-bench-migrate-fails-on-a-patch" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>frappe.modules.patch_handler.PatchError: Patch myapp.patches.v16_0.fix_data execute failed
+</code></pre></div>
+<p>or:</p>
+<div class="highlight"><pre><span></span><code>ModuleNotFoundError: No module named 'frappe.patches.v15_0.some_patch'
+Migration exit code: 1
+</code></pre></div>
+<p><strong>When it happens:</strong> <code>bench migrate</code> after an update or after pulling
+new app code.</p>
+<p><strong>Why it happens:</strong> a patch is a one-off script listed in the app's
+<code>patches.txt</code>. It fails because its file is missing (incomplete
+update), its code has a bug, or it expects data that is not there.
+The migrate stops at the first failing patch — everything after it
+has not run yet.</p>
+<p><strong>Fix:</strong></p>
+<ol>
+<li>Read the failing patch name from the error — it is the first thing
+   to fix, not the whole migrate.</li>
+<li>Check the apps are on matching branches:
+   <div class="highlight"><pre><span></span><code>bench<span class="w"> </span>version<span class="w"> </span>--format<span class="w"> </span>table
+git<span class="w"> </span>-C<span class="w"> </span>apps/frappe<span class="w"> </span>status<span class="w"> </span>--short
+git<span class="w"> </span>-C<span class="w"> </span>apps/frappe<span class="w"> </span>branch<span class="w"> </span>--show-current
+</code></pre></div>
+   A patch file missing from disk means the update did not finish —
+   restore the correct app code from the matching release, then
+   re-run <code>bench --site &lt;site&gt; migrate</code>.</li>
+<li>If the patch itself is broken, fix its code, then re-run it by
+   appending a date comment to its line in <code>patches.txt</code>:
+   <div class="highlight"><pre><span></span><code>myapp.patches.v16_0.fix_data #2026-11-26
+</code></pre></div>
+   then <code>bench --site &lt;site&gt; migrate</code> again.</li>
+<li>Last resort only: <code>bench --site &lt;site&gt; migrate --skip-failing</code>
+   skips the patch and marks it done. Use it only when you know the
+   patch is safe to skip — a skipped data patch leaves the data it
+   was supposed to move in the old shape, and the site looks fine
+   until it does not.</li>
+</ol>
+<p><strong>Prevention:</strong> back up before every migrate
+(<code>bench --site &lt;site&gt; backup</code>), and run migrations on staging first.
+Never run <code>migrate</code> on production the first time you run it anywhere.</p>
+<h3 id="b2-unknown-column-after-a-code-change">B2 — <code>Unknown column</code> after a code change<a class="headerlink" href="#b2-unknown-column-after-a-code-change" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>pymysql.err.OperationalError: (1054, "Unknown column 'tabSales Order.new_field' in 'field list'")
+</code></pre></div>
+<p><strong>When it happens:</strong> after adding a field to a DocType, or after
+switching an app's branch.</p>
+<p><strong>Why it happens:</strong> the code knows about the field but the database
+does not — the schema sync in <code>migrate</code> has not run, or ran against
+different code than is installed now.</p>
+<p><strong>Fix:</strong></p>
+<div class="highlight"><pre><span></span><code>bench<span class="w"> </span>--site<span class="w"> </span>&lt;site&gt;<span class="w"> </span>migrate
+bench<span class="w"> </span>--site<span class="w"> </span>&lt;site&gt;<span class="w"> </span>clear-cache
+</code></pre></div>
+<p>If it still fails, the code and the branch disagree — check
+<code>git -C apps/&lt;app&gt; status</code> for uncommitted or half-pulled changes,
+fix the branch, and migrate again.</p>
+<p><strong>Prevention:</strong> every DocType change ends with <code>migrate</code>, every time,
+before you test. See <a href="../../learn/framework/level-1/03-first-doctype/">Lesson 03</a>.</p>
+<h3 id="b3-not-permitted-when-opening-a-doctype">B3 — "Not Permitted" when opening a DocType<a class="headerlink" href="#b3-not-permitted-when-opening-a-doctype" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Not Permitted
+You do not have enough permissions to access this document.
+</code></pre></div>
+<p><strong>When it happens:</strong> a user opens a DocType or a document that
+Administrator opens fine.</p>
+<p><strong>Why it happens:</strong> the user's role has no permission on that
+DocType, or a User Permission restricts them to specific documents
+(for example, only their own company's records).</p>
+<p><strong>Fix:</strong></p>
+<ol>
+<li>Open <strong>Role Permission Manager</strong>, pick the DocType, and check the
+   row for the user's role — read, write, create, submit, delete
+   are separate ticks. Tick what the job needs, nothing more.</li>
+<li>Check <strong>User Permissions</strong> for that user — a restriction to one
+   Company or Warehouse hides everything else.</li>
+<li>Test as the real user, not as Administrator — Administrator sees
+   everything, so testing as Administrator tests nothing.</li>
+</ol>
+<p><strong>Prevention:</strong> test every new role with a real user account before
+go-live. See <a href="../../learn/framework/level-2/09-permissions-roles/">Lesson 09</a>
+and the <a href="../go-live-checklist/">Go-Live Checklist</a>.</p>
+<h3 id="b4-data-too-long-for-column">B4 — "Data too long for column"<a class="headerlink" href="#b4-data-too-long-for-column" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>pymysql.err.DataError: (1406, "Data too long for column 'remarks' at row 1")
+</code></pre></div>
+<p><strong>When it happens:</strong> saving a document with a long value in a Data
+field.</p>
+<p><strong>Why it happens:</strong> a <strong>Data</strong> field holds at most 140 characters.
+The form lets you type more, and the database refuses it on save.</p>
+<p><strong>Fix:</strong> change the field's type to <strong>Small Text</strong> (up to 65,535
+characters) in Customize Form, then <code>bench --site &lt;site&gt; migrate</code>.</p>
+<p><strong>Prevention:</strong> use Data only for short values — names, codes, phone
+numbers. Anything a user might write a sentence in is Small Text
+from the start.</p>
+<h3 id="b5-link-validation-fails-could-not-find">B5 — Link validation fails / "Could not find"<a class="headerlink" href="#b5-link-validation-fails-could-not-find" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>frappe.exceptions.LinkValidationError: Could not find Customer: Karachi Spice Traders
+</code></pre></div>
+<p><strong>When it happens:</strong> saving a document whose Link field points at a
+document that does not exist.</p>
+<p><strong>Why it happens:</strong> the linked document was deleted or renamed, or
+the value was typed by hand with a typo. Frappe refuses to save a
+dangling link — that is the validation working, not a bug.</p>
+<p><strong>Fix:</strong></p>
+<ol>
+<li>Check the linked document exists: search for it in Desk.</li>
+<li>If it was renamed, update the Link field to the new name.</li>
+<li>If it was deleted, recreate it — or clear the field if the link
+   is optional.</li>
+<li>In code, check before you link:
+   <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="ow">not</span> <span class="n">frappe</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s2">"Customer"</span><span class="p">,</span> <span class="n">customer_name</span><span class="p">):</span>
+    <span class="n">frappe</span><span class="o">.</span><span class="n">throw</span><span class="p">(</span><span class="n">_</span><span class="p">(</span><span class="s2">"Customer </span><span class="si">{0}</span><span class="s2"> does not exist"</span><span class="p">)</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">customer_name</span><span class="p">))</span>
+</code></pre></div></li>
+</ol>
+<p><strong>Prevention:</strong> never delete a master (Customer, Item, Warehouse)
+that transactions point to. Cancel or disable it instead, and let
+the links keep resolving.</p>
+<h3 id="b6-mandatory-field-error-on-save">B6 — Mandatory field error on save<a class="headerlink" href="#b6-mandatory-field-error-on-save" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>frappe.exceptions.MandatoryError: [Sales Order, SO-0001]: posting_date
+</code></pre></div>
+<p><strong>When it happens:</strong> saving a document that looks complete — every
+visible field is filled.</p>
+<p><strong>Why it happens:</strong> a field is marked mandatory but hidden by a
+<strong>Depends On</strong> condition, or sitting in a collapsed section. The user
+cannot see it, so they cannot fill it, and the save refuses.</p>
+<p><strong>Fix:</strong> open <strong>Customize Form</strong> for the DocType, find the mandatory
+field, and either remove the <strong>Mandatory</strong> tick or remove the
+<strong>Depends On</strong> that hides it. A field cannot be both mandatory and
+invisible.</p>
+<p><strong>Prevention:</strong> when you add a Depends On to a field, check its
+Mandatory tick in the same edit. See the
+<a href="../common-mistakes/">Common Mistakes</a> guide.</p>
+<h3 id="b7-server-script-client-script-does-not-run">B7 — Server Script / Client Script does not run<a class="headerlink" href="#b7-server-script-client-script-does-not-run" title="Permanent link">&para;</a></h3>
+<p>No error at all — the script just does nothing.</p>
+<p><strong>When it happens:</strong> after writing a script that should fire on
+save, submit, or form load.</p>
+<p><strong>Why it happens:</strong> almost always one of four things — the script is
+in the wrong place, the event name is wrong, the DocType was not
+reloaded after the change, or the script itself has an error that
+only shows in the log.</p>
+<p><strong>Fix:</strong></p>
+<ol>
+<li>Check the location. Client behaviour lives in the DocType's
+   <code>.js</code> file in the app (<code>&lt;app&gt;/&lt;app&gt;/doctype/&lt;doctype&gt;/&lt;doctype&gt;.js</code>);
+   server behaviour lives in a <code>doc_events</code> hook in <code>hooks.py</code> or a
+   Server Script document — not the other way round.</li>
+<li>Check the event name: <code>validate</code> runs on every save, <code>on_submit</code>
+   only on submit, <code>refresh</code> every time the form opens. A
+   submit-only rule in <code>validate</code> blocks drafts too.</li>
+<li>Reload the DocType: <code>bench --site &lt;site&gt; migrate</code>, then
+   <code>bench --site &lt;site&gt; clear-cache</code> — and for Client Scripts,
+   <code>bench build</code> and a hard refresh (Ctrl+Shift+R).</li>
+<li>Look for the error: browser console (F12) for Client Scripts,
+   <strong>Error Log</strong> in Desk for Server Scripts.</li>
+</ol>
+<p><strong>Prevention:</strong> one script, one event, one file — and test it the
+minute you write it, not at the end of the day. See
+<a href="../../learn/framework/level-2/05-server-scripts-events/">Lesson 05</a>
+and <a href="../../learn/framework/level-2/06-client-scripts/">Lesson 06</a>.</p>
+<h3 id="b8-print-format-shows-old-output-or-a-blank-pdf">B8 — Print format shows old output, or a blank PDF<a class="headerlink" href="#b8-print-format-shows-old-output-or-a-blank-pdf" title="Permanent link">&para;</a></h3>
+<p><strong>When it happens:</strong> after editing a Print Format, the printed
+document still shows the old layout — or prints blank.</p>
+<p><strong>Why it happens:</strong> print output is cached, and a Jinja error in the
+format fails silently on the page while the real error goes to the
+log.</p>
+<p><strong>Fix:</strong></p>
+<ol>
+<li>Clear the cache and rebuild:
+   <div class="highlight"><pre><span></span><code>bench<span class="w"> </span>--site<span class="w"> </span>&lt;site&gt;<span class="w"> </span>clear-cache
+bench<span class="w"> </span>build
+</code></pre></div></li>
+<li>Check the Print Format is set as <strong>Default</strong> for the DocType, and
+   that the document is actually using it (Print → Format dropdown).</li>
+<li>Check <strong>Error Log</strong> for a Jinja error — a bad <code>{{ }}</code> in the
+   format is the usual cause of a blank print.</li>
+</ol>
+<p><strong>Prevention:</strong> test a print format on one real document before
+telling users about it. See
+<a href="../../learn/framework/level-2/08-reports-print-formats/">Lesson 08</a>.</p>
+<hr />
+<h2 id="stage-c-production-go-live">Stage C — Production &amp; Go-Live<a class="headerlink" href="#stage-c-production-go-live" title="Permanent link">&para;</a></h2>
+<h3 id="c1-something-went-wrong-internal-server-error">C1 — "Something went wrong" / Internal Server Error<a class="headerlink" href="#c1-something-went-wrong-internal-server-error" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Internal Server Error
+Something went wrong. Please try again or contact support.
+</code></pre></div>
+<p><strong>When it happens:</strong> any page, any time — usually right after a
+deploy or an update.</p>
+<p><strong>Why it happens:</strong> this message is a cover for a real server error.
+The cause is in the logs, never on the screen.</p>
+<p><strong>Fix:</strong></p>
+<ol>
+<li>Open <strong>Error Log</strong> in Desk — the newest entry has the full
+   traceback. Read its last line first (see the checks at the top).</li>
+<li>If Desk itself is down, read the logs on the server:
+   <div class="highlight"><pre><span></span><code>tail<span class="w"> </span>-50<span class="w"> </span>logs/web.error.log
+tail<span class="w"> </span>-50<span class="w"> </span>logs/frappe.log
+</code></pre></div></li>
+<li>Check the disk is not full — a full disk causes random 500s on
+   otherwise healthy sites:
+   <div class="highlight"><pre><span></span><code>df<span class="w"> </span>-h
+</code></pre></div></li>
+</ol>
+<p><strong>Prevention:</strong> never deploy on Friday evening without a backup and
+a rollback plan. See the <a href="../go-live-checklist/">Go-Live Checklist</a>.</p>
+<h3 id="c2-scheduler-is-not-running">C2 — Scheduler is not running<a class="headerlink" href="#c2-scheduler-is-not-running" title="Permanent link">&para;</a></h3>
+<p>No error message — scheduled jobs, email, and reminders just never
+happen.</p>
+<p><strong>When it happens:</strong> after a fresh production setup, after a restore,
+or after someone turned the scheduler off and forgot.</p>
+<p><strong>Why it happens:</strong> the scheduler is a per-site switch. If it is off,
+no scheduled job runs at all — not just email. In production it also
+needs the supervisor workers running.</p>
+<p><strong>Fix:</strong></p>
+<div class="highlight"><pre><span></span><code>bench<span class="w"> </span>--site<span class="w"> </span>&lt;site&gt;<span class="w"> </span>scheduler<span class="w"> </span>status
+bench<span class="w"> </span>--site<span class="w"> </span>&lt;site&gt;<span class="w"> </span>enable-scheduler
+bench<span class="w"> </span>doctor<span class="w">          </span><span class="c1"># shows scheduler + workers in one place</span>
+</code></pre></div>
+<p>In production, also check the workers:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>supervisorctl<span class="w"> </span>status
+bench<span class="w"> </span>setup<span class="w"> </span>supervisor<span class="w">   </span><span class="c1"># regenerates the supervisor config if it is missing</span>
+</code></pre></div>
+<p>And check <code>sites/&lt;site&gt;/site_config.json</code> does not have
+<code>"pause_scheduler": 1</code> left over from a migration or a staging copy.</p>
+<p><strong>Prevention:</strong> <code>bench doctor</code> after every deploy and every reboot.
+A scheduler that has been off for a week is a week of unsent mail
+and unrun jobs. See
+<a href="../../learn/framework/level-3/11-scheduler-jobs/">Lesson 11</a>.</p>
+<h3 id="c3-emails-stuck-in-the-email-queue">C3 — Emails stuck in the Email Queue<a class="headerlink" href="#c3-emails-stuck-in-the-email-queue" title="Permanent link">&para;</a></h3>
+<p><strong>When it happens:</strong> mails sit in <strong>Email Queue</strong> with status
+<strong>Not Sent</strong> or <strong>Sending</strong> for hours — or arrive 2–5 minutes late.</p>
+<p><strong>Why it happens:</strong> Frappe does not send mail the moment you create
+it. A background job (<code>frappe.email.queue.flush</code>) picks entries up
+every 4 minutes, so a delay of a few minutes is normal. Hours means
+one of three things is wrong: sending is suspended, mail is muted,
+or the scheduler is not running (see C2).</p>
+<p><strong>Fix:</strong></p>
+<ol>
+<li>Open <strong>Email Queue</strong> in Desk. If the top-right button reads
+   <strong>Resume Sending</strong>, sending is switched off for the whole site —
+   click it.</li>
+<li>Check <code>sites/&lt;site&gt;/site_config.json</code> for <code>"mute_emails": 1</code> —
+   usually left on from testing or a staging copy. Remove it and
+   restart the bench.</li>
+<li>Check the scheduler is running (C2 above).</li>
+<li>Flush the queue by hand to confirm it works:
+   <div class="highlight"><pre><span></span><code>bench<span class="w"> </span>--site<span class="w"> </span>&lt;site&gt;<span class="w"> </span>execute<span class="w"> </span>frappe.email.queue.flush
+</code></pre></div></li>
+<li>A failed entry can be retried from its own form — open it and use
+   <strong>Send Now</strong>. If it fails again, read its <strong>Error</strong> field: it
+   names the real problem (wrong password, blocked port 25, bad
+   SMTP host).</li>
+</ol>
+<p><strong>Prevention:</strong> after every staging restore, check <code>mute_emails</code>
+before anyone wonders why no mail arrived. See
+<a href="../../learn/framework/level-3/12-notifications-email/">Lesson 12</a>.</p>
+<h3 id="c4-bench-update-fails-local-changes-would-be-overwritten">C4 — <code>bench update</code> fails: local changes would be overwritten<a class="headerlink" href="#c4-bench-update-fails-local-changes-would-be-overwritten" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>error: Your local changes to the following files would be overwritten by merge
+</code></pre></div>
+<p><strong>When it happens:</strong> <code>bench update</code> after someone edited files
+inside <code>apps/frappe</code> or <code>apps/erpnext</code> directly on the server.</p>
+<p><strong>Why it happens:</strong> <code>bench update</code> pulls new code with git, and git
+refuses to overwrite files you changed. The changes are usually an
+accidental edit — or a fix someone made on the server and never
+committed anywhere.</p>
+<p><strong>Fix:</strong></p>
+<ol>
+<li>See what changed:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>-C<span class="w"> </span>apps/frappe<span class="w"> </span>status<span class="w"> </span>--short
+git<span class="w"> </span>-C<span class="w"> </span>apps/erpnext<span class="w"> </span>status<span class="w"> </span>--short
+</code></pre></div></li>
+<li>If the changes are accidental, stash them and update:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>-C<span class="w"> </span>apps/frappe<span class="w"> </span>stash
+bench<span class="w"> </span>update
+</code></pre></div></li>
+<li>If they are a real fix, commit them to your own app or branch
+   first — never leave a fix uncommitted inside <code>apps/frappe</code>.</li>
+<li><code>bench update --reset</code> discards local changes and updates anyway.
+   Use it only when you are sure the changes are disposable — it
+   cannot be undone.</li>
+</ol>
+<p><strong>Prevention:</strong> never edit framework or ERPNext code on the server.
+Custom code lives in your own app; the server's <code>apps/frappe</code> and
+<code>apps/erpnext</code> stay clean.</p>
+<h3 id="c5-restored-backup-broken-site-version-mismatch">C5 — Restored backup, broken site / version mismatch<a class="headerlink" href="#c5-restored-backup-broken-site-version-mismatch" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>pymysql.err.OperationalError: (1054, "Unknown column ...")
+</code></pre></div>
+<p>or the site loads but documents behave wrongly, right after a
+restore.</p>
+<p><strong>When it happens:</strong> after <code>bench --site &lt;site&gt; restore &lt;backup&gt;</code>,
+especially when the backup came from a different server or version.</p>
+<p><strong>Why it happens:</strong> a backup is data, not code. Restoring it puts
+old data under new code (or the reverse), and the schema does not
+match until a migrate runs. If the apps are on a different major
+version than the backup, no migrate can fix that.</p>
+<p><strong>Fix:</strong></p>
+<ol>
+<li>Always migrate after a restore:
+   <div class="highlight"><pre><span></span><code>bench<span class="w"> </span>--site<span class="w"> </span>&lt;site&gt;<span class="w"> </span>restore<span class="w"> </span>/path/to/backup.sql.gz
+bench<span class="w"> </span>--site<span class="w"> </span>&lt;site&gt;<span class="w"> </span>migrate
+</code></pre></div></li>
+<li>Check the versions match the backup's versions:
+   <div class="highlight"><pre><span></span><code>bench<span class="w"> </span>version<span class="w"> </span>--format<span class="w"> </span>table
+</code></pre></div>
+   If the backup is v15 and the bench is v16, install the matching
+   branches first (<code>bench get-app erpnext --branch version-15</code>),
+   then restore, then migrate.</li>
+<li>If the restore itself fails, check the file is a bench backup
+   (<code>.sql.gz</code> from <code>bench backup</code>) and that there is free disk space
+   for the restore.</li>
+</ol>
+<p><strong>Prevention:</strong> label every backup with its version and date, and
+test a restore on staging before you ever need one for real. See
+<a href="../../learn/framework/level-4/21-ops/">Lesson 21</a>.</p>
+<h3 id="c6-504-gateway-timeout-on-big-reports">C6 — 504 Gateway Timeout on big reports<a class="headerlink" href="#c6-504-gateway-timeout-on-big-reports" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>504 Gateway Time-out
+</code></pre></div>
+<p><strong>When it happens:</strong> running a large report, a bulk import, or any
+long operation from the browser.</p>
+<p><strong>Why it happens:</strong> the web request has a time limit. A report that
+scans a year of Stock Ledger entries, or an import of ten thousand
+rows, takes longer than the limit — the server is still working, but
+the browser has already given up.</p>
+<p><strong>Fix:</strong></p>
+<ol>
+<li>Do not run heavy work in a web request. Move it to a background
+   job with <code>frappe.enqueue</code> — the user gets an answer when it is
+   done, not a timeout. See
+   <a href="../../learn/framework/level-3/11-scheduler-jobs/">Lesson 11</a>.</li>
+<li>For reports, filter first: a date range and a warehouse cut the
+   rows before the query runs, not after.</li>
+<li>Check the log to confirm it was a timeout and not an error:
+   <div class="highlight"><pre><span></span><code>tail<span class="w"> </span>-50<span class="w"> </span>logs/web.log
+</code></pre></div></li>
+</ol>
+<p><strong>Prevention:</strong> any operation that can grow with the data — reports,
+imports, reconciliations — belongs in a background job from the day
+it is written, not after the first timeout. See
+<a href="../../learn/framework/level-3/14-performance/">Lesson 14</a>.</p>
+<h3 id="c7-desk-is-blank-assets-404-after-an-update">C7 — Desk is blank / assets 404 after an update<a class="headerlink" href="#c7-desk-is-blank-assets-404-after-an-update" title="Permanent link">&para;</a></h3>
+<p><strong>When it happens:</strong> after <code>bench update</code>, the login page loads but
+Desk is blank, or the browser console shows 404s for <code>.js</code> and
+<code>.css</code> files.</p>
+<p><strong>Why it happens:</strong> the built assets on disk are from the old code,
+or the browser is holding the old ones. The site is fine; the files
+it serves are stale.</p>
+<p><strong>Fix:</strong></p>
+<div class="highlight"><pre><span></span><code>bench<span class="w"> </span>build
+bench<span class="w"> </span>--site<span class="w"> </span>&lt;site&gt;<span class="w"> </span>clear-cache
+</code></pre></div>
+<p>Then hard-refresh the browser (Ctrl+Shift+R). If <code>bench build</code>
+itself fails, see A5 — it is usually the Node version.</p>
+<p><strong>Prevention:</strong> every update ends with <code>bench build</code> + <code>clear-cache</code>
+before you tell users the site is back. Put it in the deploy
+checklist, not in your memory.</p>
+<hr />
+<h2 id="still-stuck">Still stuck?<a class="headerlink" href="#still-stuck" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Work the problem like <a href="../../learn/framework/level-3/16-debugging/">Lesson 16 — Debugging</a>:
+   reproduce it in the console, isolate the smallest case, read the
+   last line of the traceback.</li>
+<li>Search the <a href="https://discuss.frappe.io">Frappe Forum</a> for the exact
+   error text — if you hit it, someone hit it before you.</li>
+<li>If you post, include four things or nobody can help you: the
+   Frappe/ERPNext version (<code>bench version</code>), the full traceback
+   (last 20 lines), what you were doing when it happened, and what
+   you already tried from this guide.</li>
+<li>If it looks like a framework bug, open an issue on
+   <a href="https://github.com/frappe/frappe">frappe/frappe</a> with the same
+   four things — and a minimal reproduction, not your whole site.</li>
+</ol>
+<h2 id="how-we-can-use-it">How we can use it<a class="headerlink" href="#how-we-can-use-it" title="Permanent link">&para;</a></h2>
+<p>This is the page NexTash support opens first on a client call: the
+client reads out the error, we find it here, and the fix starts in
+minutes instead of after an hour of guessing. New team members learn
+the same way — every error they hit the first time is already written
+down with the fix that worked last time. When an error is missing
+from this page, that is the signal to add it: a library that grows
+with every incident is worth more than one that was complete on day
+one.</p>
+<h2 id="sources">Sources<a class="headerlink" href="#sources" title="Permanent link">&para;</a></h2>
+<p>Error messages and fixes verified against Frappe docs
+(Email Queue, password-reset mail), Frappe Cloud docs (migrate
+out-of-memory, failed updates), the Frappe Forum, and the
+<code>bench migrate --skip-failing</code> / <code>never_skip_patches</code> behaviour in
+Frappe's patch handler. Version requirements (v16: Python 3.14,
+Node 24, MariaDB 11.8) from the Frappe <code>pyproject.toml</code> dependency
+ranges. Lesson links point at this hub's own lessons.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Muhammad Irfaan
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "content.action.edit", "content.action.view", "content.code.copy", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+    
+  </body>
+</html>
