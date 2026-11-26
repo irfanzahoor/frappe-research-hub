@@ -22,6 +22,10 @@ docs_dir: docs
 theme:
   name: material
   language: en
+  # Left-to-right for BOTH languages, like English. Material would
+  # otherwise render the `ur` locale right-to-left automatically, but
+  # Roman Urdu is Latin script and reads like English.
+  direction: ltr
   # Dark blue + white, Irfaan's brand (see stylesheets/extra.css).
   # Light mode by default, with a dark-mode toggle in the header.
   logo: stylesheets/logo.svg

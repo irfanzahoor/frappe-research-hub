@@ -6,7 +6,7 @@ By [Muhammad Irfaan](https://www.linkedin.com/in/irfan-zahoor555/) — Full-Stac
 
 📖 **Read it as a website:** [irfanzahoor.github.io/frappe-research-hub](https://irfanzahoor.github.io/frappe-research-hub/) — search, navigation, dark mode. Same content as this repo.
 
-🌐 **Roman Urdu mein parhein:** [irfanzahoor.github.io/frappe-research-hub/ur](https://irfanzahoor.github.io/frappe-research-hub/ur/) — poora hub Roman Urdu mein, right-to-left layout ke saath. Upar header mein language switcher se bhi badal sakte hain.
+🌐 **Roman Urdu mein parhein:** [irfanzahoor.github.io/frappe-research-hub/ur](https://irfanzahoor.github.io/frappe-research-hub/ur/) — poora hub Roman Urdu mein, English jaisi hi left-to-right layout ke saath. Upar header mein language switcher se bhi badal sakte hain.
 
 ## Start here
 

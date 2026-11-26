@@ -33,10 +33,13 @@ All notable changes to the Frappe Research Hub. Dates are in Asia/Karachi.
   "How we can use it" is standardised to
   "Hum isay kaise istemal kar sakte hain" across the Urdu version.
   CHANGELOG and ROADMAP stay in English (fallback) in the Urdu site.
-- **Urdu site is RTL** — the Roman Urdu version renders
-  right-to-left (`dir="rtl"`, sidebar and text mirrored), as Urdu
-  readers expect. Blockquotes use logical CSS so their accent bar
-  flips to the right side on RTL pages.
+- **Urdu site is LTR, like English** — the Roman Urdu version uses
+  the same left-to-right layout as English (`dir="ltr"` forced in
+  the theme config, overriding Material's automatic RTL for the `ur`
+  locale). Roman Urdu is Latin script, so it reads like English.
+  (It was briefly RTL; changed at the owner's request.)
+  Blockquotes use logical CSS, so their accent bar stays correct
+  in either direction.
 - **Language switch, visible** — both homepages now link to the other
   language at the top, and the header language selector has a gold
   outline so it is easy to spot on every page.
