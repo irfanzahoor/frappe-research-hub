@@ -2,6 +2,22 @@
 
 All notable changes to the Frappe Research Hub. Dates are in Asia/Karachi.
 
+## Unreleased
+
+### Added
+
+- **Docs website** — the hub now reads as a website at
+  https://irfanzahoor.github.io/frappe-research-hub/ (MkDocs Material:
+  search, sidebar navigation, dark/light mode, dark-blue brand).
+  `mkdocs.yml` + `stylesheets/extra.css` + `scripts/sync-docs.sh`
+  build it from the repo's own markdown — no content is duplicated.
+  Deployed to the `gh-pages` branch (GitHub Pages, branch source) by
+  `workspace/custom-connectors/custom.github-research-hub/bin/deploy_pages.py`;
+  redeploy after every content push until the token gains the Workflows
+  permission, when `.github/workflows/docs.yml` (already written, not
+  yet pushed — GitHub blocks workflow files for tokens without that
+  permission) can take over auto-deploy.
+
 ## v1.0 — 2026-11-26
 
 The full path is written: all 21 Framework topics, all 14 ERPNext
