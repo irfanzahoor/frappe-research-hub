@@ -36,6 +36,13 @@
         <xhtml:link rel="alternate" hreflang="ur" href="https://irfanzahoor.github.io/frappe-research-hub/ur/guides/"/>
     </url>
     <url>
+        <loc>https://irfanzahoor.github.io/frappe-research-hub/guides/case-studies/</loc>
+        <lastmod>2026-11-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://irfanzahoor.github.io/frappe-research-hub/guides/case-studies/"/>
+        <xhtml:link rel="alternate" hreflang="ur" href="https://irfanzahoor.github.io/frappe-research-hub/ur/guides/case-studies/"/>
+    </url>
+    <url>
         <loc>https://irfanzahoor.github.io/frappe-research-hub/guides/choosing-apps/</loc>
         <lastmod>2026-11-26</lastmod>
         <changefreq>daily</changefreq>
@@ -461,6 +468,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ur" href="https://irfanzahoor.github.io/frappe-research-hub/ur/guides/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://irfanzahoor.github.io/frappe-research-hub/guides/"/>
+    </url>
+    <url>
+        <loc>https://irfanzahoor.github.io/frappe-research-hub/ur/guides/case-studies/</loc>
+        <lastmod>2026-11-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ur" href="https://irfanzahoor.github.io/frappe-research-hub/ur/guides/case-studies/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://irfanzahoor.github.io/frappe-research-hub/guides/case-studies/"/>
     </url>
     <url>
         <loc>https://irfanzahoor.github.io/frappe-research-hub/ur/guides/choosing-apps/</loc>
