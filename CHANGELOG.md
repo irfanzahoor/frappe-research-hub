@@ -78,6 +78,21 @@ All notable changes to the Frappe Research Hub. Dates are in Asia/Karachi.
   number is framed as approximate, by design — plus a shared
   lessons section and an invitation to contribute your own case
   study. Each case links to the hub lessons it uses.
+- **Cheat sheets** — `guides/cheat-sheets.md` (English + Roman
+  Urdu): one-page quick reference in 5 scannable sections — bench
+  commands (28, from `bench init` to `bench doctor`, with `<site>`
+  placeholders), hooks (`hooks.py`: doc_events, scheduler_events,
+  fixtures, permission hooks, jinja, page/app includes, route rules,
+  one-line example each), Server Script / API essentials
+  (`frappe.get_doc` / `get_list` / `get_all` / `new_doc`,
+  `db.get_value` / `db.set_value` / parameterised `db.sql`,
+  `msgprint` / `throw`, `@frappe.whitelist`, `frappe.call`,
+  `frappe.ui.form.on` skeleton, `frm` vs `cur_frm`, filter
+  operators), a DocType field-types table (18 types with "use when"),
+  and a permissions & roles table (standard roles + the 3 most
+  common permission mistakes from Lesson 09). Commands verified
+  against the official Frappe bench cheatsheet; unconfirmed commands
+  (`bench stop`, Postgres console) left out rather than guessed.
 - **Language switch, visible** — both homepages now link to the other
   language at the top, and the header language selector has a gold
   outline so it is easy to spot on every page.
