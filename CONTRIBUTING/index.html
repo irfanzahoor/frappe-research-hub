@@ -3025,6 +3025,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -3041,6 +3059,97 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ways-to-contribute" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ways to contribute
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-contribute-the-pr-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to contribute (the PR flow)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Content rules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Content rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#roman-urdu-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Roman Urdu rules
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-not-to-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What NOT to change
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Questions?
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -3074,6 +3183,86 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ways-to-contribute" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ways to contribute
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-contribute-the-pr-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to contribute (the PR flow)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Content rules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Content rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#roman-urdu-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Roman Urdu rules
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-not-to-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What NOT to change
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Questions?
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3106,13 +3295,88 @@
 
 
 <h1 id="contributing">Contributing<a class="headerlink" href="#contributing" title="Permanent link">&para;</a></h1>
-<p>This hub is public so anyone can learn from it. Changes only via fork + pull request, reviewed before merge.</p>
+<p>Welcome! This hub is public so anyone can learn Frappe and ERPNext
+from it — and anyone can help make it better. Small fixes are as
+welcome as big new lessons. You do not need to ask permission first:
+open an issue or a pull request, and the owner reviews it before
+anything is merged.</p>
+<blockquote>
+<p><strong>The one rule that matters most:</strong> changes come only through
+fork → branch → pull request, reviewed by the owner. Nobody pushes
+directly to <code>main</code>, and nobody edits a published release.</p>
+</blockquote>
+<h2 id="ways-to-contribute">Ways to contribute<a class="headerlink" href="#ways-to-contribute" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Keep entries short: what, when, how to use it, source link.</li>
-<li>Every claim needs a source: official docs, Frappe Blog/Forum, GitHub release, or a tested example.</li>
-<li>Never promise a version you have not tested.</li>
-<li>One topic per file, beginner first.</li>
+<li><strong>Fix a typo or a broken link</strong> — the smallest, most useful PR.</li>
+<li><strong>Suggest a new lesson</strong> — open an issue first with the
+  lesson-request template, so we agree on the topic before you write it.</li>
+<li><strong>Add a troubleshooting entry</strong> — one real error, in the format of
+  <code>guides/troubleshooting.md</code>: exact error → when it happens → why →
+  the fix, in order → prevention.</li>
+<li><strong>Add a case study</strong> — a real project you worked on, anonymised:
+  no client names, no company names, no quotes, no measured numbers.
+  Approximate numbers only, and say so.</li>
+<li><strong>Add a new app to the catalog</strong> — one entry in the right category
+  file under <code>research/apps-catalog/</code>: GitHub link, install command,
+  and one line on how we can use it.</li>
+<li><strong>Improve a lesson</strong> — a clearer example, a missing common mistake,
+  a command that changed in a new version.</li>
 </ul>
+<h2 id="how-to-contribute-the-pr-flow">How to contribute (the PR flow)<a class="headerlink" href="#how-to-contribute-the-pr-flow" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Fork</strong> the repo, then create a branch: <code>fix/typo-lesson-05</code>
+   or <code>add/lesson-frappe-mail</code>.</li>
+<li><strong>Make the change in BOTH languages</strong> — English and Roman Urdu,
+   same structure, same headings. A content PR with only one language
+   cannot be merged. (See the Roman Urdu rules below.)</li>
+<li><strong>Build the docs site locally</strong> and check your page renders:
+   <code>sh scripts/sync-docs.sh &amp;&amp; .venv-docs/bin/mkdocs build --clean</code>
+   (or <code>mkdocs serve</code> to preview it in the browser).</li>
+<li><strong>Open a pull request</strong> with a short description of what changed
+   and why. The PR template has a checklist — tick it honestly.</li>
+<li>The owner reviews, asks for changes if needed, and merges.</li>
+</ol>
+<h2 id="content-rules">Content rules<a class="headerlink" href="#content-rules" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Lesson format</strong> — every lesson follows the same shape: what it
+  is, a minimal working example with real code or commands, when to
+  use it — and when not to — common mistakes, and a Next link.</li>
+<li><strong>Every claim needs a source</strong> — official docs, Frappe Blog/Forum,
+  GitHub release, or a tested example. Link the source.</li>
+<li><strong>Never promise a version you have not tested.</strong></li>
+<li><strong>Verify facts before writing</strong> — check the DocType or field in the
+  Frappe source or docs, not from memory. (Example: the Contact
+  DocType has <code>user</code> and a <code>links</code> Dynamic Link child table — there
+  is no <code>customer</code> field on Contact.)</li>
+<li><strong>No invented names, quotes, or numbers.</strong> If a number is
+  approximate, say so.</li>
+<li><strong>Keep entries short</strong> — what, when, how to use it, source link.</li>
+<li><strong>One topic per file, beginner first.</strong></li>
+</ul>
+<h3 id="roman-urdu-rules">Roman Urdu rules<a class="headerlink" href="#roman-urdu-rules" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>0 Devanagari / Arabic-script characters</strong> anywhere in the Urdu
+  version. Roman Urdu only — Urdu written in Latin letters.</li>
+<li>Code, commands, DocType and field names, URLs and app names stay
+  in <strong>English</strong>.</li>
+<li>The "How we can use it" line is always
+  <strong>"Hum isay kaise istemal kar sakte hain"</strong>.</li>
+<li>Same headings and structure as the English file, in the same order.</li>
+</ul>
+<h2 id="what-not-to-change">What NOT to change<a class="headerlink" href="#what-not-to-change" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Do not delete files, rewrite published releases, or edit
+  CHANGELOG history entries for released versions.</li>
+<li>Do not change repo settings, topics, <code>mkdocs.yml</code>, or anything
+  under <code>.github/workflows/</code> — open an issue first if you think
+  something there needs changing.</li>
+<li>Do not add a new top-level section or a new guide without
+  discussing it in an issue first.</li>
+</ul>
+<h2 id="questions">Questions?<a class="headerlink" href="#questions" title="Permanent link">&para;</a></h2>
+<p>Open an issue — the templates (lesson request, bug report, new app)
+are there to guide you. If you are not sure which one fits, pick
+the closest and say so in the text.</p>
 
 
 
