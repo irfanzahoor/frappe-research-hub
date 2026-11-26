@@ -32,6 +32,34 @@ All notable changes to the Frappe Research Hub. Dates are in Asia/Karachi.
     permissions, secrets, files, audit.
   - `learn/framework/level-3/16-debugging.md` — tracebacks, logs,
     `bench console`, common errors, asking for help.
+- **Learn: ERPNext — remaining 10 modules**
+  - `learn/erpnext/operations/05-manufacturing.md` — BOM, Work Orders,
+    Job Cards, Production Plan, subcontracting (fmc examples).
+  - `learn/erpnext/operations/06-quality.md` — Quality Inspections,
+    quarantine, Quality Goals and Actions.
+  - `learn/erpnext/operations/07-projects.md` — Projects, Tasks,
+    Timesheets, costing, profitability.
+  - `learn/erpnext/operations/08-assets.md` — Asset lifecycle,
+    depreciation, maintenance, movement.
+  - `learn/erpnext/people/09-hr.md` — Employees, leave, attendance,
+    payroll, shifts (Frappe HR in v16).
+  - `learn/erpnext/people/10-crm.md` — Frappe CRM (leads, deals, web
+    forms); legacy ERPNext CRM scheduled for removal in v17.
+  - `learn/erpnext/people/11-helpdesk.md` — HD Tickets, SLAs, knowledge
+    base (Frappe Helpdesk).
+  - `learn/erpnext/people/12-support-portal.md` — customer portal,
+    Portal Users, communication.
+  - `learn/erpnext/v16/13-studio-flow-insights.md` — Studio mini-apps,
+    Flow AI, Insights dashboards in Desk.
+  - `learn/erpnext/v16/14-cross-module-flows.md` — forecast → MPS → MRP,
+    sales → stock → accounts, production → QC → sales.
+
+### Fixed
+
+- Corrected the legacy ERPNext CRM removal claim: it is scheduled for
+  removal in **v17**, not v16 (ERPNext docs, Frappe Blog Nov 2026).
+  Fixed in `learn/erpnext/people/10-crm.md` and
+  `research/history-2024-2026.md`.
 
 ## v0.1.0-alpha — 2026-11-26
 
