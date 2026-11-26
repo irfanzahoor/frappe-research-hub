@@ -104,6 +104,20 @@ All notable changes to the Frappe Research Hub. Dates are in Asia/Karachi.
   `i18n/ur/learn/...`. The View-source (raw) links are derived from
   the same URL, so they are fixed too. Verified: 0 broken GitHub
   links left across all 119 pages.
+- **Community contributions setup** — `CONTRIBUTING.md` (English +
+  Roman Urdu) expanded from 4 bullets into a full guide: ways to
+  contribute (typo/link fix, new lesson, troubleshooting entry,
+  anonymised case study, new app for the catalog), the PR flow
+  (fork → branch → PR → owner review), content rules (lesson format,
+  every claim needs a source, verify facts before writing, no
+  invented names/quotes/numbers, every content PR needs BOTH
+  English and Roman Urdu), and what not to change. New GitHub issue
+  templates (`.github/ISSUE_TEMPLATE/`: lesson-request, bug-report,
+  new-app) and a pull request template (`.github/pull_request_template.md`)
+  with an EN+UR / links / facts checklist. The Contributing page is
+  already in the docs nav (About → Contributing). Enabling GitHub
+  Discussions still needs the owner in repo Settings — it cannot be
+  done via the API token.
 
 ## v1.0 — 2026-11-26
 

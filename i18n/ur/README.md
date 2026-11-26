@@ -32,16 +32,22 @@
 
 ## Contributing
 
-Yeh hub public hai taake koi bhi is se seekh sake. Changes sirf fork + pull request se, merge se pehle reviewed. [CONTRIBUTING.md](CONTRIBUTING.md) dekhein.
+Yeh hub public hai taake koi bhi is se seekh sake — aur koi bhi is ko
+behtar banane mein madad kar sakta hai. Typo fix karein, nayi lesson
+suggest karein, troubleshooting entry ya case study add karein, ya
+catalog ke liye app suggest karein. Changes sirf fork + pull request
+se, merge se pehle reviewed. Poori guide ke liye
+[CONTRIBUTING.md](CONTRIBUTING.md) dekhein, aur issue kholte waqt
+issue templates (lesson request, bug report, new app) use karein.
 
 ## Status
 
 ![v1.0](https://img.shields.io/badge/status-v1.0-brightgreen)
 
 **v1.0** — poora path likha hua hai: Framework Levels 1–4 (21 lessons),
-14 ERPNext modules, aur 6 guides (Common mistakes, Upgrade
+14 ERPNext modules, aur 8 guides (Common mistakes, Upgrade
 v14 → v15 → v16, Go-live checklist, Choosing apps, Practice project,
-Troubleshooting).
+Troubleshooting, Case studies, Cheat sheets).
 Research (history +
 66-app catalog) 26 Nov 2026 tak complete hai. 
 [CHANGELOG.md](CHANGELOG.md) aur [ROADMAP.md](ROADMAP.md) dekhein.

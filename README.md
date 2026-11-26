@@ -32,7 +32,13 @@ By [Muhammad Irfaan](https://www.linkedin.com/in/irfan-zahoor555/) — Full-Stac
 
 ## Contributing
 
-This hub is public so anyone can learn from it. Changes only via fork + pull request, reviewed before merge. See [CONTRIBUTING.md](CONTRIBUTING.md).
+This hub is public so anyone can learn from it — and anyone can help
+make it better. Fix a typo, suggest a new lesson, add a
+troubleshooting entry or a case study, or suggest an app for the
+catalog. Changes only via fork + pull request, reviewed before merge.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide, and use
+the issue templates (lesson request, bug report, new app) when
+opening an issue.
 
 ## Status
 
