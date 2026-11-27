@@ -67,7 +67,20 @@
 
     
     
-  </head>
+  
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Changelog - Frappe & ERPNext Research Hub" />
+<meta property="og:description" content="Learn Frappe Framework and ERPNext from Noob to Pro — guides, research, new apps & real-world use cases." />
+<meta property="og:image" content="https://irfanzahoor.github.io/frappe-research-hub/assets/images/social/CHANGELOG.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://irfanzahoor.github.io/frappe-research-hub/CHANGELOG/" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="Changelog - Frappe & ERPNext Research Hub" />
+<meta property="twitter:description" content="Learn Frappe Framework and ERPNext from Noob to Pro — guides, research, new apps & real-world use cases." />
+<meta property="twitter:image" content="https://irfanzahoor.github.io/frappe-research-hub/assets/images/social/CHANGELOG.png" />
+</head>
   
   
     
@@ -3481,6 +3494,17 @@
   (It was briefly RTL; changed at the owner's request.)
   Blockquotes use logical CSS, so their accent bar stays correct
   in either direction.</li>
+<li><strong>SEO + social cards</strong> — the docs site now generates one Open Graph
+  card image per page (MkDocs Material <code>social</code> plugin, navy <code>#0b2a5b</code>
+  background, white text, Inter, hub logo; needs Pillow + cairosvg in
+  <code>.venv-docs</code>), so shared links show a proper preview on LinkedIn /
+  X. Key pages (both homepages, guides index, research history +
+  apps catalog, the four new guides) have a specific <code>description:</code>
+  in front matter, in their own language (English / Roman Urdu),
+  under 160 characters; other pages fall back to the site
+  description. <code>site_url</code> is set, so cards and the sitemap use
+  absolute URLs. Still manual: submit the sitemap in Google Search
+  Console.</li>
 <li><strong>Troubleshooting / error library</strong> — <code>guides/troubleshooting.md</code>
   (English + Roman Urdu): 22 real, common Frappe/ERPNext errors in
   three stages — Setup &amp; Install (wrong versions, MariaDB access
