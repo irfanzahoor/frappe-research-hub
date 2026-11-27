@@ -2375,6 +2375,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#code-hasil-karein" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Code hasil karein
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#shuru-karne-se-pehle" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3605,6 +3616,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#code-hasil-karein" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Code hasil karein
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#shuru-karne-se-pehle" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4096,6 +4118,19 @@ Pass).</p>
 <p><strong>Waqt:</strong> taqreeban 3–4 shaamein, har phase taqreeban aik ghanta.
 <strong>Nateeja:</strong> aik site jo aap client ko demo kar sakte hain, aur yeh
 confidence ke agla project aap scratch se bana sakte hain.</p>
+<h2 id="code-hasil-karein">Code hasil karein<a class="headerlink" href="#code-hasil-karein" title="Permanent link">&para;</a></h2>
+<p>Gate Pass scratch se type karne ki zaroorat nahi — working code is repo
+mein <a href="https://github.com/irfanzahoor/frappe-research-hub/tree/main/demo-app"><code>demo-app/</code></a>
+mein hai: <code>lal_mirch_foods</code> app, Gate Pass DocType, us ka controller,
+client script aur hooks ke saath. Install karein:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/frappe-bench
+cp<span class="w"> </span>-r<span class="w"> </span>/path/to/frappe-research-hub/demo-app/lal_mirch_foods<span class="w"> </span>apps/
+bench<span class="w"> </span>--site<span class="w"> </span>spice.local<span class="w"> </span>install-app<span class="w"> </span>lal_mirch_foods
+bench<span class="w"> </span>--site<span class="w"> </span>spice.local<span class="w"> </span>migrate
+</code></pre></div>
+<p>Phir Phase 2 Desk mein follow karein — DocType pehle se wahan hoga.
+Baaki project (BOMs, Work Orders, reports) guide steps hi rehte hain:
+woh khud type karein, seekhna wahin hai.</p>
 <h2 id="shuru-karne-se-pehle">Shuru karne se pehle<a class="headerlink" href="#shuru-karne-se-pehle" title="Permanent link">&para;</a></h2>
 <p><strong>Aap ko chahiye:</strong> ERPNext v16 ke saath aik working bench (dekhein
 <a href="../../learn/framework/level-1/02-bench-sites-apps/">Lesson 02 — Bench, Sites &amp; Apps</a>).

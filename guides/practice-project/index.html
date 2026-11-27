@@ -2375,6 +2375,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#get-the-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get the code
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#before-you-start" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3605,6 +3616,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#get-the-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get the code
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#before-you-start" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4094,6 +4116,19 @@ DocType of your own (the Gate Pass from Lesson 03).</p>
 <p><strong>Time:</strong> about 3–4 evenings, roughly an hour a phase. <strong>Result:</strong> a
 site you can demo to a client, and the confidence that you can build
 the next one from scratch.</p>
+<h2 id="get-the-code">Get the code<a class="headerlink" href="#get-the-code" title="Permanent link">&para;</a></h2>
+<p>You do not have to type the Gate Pass from scratch — the working code
+is in this repo at <a href="https://github.com/irfanzahoor/frappe-research-hub/tree/main/demo-app"><code>demo-app/</code></a>:
+the <code>lal_mirch_foods</code> app with the Gate Pass DocType, its controller,
+the client script, and the hooks. Install it with:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/frappe-bench
+cp<span class="w"> </span>-r<span class="w"> </span>/path/to/frappe-research-hub/demo-app/lal_mirch_foods<span class="w"> </span>apps/
+bench<span class="w"> </span>--site<span class="w"> </span>spice.local<span class="w"> </span>install-app<span class="w"> </span>lal_mirch_foods
+bench<span class="w"> </span>--site<span class="w"> </span>spice.local<span class="w"> </span>migrate
+</code></pre></div>
+<p>Then follow Phase 2 in Desk — the DocType is already there. The rest
+of the project (BOMs, Work Orders, reports) stays as guide steps: type
+those yourself, that is where the learning is.</p>
 <h2 id="before-you-start">Before you start<a class="headerlink" href="#before-you-start" title="Permanent link">&para;</a></h2>
 <p><strong>You need:</strong> a working bench with ERPNext v16 (see
 <a href="../../learn/framework/level-1/02-bench-sites-apps/">Lesson 02 — Bench, Sites &amp; Apps</a>).
