@@ -3556,9 +3556,17 @@
   templates (<code>.github/ISSUE_TEMPLATE/</code>: lesson-request, bug-report,
   new-app) and a pull request template (<code>.github/pull_request_template.md</code>)
   with an EN+UR / links / facts checklist. The Contributing page is
-  already in the docs nav (About → Contributing). Enabling GitHub
-  Discussions still needs the owner in repo Settings — it cannot be
-  done via the API token.</li>
+  already in the docs nav (About → Contributing). GitHub Discussions
+  was then enabled on the repo via the API (the token's Administration
+  permission covers it) — verified <code>has_discussions: true</code>.</li>
+<li><strong>Page comments (giscus)</strong> — every lesson and guide page now has a
+  Comments section at the bottom, backed by GitHub Discussions
+  (category "General", one discussion per page, <code>overrides/partials/comments.html</code>
+  wired through the theme's <code>custom_dir</code>). Readers can ask questions
+  right under the lesson they are reading. The giscus GitHub App
+  still needs the owner to install it at https://github.com/apps/giscus
+  on this repo — until then the widget shows a "giscus is not
+  installed on this repository" message instead of a comment box.</li>
 </ul>
 <h2 id="v10-2026-11-26">v1.0 — 2026-11-26<a class="headerlink" href="#v10-2026-11-26" title="Permanent link">&para;</a></h2>
 <p>The full path is written: all 21 Framework topics, all 14 ERPNext
@@ -3708,7 +3716,23 @@ No lessons yet — outlines only.</p>
 
 
 
-
+<h2 id="__comments">Comments</h2>
+<script src="https://giscus.app/client.js"
+        data-repo="irfanzahoor/frappe-research-hub"
+        data-repo-id="R_kgDOV8vy_A"
+        data-category="General"
+        data-category-id="DIC_kwDOV8vy_M4DMEva"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
                 
               </article>
             </div>
