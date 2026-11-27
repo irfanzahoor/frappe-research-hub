@@ -50,9 +50,9 @@ opening an issue.
 ![v1.0](https://img.shields.io/badge/status-v1.0-brightgreen)
 
 **v1.0** — the full path is written: Framework Levels 1–4 (21 lessons),
-all 14 ERPNext modules, and 8 guides (Common mistakes, Upgrade
+all 14 ERPNext modules, and 9 guides (Common mistakes, Upgrade
 v14 → v15 → v16, Go-live checklist, Choosing apps, Practice project,
-Troubleshooting, Case studies, Cheat sheets).
+Troubleshooting, Case studies, Cheat sheets, Interview prep).
 Research (history +
 66-app catalog) is complete as of 26 Nov 2026. Every lesson and guide
 page has a Comments section (giscus, backed by GitHub Discussions) —

@@ -26,7 +26,7 @@ All notable changes to the Frappe Research Hub. Dates are in Asia/Karachi.
   navy gradient header with a gold rule, teal links, gold title bar
   under every page heading. Dark mode included.
 - **Roman Urdu version** — the whole hub translated into Roman Urdu
-  (59 files: all 21 Framework lessons, 14 ERPNext modules, 6 guides,
+  (62 files: all 21 Framework lessons, 14 ERPNext modules, 9 guides,
   research, root pages). Code, commands, DocType/field names and URLs
   stay in English; prose is Roman Urdu. Switch languages from the
   header: English at `/`, Roman Urdu at `/ur/`. The label
@@ -129,6 +129,21 @@ All notable changes to the Frappe Research Hub. Dates are in Asia/Karachi.
   already in the docs nav (About → Contributing). GitHub Discussions
   was then enabled on the repo via the API (the token's Administration
   permission covers it) — verified `has_discussions: true`.
+- **Interview prep guide** — `guides/interview-prep.md`
+  (English + Roman Urdu): 36 interview questions with short model
+  answers in 5 sections — Frappe Framework basics (10), ERPNext
+  functional (8: order-to-cash, buying/stock, manufacturing, BOM,
+  batch vs serial, HR, CRM), code & debugging (8: spot-the-bug with
+  real snippets — f-string SQL injection, JS field-hiding is not
+  security, `validate` vs `before_insert`, `None` from `get_value`,
+  `frappe.enqueue`, `cur_frm`, `save` vs `submit`, N+1 queries),
+  scenario questions (6: discount approval workflow, gate-pass
+  register, custom report, Excel migration, slow report, production
+  bug at 5pm), and HR / behavioural (4). Ends with a one-week
+  revision plan mapping each day to the hub lessons to revise, and
+  every section links to the lesson that teaches it. No invented
+  salaries, companies or hiring claims — every answer verified
+  against the hub's own lessons.
 - **Page comments (giscus)** — every lesson and guide page now has a
   Comments section at the bottom, backed by GitHub Discussions
   (category "General", one discussion per page, `overrides/partials/comments.html`

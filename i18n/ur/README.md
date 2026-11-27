@@ -50,9 +50,9 @@ issue templates (lesson request, bug report, new app) use karein.
 ![v1.0](https://img.shields.io/badge/status-v1.0-brightgreen)
 
 **v1.0** — poora path likha hua hai: Framework Levels 1–4 (21 lessons),
-14 ERPNext modules, aur 8 guides (Common mistakes, Upgrade
+14 ERPNext modules, aur 9 guides (Common mistakes, Upgrade
 v14 → v15 → v16, Go-live checklist, Choosing apps, Practice project,
-Troubleshooting, Case studies, Cheat sheets).
+Troubleshooting, Case studies, Cheat sheets, Interview prep).
 Research (history +
 66-app catalog) 26 Nov 2026 tak complete hai. 
 [CHANGELOG.md](CHANGELOG.md) aur [ROADMAP.md](ROADMAP.md) dekhein.
