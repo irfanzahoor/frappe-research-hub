@@ -1,5 +1,5 @@
 ---
-description: "Opinionated Frappe and ERPNext guides from real projects: learning paths, upgrades, go-live, practice project, troubleshooting, case studies and cheat sheets."
+description: "Opinionated Frappe and ERPNext guides from real projects: learning paths, upgrades, go-live, practice project, troubleshooting, case studies, cheat sheets and glossary."
 ---
 
 # Guides
@@ -17,3 +17,4 @@ Opinionated guides from real NexTash projects. Short, concrete, no theory withou
 - [Case studies — ERPNext in production](case-studies.md) — a spice manufacturer, a trading/distribution business, and a services company: what was built, what went wrong, and what to take from it
 - [Cheat sheets — quick reference](cheat-sheets.md) — bench commands, hooks, server/API essentials, field types, permissions & roles
 - [Interview prep — 36 questions with model answers](interview-prep.md) — Frappe basics, ERPNext flows, code spot-the-bug, scenarios, HR questions, and a one-week revision plan
+- [Glossary — 56 terms in plain language](glossary.md) — every confusing Frappe/ERPNext word, 1–2 lines each, with a link to the lesson that teaches it

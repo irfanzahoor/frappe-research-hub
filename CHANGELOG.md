@@ -193,6 +193,13 @@ All notable changes to the Frappe Research Hub. Dates are in Asia/Karachi.
   reframed to the same purpose (a personal Noob-to-Pro mastery path:
   developers master Frappe by doing it, functional people use it
   for guidance); guides count is now 10.
+- **Glossary** — `guides/glossary.md` (English + Roman Urdu): 56
+  Frappe/ERPNext terms in plain language, alphabetical with an A–Z
+  index — one or two lines each, with a link to the hub lesson that
+  teaches it. Terms stay in English in the Roman Urdu version; only
+  the definitions are translated. Built for both tracks: developers
+  meet the terms in the lessons, functional people meet them in
+  meetings. Guides count is now 11.
 
 ## v1.0 — 2026-11-26
 
