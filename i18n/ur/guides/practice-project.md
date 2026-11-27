@@ -23,10 +23,12 @@ confidence ke agla project aap scratch se bana sakte hain.
 
 ## Code hasil karein
 
-Gate Pass scratch se type karne ki zaroorat nahi — working code is repo
-mein [`demo-app/`](https://github.com/irfanzahoor/frappe-research-hub/tree/main/demo-app)
+Working code is repo mein [`demo-app/`](https://github.com/irfanzahoor/frappe-research-hub/tree/main/demo-app)
 mein hai: `lal_mirch_foods` app, Gate Pass DocType, us ka controller,
-client script aur hooks ke saath. Install karein:
+client script aur hooks ke saath. Yeh reference hai, shortcut nahi:
+Gate Pass pehle khud banayein (Phase 2), phir app install karke apne
+code ko is se line by line compare karein. Maqsad yeh hai ke aik waqt
+aaye jab aap yeh guide ke baghair bana sakein. Install karein:
 
 ```bash
 cd ~/frappe-bench
@@ -35,7 +37,6 @@ bench --site spice.local install-app lal_mirch_foods
 bench --site spice.local migrate
 ```
 
-Phir Phase 2 Desk mein follow karein — DocType pehle se wahan hoga.
 Baaki project (BOMs, Work Orders, reports) guide steps hi rehte hain:
 woh khud type karein, seekhna wahin hai.
 

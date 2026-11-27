@@ -3,8 +3,11 @@
 The practice-project guide (`guides/practice-project.md`) is text.
 This folder is the code: a real, minimal Frappe app with the Gate Pass
 DocType from Lesson 03, its controller, the client script, and the
-hooks — so you can install it and follow Phase 2 in Desk instead of
-typing the DocType by hand.
+hooks. Use it the right way: build the Gate Pass yourself first, step
+by step, then compare what you built with this code — and keep
+practising until you can build it without the guide. Installing it
+gives you a working starting point to check against, not a substitute
+for doing the work.
 
 ## What is in it
 

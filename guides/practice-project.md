@@ -21,10 +21,13 @@ the next one from scratch.
 
 ## Get the code
 
-You do not have to type the Gate Pass from scratch — the working code
-is in this repo at [`demo-app/`](https://github.com/irfanzahoor/frappe-research-hub/tree/main/demo-app):
+The working code is in this repo at [`demo-app/`](https://github.com/irfanzahoor/frappe-research-hub/tree/main/demo-app):
 the `lal_mirch_foods` app with the Gate Pass DocType, its controller,
-the client script, and the hooks. Install it with:
+the client script, and the hooks. It is a reference, not a shortcut:
+build the Gate Pass yourself first (Phase 2), then install the app and
+compare what you built with the shipped code, line by line. The goal
+is to reach the point where you can build it without the guide.
+Install it with:
 
 ```bash
 cd ~/frappe-bench
@@ -33,9 +36,8 @@ bench --site spice.local install-app lal_mirch_foods
 bench --site spice.local migrate
 ```
 
-Then follow Phase 2 in Desk — the DocType is already there. The rest
-of the project (BOMs, Work Orders, reports) stays as guide steps: type
-those yourself, that is where the learning is.
+The rest of the project (BOMs, Work Orders, reports) stays as guide
+steps: type those yourself, that is where the learning is.
 
 ## Before you start
 
