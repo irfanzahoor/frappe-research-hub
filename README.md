@@ -27,7 +27,7 @@ By [Muhammad Irfaan](https://www.linkedin.com/in/irfan-zahoor555/) — Full-Stac
 
 - **Learn** — ordered learning paths. Beginner first, advanced later. Every topic: what it is, when to use it, a minimal working example, and common mistakes.
 - **Research** — what is new and what is worth using. Sourced from official Frappe Blog, Forum, GitHub releases, Frappe Times and Marketplace, with a source link per item.
-- **Guides** — opinionated, from real NexTash projects: how we actually do upgrades, go-lives, performance fixes and custom apps.
+- **Guides** — opinionated, from real NexTash projects: how we actually do upgrades, go-lives, performance fixes and custom apps. The practice project's code ships in [`demo-app/`](https://github.com/irfanzahoor/frappe-research-hub/tree/main/demo-app) as the installable `lal_mirch_foods` app.
 
 ## Related work
 

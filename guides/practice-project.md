@@ -19,6 +19,24 @@ DocType of your own (the Gate Pass from Lesson 03).
 site you can demo to a client, and the confidence that you can build
 the next one from scratch.
 
+## Get the code
+
+You do not have to type the Gate Pass from scratch — the working code
+is in this repo at [`demo-app/`](https://github.com/irfanzahoor/frappe-research-hub/tree/main/demo-app):
+the `lal_mirch_foods` app with the Gate Pass DocType, its controller,
+the client script, and the hooks. Install it with:
+
+```bash
+cd ~/frappe-bench
+cp -r /path/to/frappe-research-hub/demo-app/lal_mirch_foods apps/
+bench --site spice.local install-app lal_mirch_foods
+bench --site spice.local migrate
+```
+
+Then follow Phase 2 in Desk — the DocType is already there. The rest
+of the project (BOMs, Work Orders, reports) stays as guide steps: type
+those yourself, that is where the learning is.
+
 ## Before you start
 
 **You need:** a working bench with ERPNext v16 (see

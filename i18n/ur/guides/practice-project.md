@@ -21,6 +21,24 @@ Pass).
 **Nateeja:** aik site jo aap client ko demo kar sakte hain, aur yeh
 confidence ke agla project aap scratch se bana sakte hain.
 
+## Code hasil karein
+
+Gate Pass scratch se type karne ki zaroorat nahi — working code is repo
+mein [`demo-app/`](https://github.com/irfanzahoor/frappe-research-hub/tree/main/demo-app)
+mein hai: `lal_mirch_foods` app, Gate Pass DocType, us ka controller,
+client script aur hooks ke saath. Install karein:
+
+```bash
+cd ~/frappe-bench
+cp -r /path/to/frappe-research-hub/demo-app/lal_mirch_foods apps/
+bench --site spice.local install-app lal_mirch_foods
+bench --site spice.local migrate
+```
+
+Phir Phase 2 Desk mein follow karein — DocType pehle se wahan hoga.
+Baaki project (BOMs, Work Orders, reports) guide steps hi rehte hain:
+woh khud type karein, seekhna wahin hai.
+
 ## Shuru karne se pehle
 
 **Aap ko chahiye:** ERPNext v16 ke saath aik working bench (dekhein

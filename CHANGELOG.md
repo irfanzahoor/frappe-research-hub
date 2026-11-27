@@ -152,6 +152,20 @@ All notable changes to the Frappe Research Hub. Dates are in Asia/Karachi.
   still needs the owner to install it at https://github.com/apps/giscus
   on this repo — until then the widget shows a "giscus is not
   installed on this repository" message instead of a comment box.
+- **Demo app code** — `demo-app/lal_mirch_foods/` (linked from the
+  practice-project guide, English + Roman Urdu): the practice
+  project's Gate Pass as a real, minimal, installable Frappe app —
+  Gate Pass + Gate Pass Item DocType JSONs (fields exactly as Lesson
+  03, structure modelled on the real Frappe v16 `ToDo`, `DocField`
+  and `DocType Link` files), controller validation (no future dates,
+  positive qty), the Phase 2 client script, a `doc_events` validate
+  hook, a daily scheduler job that files ToDos for stale draft
+  Delivery passes, two unit tests, and a `pyproject.toml` in the
+  `bench new-app` form. Install is a manual copy into the bench's
+  `apps/` folder (`bench get-app` cannot install a subfolder) —
+  documented in `demo-app/README.md`. Left out on purpose: the print
+  format (Jinja to paste into Desk, per the guide) and the rest of
+  the project (BOMs, Work Orders, reports stay as guide steps).
 
 ## v1.0 — 2026-11-26
 
