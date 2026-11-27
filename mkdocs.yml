@@ -152,6 +152,7 @@ nav:
           - 13 — Studio, Flow & Insights: learn/erpnext/v16/13-studio-flow-insights.md
           - 14 — Cross-Module Flows: learn/erpnext/v16/14-cross-module-flows.md
   - Guides:
+      - Learning Paths: guides/learning-paths.md
       - Overview: guides/README.md
       - Common Mistakes: guides/common-mistakes.md
       - Upgrade v14 → v15 → v16: guides/upgrade-v14-v15-v16.md

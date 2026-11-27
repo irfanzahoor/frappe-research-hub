@@ -1,10 +1,12 @@
 ---
-description: "Opinionated Frappe and ERPNext guides from real projects: upgrades, go-live, practice project, troubleshooting, case studies and cheat sheets."
+description: "Opinionated Frappe and ERPNext guides from real projects: learning paths, upgrades, go-live, practice project, troubleshooting, case studies and cheat sheets."
 ---
 
 # Guides
 
 Opinionated guides from real NexTash projects. Short, concrete, no theory without a use case.
+
+- [Learning paths — developer mastery or functional guidance](learning-paths.md) — two ordered tracks through the hub: master Frappe by building, or understand ERPNext to guide an implementation
 
 - [Upgrade guide — v14 → v15 → v16 readiness check](upgrade-v14-v15-v16.md)
 - [Go-live checklist — data import, permissions, training, cutover](go-live-checklist.md)

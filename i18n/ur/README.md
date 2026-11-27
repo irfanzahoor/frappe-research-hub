@@ -7,6 +7,8 @@ title: "Frappe aur ERPNext — Noob se Pro tak"
 
 > Frappe Framework aur ERPNext Noob se Pro tak seekhein — pehle bench setup se production ERP tak. Guides, research, nayi apps, aur real-world use cases, sab aik jagah.
 
+Yeh aik personal mastery path hai: developers is se hands-on guzarte hain, jab tak woh guide ke baghair Frappe work na bana sakein; functional log is se guidance lete hain.
+
 [Muhammad Irfaan](https://www.linkedin.com/in/irfan-zahoor555/) ki taraf se — Full-Stack Developer & ERP Specialist, NexTash, Lahore. ERP systems bana rahe hain jin par businesses asal mein rely karte hain.
 
 📖 **Is ko website ke tor par parhein:** [irfanzahoor.github.io/frappe-research-hub](https://irfanzahoor.github.io/frappe-research-hub/) — search, navigation, dark mode. Wahi content jo is repo mein hai.
@@ -17,6 +19,7 @@ title: "Frappe aur ERPNext — Noob se Pro tak"
 
 | Path | Kis ke liye hai | Shuruaat |
 |---|---|---|
+| [Learning Paths](guides/learning-paths.md) | Sab — yahan se shuru karein | Developer Mastery Track (Noob se Pro tak) ya Functional Guidance Track |
 | [Learn: Frappe Framework](learn/framework/README.md) | Developers — beginner se advanced tak | Bench, DocTypes, Server & Client Scripts, APIs, Reports, Permissions, Workflows |
 | [Learn: ERPNext Modules](learn/erpnext/README.md) | Implementers, consultants, business users | Accounting, Stock, Manufacturing, Selling, Buying, HR, CRM, Projects, Assets, Helpdesk |
 | [Research: 2024–2026 mein kya badla](research/history-2024-2026.md) | Sab jo catch up kar rahe hain | 18 bari tabdeeliyan, Nov 2024–Nov 2026, har aik ke saath "Hum is ko kaise use kar sakte hain" line |
@@ -50,9 +53,9 @@ issue templates (lesson request, bug report, new app) use karein.
 ![v1.0](https://img.shields.io/badge/status-v1.0-brightgreen)
 
 **v1.0** — poora path likha hua hai: Framework Levels 1–4 (21 lessons),
-14 ERPNext modules, aur 9 guides (Common mistakes, Upgrade
-v14 → v15 → v16, Go-live checklist, Choosing apps, Practice project,
-Troubleshooting, Case studies, Cheat sheets, Interview prep).
+14 ERPNext modules, aur 10 guides (Learning paths, Common mistakes,
+Upgrade v14 → v15 → v16, Go-live checklist, Choosing apps, Practice
+project, Troubleshooting, Case studies, Cheat sheets, Interview prep).
 Research (history +
 66-app catalog) 26 Nov 2026 tak complete hai. 
 [CHANGELOG.md](CHANGELOG.md) aur [ROADMAP.md](ROADMAP.md) dekhein.

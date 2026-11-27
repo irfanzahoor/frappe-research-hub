@@ -1,10 +1,12 @@
 ---
-description: "Asal projects se li gayi Frappe aur ERPNext guides — upgrades, go-live, practice project, troubleshooting, case studies aur cheat sheets."
+description: "Asal projects se li gayi Frappe aur ERPNext guides — learning paths, upgrades, go-live, practice project, troubleshooting, case studies aur cheat sheets."
 ---
 
 # Guides
 
 NexTash ke asal projects se li gayi opinionated guides. Mukhtasar, concrete, koi theory nahi — sirf woh jiska koi use case ho.
+
+- [Learning paths — developer mastery ya functional guidance](learning-paths.md) — hub se guzarne ke do tartib se tracks: bana kar Frappe ko master karein, ya implementation guide karne ke liye ERPNext samjhein
 
 - [Upgrade guide — v14 → v15 → v16 ke liye tayyari check](upgrade-v14-v15-v16.md)
 - [Go-live checklist — data import, permissions, training, cutover](go-live-checklist.md)

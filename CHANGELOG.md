@@ -166,6 +166,23 @@ All notable changes to the Frappe Research Hub. Dates are in Asia/Karachi.
   documented in `demo-app/README.md`. Left out on purpose: the print
   format (Jinja to paste into Desk, per the guide) and the rest of
   the project (BOMs, Work Orders, reports stay as guide steps).
+- **Learning paths** — `guides/learning-paths.md` (English + Roman
+  Urdu): two ordered tracks through the hub, top of the Guides
+  section. The Developer Mastery Track runs Level 1 → 2 → 3 →
+  ERPNext Operations → Level 4, with the ERPNext Core modules
+  interleaved after Level 2, a hands-on checkpoint after each stage
+  (done only when it can be completed without opening the hub), the
+  practice project as capstone with the demo app as reference — not
+  a shortcut — and interview prep as the final check; mastery is
+  defined explicitly (build the Gate Pass app + the practice-project
+  flow from a blank bench, without the hub). The Functional Guidance
+  Track needs no code: what Frappe/ERPNext is, the business flows,
+  choosing apps, case studies, working with developers, and what
+  can go wrong — ending with how to use it in a real
+  implementation. Time estimates are labelled rough. README intro
+  reframed to the same purpose (a personal Noob-to-Pro mastery path:
+  developers master Frappe by doing it, functional people use it
+  for guidance); guides count is now 10.
 
 ## v1.0 — 2026-11-26
 

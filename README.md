@@ -7,6 +7,8 @@ title: "Frappe & ERPNext — Noob to Pro"
 
 > Learn Frappe Framework and ERPNext from Noob to Pro — from first bench setup to production ERP. Guides, research, new apps, and real-world use cases, in one place.
 
+This is a personal mastery path: developers work through it hands-on until they can build Frappe work without the guide; functional people use it for guidance.
+
 By [Muhammad Irfaan](https://www.linkedin.com/in/irfan-zahoor555/) — Full-Stack Developer & ERP Specialist, NexTash, Lahore. Building ERP systems businesses actually rely on.
 
 📖 **Read it as a website:** [irfanzahoor.github.io/frappe-research-hub](https://irfanzahoor.github.io/frappe-research-hub/) — search, navigation, dark mode. Same content as this repo. Every page has its own social preview card and the key pages have a meta description for search.
@@ -17,6 +19,7 @@ By [Muhammad Irfaan](https://www.linkedin.com/in/irfan-zahoor555/) — Full-Stac
 
 | Path | Who it is for | Start |
 |---|---|---|
+| [Learning Paths](guides/learning-paths.md) | Everyone — start here | Developer Mastery Track (Noob to Pro) or Functional Guidance Track |
 | [Learn: Frappe Framework](learn/framework/README.md) | Developers — beginner to advanced | Bench, DocTypes, Server & Client Scripts, APIs, Reports, Permissions, Workflows |
 | [Learn: ERPNext Modules](learn/erpnext/README.md) | Implementers, consultants, business users | Accounting, Stock, Manufacturing, Selling, Buying, HR, CRM, Projects, Assets, Helpdesk |
 | [Research: What changed 2024–2026](research/history-2024-2026.md) | Everyone catching up | 18 major changes, Nov 2024–Nov 2026, each with a "How we can use it" line |
@@ -50,9 +53,10 @@ opening an issue.
 ![v1.0](https://img.shields.io/badge/status-v1.0-brightgreen)
 
 **v1.0** — the full path is written: Framework Levels 1–4 (21 lessons),
-all 14 ERPNext modules, and 9 guides (Common mistakes, Upgrade
-v14 → v15 → v16, Go-live checklist, Choosing apps, Practice project,
-Troubleshooting, Case studies, Cheat sheets, Interview prep).
+all 14 ERPNext modules, and 10 guides (Learning paths, Common
+mistakes, Upgrade v14 → v15 → v16, Go-live checklist, Choosing apps,
+Practice project, Troubleshooting, Case studies, Cheat sheets,
+Interview prep).
 Research (history +
 66-app catalog) is complete as of 26 Nov 2026. Every lesson and guide
 page has a Comments section (giscus, backed by GitHub Discussions) —
