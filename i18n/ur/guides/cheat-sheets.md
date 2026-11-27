@@ -1,3 +1,7 @@
+---
+description: "Aik page mein Frappe aur ERPNext cheat sheets — 28 bench commands, 17 hooks, API essentials, field types aur permissions."
+---
+
 # Cheat Sheets — Frappe & ERPNext Quick Reference
 
 Ye woh pages hain jo kaam karte waqt khulay rakhnay chahiye. Koi lambi

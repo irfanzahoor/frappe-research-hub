@@ -1,3 +1,7 @@
+---
+description: "Opinionated Frappe and ERPNext guides from real projects: upgrades, go-live, practice project, troubleshooting, case studies and cheat sheets."
+---
+
 # Guides
 
 Opinionated guides from real NexTash projects. Short, concrete, no theory without a use case.

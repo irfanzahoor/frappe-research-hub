@@ -1,3 +1,7 @@
+---
+description: "66 genuinely useful Frappe and ERPNext apps in 11 categories, each with what it does, why it helps and how to use it."
+---
+
 # Frappe / ERPNext Apps Catalog
 
 > Every genuinely useful Frappe/ERPNext app found by global research up to 26 November 2026. Each app is short: what it does, why it helps, one **How we can use it** line for NexTash work, and the GitHub link + install command. Test on staging first; never promise a version you have not tested — entries marked "not stated" need a README check before proposing.

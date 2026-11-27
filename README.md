@@ -1,10 +1,15 @@
+---
+description: "Learn Frappe Framework and ERPNext from Noob to Pro — 21 lessons, 14 modules, guides, new apps and real-world use cases."
+title: "Frappe & ERPNext — Noob to Pro"
+---
+
 # Frappe Research Hub
 
 > Learn Frappe Framework and ERPNext from Noob to Pro — from first bench setup to production ERP. Guides, research, new apps, and real-world use cases, in one place.
 
 By [Muhammad Irfaan](https://www.linkedin.com/in/irfan-zahoor555/) — Full-Stack Developer & ERP Specialist, NexTash, Lahore. Building ERP systems businesses actually rely on.
 
-📖 **Read it as a website:** [irfanzahoor.github.io/frappe-research-hub](https://irfanzahoor.github.io/frappe-research-hub/) — search, navigation, dark mode. Same content as this repo.
+📖 **Read it as a website:** [irfanzahoor.github.io/frappe-research-hub](https://irfanzahoor.github.io/frappe-research-hub/) — search, navigation, dark mode. Same content as this repo. Every page has its own social preview card and the key pages have a meta description for search.
 
 🌐 **Roman Urdu mein parhein:** [irfanzahoor.github.io/frappe-research-hub/ur](https://irfanzahoor.github.io/frappe-research-hub/ur/) — poora hub Roman Urdu mein, English jaisi hi left-to-right layout ke saath. Upar header mein language switcher se bhi badal sakte hain.
 

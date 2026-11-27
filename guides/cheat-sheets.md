@@ -1,3 +1,7 @@
+---
+description: "One-page Frappe and ERPNext cheat sheets — 28 bench commands, 17 hooks, API essentials, field types and permissions."
+---
+
 # Cheat Sheets — Frappe & ERPNext Quick Reference
 
 The pages to keep open while you work. No explanations — just the

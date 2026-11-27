@@ -1,3 +1,7 @@
+---
+description: "Build a spice factory end to end in Frappe and ERPNext — Gate Pass, stock, sales, quality gate, invoicing — in 8 guided phases."
+---
+
 # Practice Project — Build a Spice Factory, End to End
 
 Reading lessons teaches you the pieces. This project teaches you how

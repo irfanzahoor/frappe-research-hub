@@ -92,6 +92,15 @@ plugins:
         - locale: ur
           name: Roman Urdu
           build: true
+  # Social cards (Open Graph images, one per page) in the site's
+  # navy/gold brand colours. Needs Pillow + cairosvg in .venv-docs
+  # (the logo is an SVG). Cards are generated into site/ at build
+  # time and deployed with gh-pages — they are not committed.
+  - social:
+      cards_layout_options:
+        background_color: "#0b2a5b"
+        color: "#ffffff"
+        font_family: Inter
 
 nav:
   - Home: README.md

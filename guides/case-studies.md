@@ -1,3 +1,7 @@
+---
+description: "Three real-world ERPNext case studies — spice manufacturing, trading and services — what was built, what went wrong, what it taught."
+---
+
 # Case Studies — ERPNext in Production
 
 Lessons teach you the pieces. These case studies show what happens

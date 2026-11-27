@@ -1,3 +1,7 @@
+---
+description: "Asal projects se li gayi Frappe aur ERPNext guides — upgrades, go-live, practice project, troubleshooting, case studies aur cheat sheets."
+---
+
 # Guides
 
 NexTash ke asal projects se li gayi opinionated guides. Mukhtasar, concrete, koi theory nahi — sirf woh jiska koi use case ho.

@@ -40,6 +40,17 @@ All notable changes to the Frappe Research Hub. Dates are in Asia/Karachi.
   (It was briefly RTL; changed at the owner's request.)
   Blockquotes use logical CSS, so their accent bar stays correct
   in either direction.
+- **SEO + social cards** — the docs site now generates one Open Graph
+  card image per page (MkDocs Material `social` plugin, navy `#0b2a5b`
+  background, white text, Inter, hub logo; needs Pillow + cairosvg in
+  `.venv-docs`), so shared links show a proper preview on LinkedIn /
+  X. Key pages (both homepages, guides index, research history +
+  apps catalog, the four new guides) have a specific `description:`
+  in front matter, in their own language (English / Roman Urdu),
+  under 160 characters; other pages fall back to the site
+  description. `site_url` is set, so cards and the sitemap use
+  absolute URLs. Still manual: submit the sitemap in Google Search
+  Console.
 - **Troubleshooting / error library** — `guides/troubleshooting.md`
   (English + Roman Urdu): 22 real, common Frappe/ERPNext errors in
   three stages — Setup & Install (wrong versions, MariaDB access

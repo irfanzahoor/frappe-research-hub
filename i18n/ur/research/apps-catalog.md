@@ -1,3 +1,7 @@
+---
+description: "11 categories mein 66 waqai useful Frappe aur ERPNext apps — har aik mein kya karta hai, kyun faida deta hai aur kaise use karein."
+---
+
 # Frappe / ERPNext Apps Catalog
 
 > Global research se mile har waqai useful Frappe/ERPNext app, 26 November 2026 tak. Har app chhoti hai: yeh kya karta hai, kyun faida deta hai, NexTash ke kaam ke liye ek **Hum isay kaise use kar sakte hain** line, aur GitHub link + install command. Pehle staging par test karein; woh version kabhi promise na karein jo test nahi kiya — "not stated" wali entries propose karne se pehle README check karna zaroori hai.

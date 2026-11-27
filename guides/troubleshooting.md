@@ -1,3 +1,7 @@
+---
+description: "22 common Frappe and ERPNext errors with the exact error, why it happens and the fix — setup, development and production."
+---
+
 # Troubleshooting — The Error Library
 
 The page you open when something breaks. Every entry is a real error

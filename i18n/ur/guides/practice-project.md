@@ -1,3 +1,7 @@
+---
+description: "Frappe aur ERPNext mein masala factory end to end banayein — Gate Pass, stock, sales, quality gate, invoicing — 8 guided phases mein."
+---
+
 # Practice Project — Masala Factory
 
 Lessons parhne se aap ko pieces samajh aate hain. Yeh project aap ko

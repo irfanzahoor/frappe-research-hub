@@ -1,3 +1,8 @@
+---
+description: "Frappe Framework aur ERPNext Noob se Pro tak seekhein — 21 lessons, 14 modules, guides, nayi apps aur real-world use cases."
+title: "Frappe aur ERPNext — Noob se Pro tak"
+---
+
 # Frappe Research Hub
 
 > Frappe Framework aur ERPNext Noob se Pro tak seekhein — pehle bench setup se production ERP tak. Guides, research, nayi apps, aur real-world use cases, sab aik jagah.

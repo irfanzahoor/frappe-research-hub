@@ -14,4 +14,7 @@ cp -r learn guides research stylesheets docs/en/
 cp README.md CHANGELOG.md ROADMAP.md CONTRIBUTING.md docs/en/
 cp -r i18n/ur/* docs/ur/
 cp -r stylesheets docs/ur/
+# Also at docs/ root, so the social plugin finds the logo at
+# docs/stylesheets/logo.svg (it resolves theme.logo from docs_dir).
+cp -r stylesheets docs/
 echo "docs/ synced: $(find docs/en -name '*.md' | wc -l) English + $(find docs/ur -name '*.md' | wc -l) Roman Urdu markdown files"

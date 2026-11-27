@@ -1,3 +1,7 @@
+---
+description: "Frappe aur ERPNext ki 22 aam ghaltiyan — exact error, wajah aur fix — setup, development aur production ke liye."
+---
+
 # Troubleshooting — Error Library
 
 Woh page jo aap kholte hain jab kuch toot jaye. Har entry aik asal

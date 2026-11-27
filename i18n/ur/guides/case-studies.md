@@ -1,3 +1,7 @@
+---
+description: "Teen real-world ERPNext case studies — spice manufacturing, trading aur services — kya banaya, kya galat hua, kya seekha."
+---
+
 # Case Studies — ERPNext Production Mein
 
 Lessons aap ko pieces sikhati hain. Yeh case studies dikhati hain ke
