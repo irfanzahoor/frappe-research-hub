@@ -1,0 +1,3967 @@
+
+<!doctype html>
+<html lang="ur" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Hub se guzarne ke do learning paths — Developer Mastery Track, Frappe ko bana kar master karne ke liye, aur Functional Guidance Track, non-developers ke liye.">
+      
+      
+        <meta name="author" content="Muhammad Irfaan">
+      
+      
+        <link rel="canonical" href="https://irfanzahoor.github.io/frappe-research-hub/ur/guides/learning-paths/">
+      
+      
+        <link rel="prev" href="../../learn/erpnext/v16/14-cross-module-flows/">
+      
+      
+        <link rel="next" href="../">
+      
+      
+        
+          <link rel="alternate" href="../../../guides/learning-paths/" hreflang="en">
+        
+          <link rel="alternate" href="./" hreflang="ur">
+        
+      
+      
+      <link rel="icon" href="../../../stylesheets/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
+    
+    
+      
+        <title>Learning Paths - Frappe & ERPNext Research Hub</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Learning Paths - Frappe & ERPNext Research Hub" />
+<meta property="og:description" content="Hub se guzarne ke do learning paths — Developer Mastery Track, Frappe ko bana kar master karne ke liye, aur Functional Guidance Track, non-developers ke liye." />
+<meta property="og:image" content="https://irfanzahoor.github.io/frappe-research-hub/assets/images/social/ur/guides/learning-paths.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://irfanzahoor.github.io/frappe-research-hub/ur/guides/learning-paths/" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="Learning Paths - Frappe & ERPNext Research Hub" />
+<meta property="twitter:description" content="Hub se guzarne ke do learning paths — Developer Mastery Track, Frappe ko bana kar master karne ke liye, aur Functional Guidance Track, non-developers ke liye." />
+<meta property="twitter:image" content="https://irfanzahoor.github.io/frappe-research-hub/assets/images/social/ur/guides/learning-paths.png" />
+</head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#learning-paths-developer-mastery-ya-functional-guidance" class="md-skip">
+          براہِ راست مواد پر جائیں
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="سر تحریر">
+    <a href="../../" title="Frappe &amp; ERPNext Research Hub" class="md-header__button md-logo" aria-label="Frappe & ERPNext Research Hub" data-md-component="logo">
+      
+  <img src="../../../stylesheets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Frappe & ERPNext Research Hub
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Learning Paths
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="زبان کا انتخاب کریں">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../guides/learning-paths/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="ur" class="md-select__link">
+              Roman Urdu
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="تلاش کریں" placeholder="تلاش کریں" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="تلاش">
+        
+        <button type="reset" class="md-search__icon md-icon" title="صاف کریں" aria-label="صاف کریں" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            تلاش کا آغاز ہو رہا ہے
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/irfanzahoor/frappe-research-hub" title="ریپازٹری پر جائیں" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    irfanzahoor/frappe-research-hub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="ٹیبز" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../learn/framework/" class="md-tabs__link">
+          
+  
+  
+  Learn: Frappe Framework
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../learn/erpnext/" class="md-tabs__link">
+          
+  
+  
+  Learn: ERPNext Modules
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Guides
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../research/history-2024-2026/" class="md-tabs__link">
+          
+  
+  
+  Research
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../CHANGELOG/" class="md-tabs__link">
+          
+  
+  
+  About
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="رہنمائی" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../" title="Frappe &amp; ERPNext Research Hub" class="md-nav__button md-logo" aria-label="Frappe & ERPNext Research Hub" data-md-component="logo">
+      
+  <img src="../../../stylesheets/logo.svg" alt="logo">
+
+    </a>
+    Frappe & ERPNext Research Hub
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/irfanzahoor/frappe-research-hub" title="ریپازٹری پر جائیں" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    irfanzahoor/frappe-research-hub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learn: Frappe Framework
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Learn: Frappe Framework
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 1 — Start
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 1 — Start
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-1/01-what-is-frappe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 — What is Frappe
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-1/02-bench-sites-apps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 — Bench, Sites & Apps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-1/03-first-doctype/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 — Your First DocType
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-1/04-desk-list-form/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 — Desk, List & Form
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 2 — Build
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 2 — Build
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-2/05-server-scripts-events/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 — Server Scripts & Document Events
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-2/06-client-scripts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 — Client Scripts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-2/07-apis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 — APIs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-2/08-reports-print-formats/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 — Reports & Print Formats
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-2/09-permissions-roles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 — Permissions & Roles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-2/10-workflows-assignments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 — Workflows & Assignments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 3 — Ship
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 3 — Ship
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-3/11-scheduler-jobs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11 — Scheduler & Background Jobs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-3/12-notifications-email/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12 — Notifications, Email & Integrations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-3/13-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13 — Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-3/14-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14 — Performance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-3/15-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    15 — Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-3/16-debugging/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    16 — Debugging
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 4 — Advanced
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 4 — Advanced
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-4/17-studio-flow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    17 — Studio & Flow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-4/18-insights/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    18 — Insights
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-4/19-website-portal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    19 — Website & Portal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-4/20-upgrades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    20 — Upgrades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/framework/level-4/21-ops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    21 — Ops
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learn: ERPNext Modules
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Learn: ERPNext Modules
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Core
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/core/01-accounting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 — Accounting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/core/02-stock-inventory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 — Stock & Inventory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/core/03-selling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 — Selling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/core/04-buying/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 — Buying
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operations
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Operations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/operations/05-manufacturing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 — Manufacturing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/operations/06-quality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 — Quality
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/operations/07-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 — Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/operations/08-assets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 — Assets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    People
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    People
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/people/09-hr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 — HR
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/people/10-crm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 — CRM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/people/11-helpdesk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11 — Helpdesk
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/people/12-support-portal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12 — Support & Portal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v16
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    v16
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/v16/13-studio-flow-insights/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13 — Studio, Flow & Insights
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/erpnext/v16/14-cross-module-flows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14 — Cross-Module Flows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learning Paths
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learning Paths
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="فہرست">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      فہرست
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aap-kaun-sa-track-hain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aap kaun sa track hain?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#track-1-developer-mastery-noob-se-pro-tak" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Track 1 — Developer Mastery: Noob se Pro tak
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Track 1 — Developer Mastery: Noob se Pro tak">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stage-1-foundations-lag-bhag-1-hafta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 1 — Foundations (lag bhag 1 hafta)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-2-build-lag-bhag-2-haftay" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 2 — Build (lag bhag 2 haftay)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-3-ship-lag-bhag-2-haftay" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 3 — Ship (lag bhag 2 haftay)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-4-operations-lag-bhag-2-haftay" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 4 — Operations (lag bhag 2 haftay)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-5-advanced-lag-bhag-2-haftay" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 5 — Advanced (lag bhag 2 haftay)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-6-capstone-practice-project-lag-bhag-1-hafta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 6 — Capstone: practice project (lag bhag 1 hafta)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-7-aakhri-check-interview-ki-tayyari" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 7 — Aakhri check: interview ki tayyari
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#master-ka-matlab-kya-hai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "Master" ka matlab kya hai
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#track-2-functional-guidance-erpnext-samjhein-implementation-ko-guide-karein" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Track 2 — Functional Guidance: ERPNext samjhein, implementation ko guide karein
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Track 2 — Functional Guidance: ERPNext samjhein, implementation ko guide karein">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stage-1-frappe-aur-erpnext-kya-hain-chand-shaamein" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 1 — Frappe aur ERPNext kya hain (chand shaamein)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-2-woh-flows-jo-business-chalate-hain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 2 — Woh flows jo business chalate hain
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-3-sahi-tools-chunein" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 3 — Sahi tools chunein
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-4-asal-implementations-se-seekhein" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 4 — Asal implementations se seekhein
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-5-developers-ke-saath-kaam-karein" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 5 — Developers ke saath kaam karein
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-6-jab-cheezein-ghalat-ho-jayein" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 6 — Jab cheezein ghalat ho jayein
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-track-ko-asal-implementation-mein-kaise-use-karein" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Is track ko asal implementation mein kaise use karein
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common-mistakes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Common Mistakes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../upgrade-v14-v15-v16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Upgrade v14 → v15 → v16
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../go-live-checklist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Go-Live Checklist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../choosing-apps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choosing Apps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice-project/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Practice Project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../case-studies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Case Studies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cheat-sheets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cheat Sheets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interview-prep/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interview Prep
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Research
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/history-2024-2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What Changed 2024–2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apps Catalog
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Apps Catalog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/pos-retail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    POS & Retail
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/invoicing-ocr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Invoicing & OCR
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/hr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HR
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/crm-support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CRM & Support
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/manufacturing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manufacturing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/ecommerce/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    E-Commerce
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/integrations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integrations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/localisations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Localisations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/developer-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Developer Tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/apps-catalog/productivity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Productivity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    About
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ROADMAP/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CONTRIBUTING/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="فہرست">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      فہرست
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aap-kaun-sa-track-hain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aap kaun sa track hain?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#track-1-developer-mastery-noob-se-pro-tak" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Track 1 — Developer Mastery: Noob se Pro tak
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Track 1 — Developer Mastery: Noob se Pro tak">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stage-1-foundations-lag-bhag-1-hafta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 1 — Foundations (lag bhag 1 hafta)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-2-build-lag-bhag-2-haftay" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 2 — Build (lag bhag 2 haftay)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-3-ship-lag-bhag-2-haftay" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 3 — Ship (lag bhag 2 haftay)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-4-operations-lag-bhag-2-haftay" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 4 — Operations (lag bhag 2 haftay)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-5-advanced-lag-bhag-2-haftay" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 5 — Advanced (lag bhag 2 haftay)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-6-capstone-practice-project-lag-bhag-1-hafta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 6 — Capstone: practice project (lag bhag 1 hafta)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-7-aakhri-check-interview-ki-tayyari" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 7 — Aakhri check: interview ki tayyari
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#master-ka-matlab-kya-hai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "Master" ka matlab kya hai
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#track-2-functional-guidance-erpnext-samjhein-implementation-ko-guide-karein" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Track 2 — Functional Guidance: ERPNext samjhein, implementation ko guide karein
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Track 2 — Functional Guidance: ERPNext samjhein, implementation ko guide karein">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stage-1-frappe-aur-erpnext-kya-hain-chand-shaamein" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 1 — Frappe aur ERPNext kya hain (chand shaamein)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-2-woh-flows-jo-business-chalate-hain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 2 — Woh flows jo business chalate hain
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-3-sahi-tools-chunein" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 3 — Sahi tools chunein
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-4-asal-implementations-se-seekhein" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 4 — Asal implementations se seekhein
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-5-developers-ke-saath-kaam-karein" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 5 — Developers ke saath kaam karein
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-6-jab-cheezein-ghalat-ho-jayein" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 6 — Jab cheezein ghalat ho jayein
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-track-ko-asal-implementation-mein-kaise-use-karein" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Is track ko asal implementation mein kaise use karein
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/irfanzahoor/frappe-research-hub/edit/main/i18n/ur/guides/learning-paths.md" title="اس صفحے میں ترمیم کریں" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/irfanzahoor/frappe-research-hub/raw/main/i18n/ur/guides/learning-paths.md" title="اس صفحہ کا ماخذ دیکھیں" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="learning-paths-developer-mastery-ya-functional-guidance">Learning Paths — Developer Mastery ya Functional Guidance<a class="headerlink" href="#learning-paths-developer-mastery-ya-functional-guidance" title="Permanent link">&para;</a></h1>
+<p>Yeh hub aik personal mastery path hai, reading list nahi. Yeh is
+liye banaya gaya hai ke aik banda is se akela guzre, aur jab tak wo
+kaam guide ke baghair na kar sake, tab tak rukay nahi. Is se guzarne
+ke do tareeqe hain, is hisab se ke aap kaun hain — aik chunein, aur
+us ko tartib se follow karein. Aage peeche mat kudain; har stage
+pichli stage ko assume karti hai.</p>
+<h2 id="aap-kaun-sa-track-hain">Aap kaun sa track hain?<a class="headerlink" href="#aap-kaun-sa-track-hain" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Developer Mastery Track</strong> — aap code likhte hain, ya likhna
+  chahte hain. Aap asal bench par asal cheezein banayenge, keyboard
+  par haath rakh kar, aur har stage ko is tarah prove karenge ke
+  guide dekhe baghair kar ke dikhayenge. Is track ko follow karein
+  agar aap ka goal Frappe work ko <em>master</em> karna hai.</li>
+<li><strong>Functional Guidance Track</strong> — aap code nahi likhte: ERP
+  consultant, business user, manager, ya woh banda jo decide karta
+  hai ke system ko kya karna hai. Aap samajhne, evaluate karne aur
+  implementation ko guide karne ke liye parhenge — code ke baghair.</li>
+</ul>
+<p>Aap kisi bhi waqt track badal sakte hain. Jo developer Mastery Track
+khatam kar le, usay bhi Functional Track ki case studies parhni
+chahiye; jo functional banda DocType kaise kaam karta hai, yeh jan'na
+chahe, wo Level 1 mein jhank sakta hai. Yeh tracks raaste hain,
+deewarein nahi.</p>
+<hr />
+<h2 id="track-1-developer-mastery-noob-se-pro-tak">Track 1 — Developer Mastery: Noob se Pro tak<a class="headerlink" href="#track-1-developer-mastery-noob-se-pro-tak" title="Permanent link">&para;</a></h2>
+<p><strong>Tareeqa yeh hai:</strong> lessons parhein, phir checkpoint karein. Aik
+checkpoint tab hi complete hota hai jab aap usay <em>hub khole baghair</em>
+kar sakein — na guide, na notes, sirf aik khaali bench aur aap ki
+yaad-dasht. Agar na kar sakein, to wapas ja kar dobara parhein; isi
+mein asal seekh hai. Neeche diye gaye time estimates aik rough guide
+hain, un ke liye jo haftay mein chand shaamein parhte hain.</p>
+<h3 id="stage-1-foundations-lag-bhag-1-hafta">Stage 1 — Foundations (lag bhag 1 hafta)<a class="headerlink" href="#stage-1-foundations-lag-bhag-1-hafta" title="Permanent link">&para;</a></h3>
+<p>Tartib se parhein:</p>
+<ul>
+<li><a href="../../learn/framework/level-1/01-what-is-frappe/">Lesson 01 — What is Frappe</a></li>
+<li><a href="../../learn/framework/level-1/02-bench-sites-apps/">Lesson 02 — Bench, Sites &amp; Apps</a></li>
+<li><a href="../../learn/framework/level-1/03-first-doctype/">Lesson 03 — Your First DocType</a></li>
+<li><a href="../../learn/framework/level-1/04-desk-list-form/">Lesson 04 — Desk, List &amp; Form</a></li>
+</ul>
+<p><strong>Checkpoint:</strong> aik fresh bench par, nayi app banayein aur Gate Pass
+DocType shuru se banayein — fields <code>naming_series</code>,
+<code>gate_pass_date</code>, <code>visitor_name</code>, <code>company</code>, <code>purpose</code>, plus Gate
+Pass Item child table (<code>item_name</code>, <code>qty</code>, <code>direction</code>) — phir Desk
+mein aik Gate Pass banayein aur submit karein. Guide khole baghair.</p>
+<h3 id="stage-2-build-lag-bhag-2-haftay">Stage 2 — Build (lag bhag 2 haftay)<a class="headerlink" href="#stage-2-build-lag-bhag-2-haftay" title="Permanent link">&para;</a></h3>
+<p>Tartib se parhein:</p>
+<ul>
+<li><a href="../../learn/framework/level-2/05-server-scripts-events/">Lesson 05 — Server Scripts &amp; Document Events</a></li>
+<li><a href="../../learn/framework/level-2/06-client-scripts/">Lesson 06 — Client Scripts</a></li>
+<li><a href="../../learn/framework/level-2/07-apis/">Lesson 07 — APIs</a></li>
+<li><a href="../../learn/framework/level-2/08-reports-print-formats/">Lesson 08 — Reports &amp; Print Formats</a></li>
+<li><a href="../../learn/framework/level-2/09-permissions-roles/">Lesson 09 — Permissions &amp; Roles</a></li>
+<li><a href="../../learn/framework/level-2/10-workflows-assignments/">Lesson 10 — Workflows &amp; Assignments</a></li>
+</ul>
+<p>Phir woh documents jin ko aap automate karenge — ERPNext Core modules:</p>
+<ul>
+<li><a href="../../learn/erpnext/core/01-accounting/">Module 01 — Accounting</a></li>
+<li><a href="../../learn/erpnext/core/02-stock-inventory/">Module 02 — Stock &amp; Inventory</a></li>
+<li><a href="../../learn/erpnext/core/03-selling/">Module 03 — Selling</a></li>
+<li><a href="../../learn/erpnext/core/04-buying/">Module 04 — Buying</a></li>
+</ul>
+<p><strong>Checkpoint:</strong> apne Gate Pass mein server-side validation add
+karein (future dates nahi, positive quantities) aur aik client script
+jo date set kare aur direction par react kare — khud likhein,
+yaad-dasht se. Apna kaam baad mein demo app se compare karein,
+pehle nahi. Jab atak jayein, to <a href="../cheat-sheets/">Cheat Sheets</a>
+use karein — woh cheezein dekhne ke liye hain, poore solutions
+copy karne ke liye nahi.</p>
+<h3 id="stage-3-ship-lag-bhag-2-haftay">Stage 3 — Ship (lag bhag 2 haftay)<a class="headerlink" href="#stage-3-ship-lag-bhag-2-haftay" title="Permanent link">&para;</a></h3>
+<p>Tartib se parhein:</p>
+<ul>
+<li><a href="../../learn/framework/level-3/11-scheduler-jobs/">Lesson 11 — Scheduler &amp; Background Jobs</a></li>
+<li><a href="../../learn/framework/level-3/12-notifications-email/">Lesson 12 — Notifications, Email &amp; Integrations</a></li>
+<li><a href="../../learn/framework/level-3/13-testing/">Lesson 13 — Testing</a></li>
+<li><a href="../../learn/framework/level-3/14-performance/">Lesson 14 — Performance</a></li>
+<li><a href="../../learn/framework/level-3/15-security/">Lesson 15 — Security</a></li>
+<li><a href="../../learn/framework/level-3/16-debugging/">Lesson 16 — Debugging</a></li>
+</ul>
+<p><strong>Checkpoint:</strong> apni app mein aik daily scheduler job add karein jo
+stale draft Gate Passes dhoonde, aur aik Script Report likhein jo
+Gate Passes ko din ke hisab se list kare. Phir jaan boojh kar kuch
+tor dein — aik kharab migration, aik ghalat permission — aur usay
+sirf traceback aur
+<a href="../../learn/framework/level-3/16-debugging/">Lesson 16</a> se theek
+karein. Debugging kaam ka hissa hai, is mein rukawat nahi.</p>
+<h3 id="stage-4-operations-lag-bhag-2-haftay">Stage 4 — Operations (lag bhag 2 haftay)<a class="headerlink" href="#stage-4-operations-lag-bhag-2-haftay" title="Permanent link">&para;</a></h3>
+<p>Woh ERPNext modules jo asal business chalate hain. Manufacturing
+aur Quality practice project ke stock phases <em>se pehle</em> parhein —
+wahan aap ko in ki zaroorat paregi:</p>
+<ul>
+<li><a href="../../learn/erpnext/operations/05-manufacturing/">Module 05 — Manufacturing</a></li>
+<li><a href="../../learn/erpnext/operations/06-quality/">Module 06 — Quality</a></li>
+<li><a href="../../learn/erpnext/operations/07-projects/">Module 07 — Projects</a></li>
+<li><a href="../../learn/erpnext/operations/08-assets/">Module 08 — Assets</a></li>
+<li><a href="../../learn/erpnext/people/09-hr/">Module 09 — HR</a></li>
+<li><a href="../../learn/erpnext/people/10-crm/">Module 10 — CRM</a></li>
+<li><a href="../../learn/erpnext/people/11-helpdesk/">Module 11 — Helpdesk</a></li>
+<li><a href="../../learn/erpnext/people/12-support-portal/">Module 12 — Support &amp; Portal</a></li>
+</ul>
+<p><strong>Checkpoint:</strong> order-to-cash flow (Sales Order → Delivery Note →
+Sales Invoice → Payment Entry) aur buy-to-pay flow (Purchase Order
+→ Purchase Receipt → Purchase Invoice → Payment Entry) kisi aur ko
+samjhayein, notes ke baghair, har step par DocType ka naam le kar
+aur yeh bata kar ke stock aur ledger mein kya badalta hai. Agar
+samjha nahi sakte, to abhi seekha nahi.</p>
+<h3 id="stage-5-advanced-lag-bhag-2-haftay">Stage 5 — Advanced (lag bhag 2 haftay)<a class="headerlink" href="#stage-5-advanced-lag-bhag-2-haftay" title="Permanent link">&para;</a></h3>
+<p>Tartib se parhein:</p>
+<ul>
+<li><a href="../../learn/erpnext/v16/13-studio-flow-insights/">Module 13 — Studio, Flow &amp; Insights</a></li>
+<li><a href="../../learn/erpnext/v16/14-cross-module-flows/">Module 14 — Cross-Module Flows</a></li>
+<li><a href="../../learn/framework/level-4/17-studio-flow/">Lesson 17 — Studio &amp; Flow</a></li>
+<li><a href="../../learn/framework/level-4/18-insights/">Lesson 18 — Insights</a></li>
+<li><a href="../../learn/framework/level-4/19-website-portal/">Lesson 19 — Website &amp; Portal</a></li>
+<li><a href="../../learn/framework/level-4/20-upgrades/">Lesson 20 — Upgrades</a></li>
+<li><a href="../../learn/framework/level-4/21-ops/">Lesson 21 — Ops</a></li>
+</ul>
+<p><strong>Checkpoint:</strong> apni site ka backup lein, usay doosri site par
+restore karein, aur
+<a href="../upgrade-v14-v15-v16/">Upgrade guide</a> ke mutabiq upgrade karein.
+Jo developer backup restore nahi kar sakta, us ne yeh stage
+khatam nahi ki.</p>
+<h3 id="stage-6-capstone-practice-project-lag-bhag-1-hafta">Stage 6 — Capstone: practice project (lag bhag 1 hafta)<a class="headerlink" href="#stage-6-capstone-practice-project-lag-bhag-1-hafta" title="Permanent link">&para;</a></h3>
+<p><a href="../practice-project/">Practice Project — masala factory, shuru se end
+tak</a> banayein, saari 8 phases, apni bench par.
+Yeh poora track aik project mein hai: Gate Pass, BOM aur Work Order,
+stock, sales, Quality Inspection gate, invoicing, payment, report
+aur print format, phir permissions, backup aur go-live.</p>
+<p><a href="https://github.com/irfanzahoor/frappe-research-hub/tree/main/demo-app">Demo app code</a>
+aik <strong>reference hai, shortcut nahi</strong>: pehle Gate Pass khud banayein,
+phir apna code shipped app se line by line compare karein. Agar aap
+ka code aur demo app aik jaise hain, to aap ne theek banaya. Agar
+farq hai, to pata lagayein ke kyun — woh farq hi asal lesson hai.</p>
+<h3 id="stage-7-aakhri-check-interview-ki-tayyari">Stage 7 — Aakhri check: interview ki tayyari<a class="headerlink" href="#stage-7-aakhri-check-interview-ki-tayyari" title="Permanent link">&para;</a></h3>
+<p><a href="../interview-prep/">Interview Prep guide</a> se guzrein — 36 sawal,
+model jawab ke saath, jin mein spot-the-bug code sawal bhi hain.
+Agar aap code aur scenario sawalon ka jawab bina hichkichahat ke
+de sakte hain, to aap tayyar hain ke koi aur aap ko test kare.</p>
+<h3 id="master-ka-matlab-kya-hai">"Master" ka matlab kya hai<a class="headerlink" href="#master-ka-matlab-kya-hai" title="Permanent link">&para;</a></h3>
+<p>Aap master tab hain jab aap aik khaali bench par baith kar Gate Pass
+app plus practice-project flow — DocTypes, validation, client script,
+workflow, report, print format, permissions, backup — <strong>hub khole
+baghair</strong> bana sakein. Lafzon ki yaad-dasht se nahi, balkay is
+samajh se ke pieces aik doosre se kaise jurrte hain.</p>
+<p>Yahi woh bar hai jis ke around yeh track banaya gaya hai. Is ke baad
+sirf sharp rehna hai: <a href="../troubleshooting/">Troubleshooting guide</a>
+jab kuch toot jaye, <a href="../cheat-sheets/">Cheat Sheets</a> jab koi command
+chahiye, <a href="../case-studies/">Case Studies</a> is liye ke asal
+implementations kaise gayi, aur har go-live se pehle
+<a href="../common-mistakes/">Common Mistakes</a> ki list.</p>
+<hr />
+<h2 id="track-2-functional-guidance-erpnext-samjhein-implementation-ko-guide-karein">Track 2 — Functional Guidance: ERPNext samjhein, implementation ko guide karein<a class="headerlink" href="#track-2-functional-guidance-erpnext-samjhein-implementation-ko-guide-karein" title="Permanent link">&para;</a></h2>
+<p><strong>Tareeqa yeh hai:</strong> samajhne ke liye parhein, banane ke liye nahi.
+Koi code nahi, koi bench nahi, koi commands nahi. Har stage ke end
+par aap ko yeh pata hona chahiye ke aap kya <em>decide</em> ya <em>explain</em>
+kar sakte hain.</p>
+<h3 id="stage-1-frappe-aur-erpnext-kya-hain-chand-shaamein">Stage 1 — Frappe aur ERPNext kya hain (chand shaamein)<a class="headerlink" href="#stage-1-frappe-aur-erpnext-kya-hain-chand-shaamein" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="../../learn/framework/level-1/01-what-is-frappe/">Lesson 01 — What is Frappe</a> — Framework kya hai, ERPNext kya hai, Frappe Cloud kya hai</li>
+<li><a href="../../learn/erpnext/core/01-accounting/">Module 01 — Accounting</a></li>
+<li><a href="../../learn/erpnext/core/02-stock-inventory/">Module 02 — Stock &amp; Inventory</a></li>
+<li><a href="../../learn/erpnext/core/03-selling/">Module 03 — Selling</a></li>
+<li><a href="../../learn/erpnext/core/04-buying/">Module 04 — Buying</a></li>
+</ul>
+<p><strong>Ab aap yeh kar sakein ge:</strong> kisi colleague ko saada alfaaz mein
+samjha sakein ke ERPNext business ke liye kya karta hai, aur kaun sa
+module paise, stock, sales aur purchasing ka malik hai.</p>
+<h3 id="stage-2-woh-flows-jo-business-chalate-hain">Stage 2 — Woh flows jo business chalate hain<a class="headerlink" href="#stage-2-woh-flows-jo-business-chalate-hain" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="../../learn/erpnext/v16/14-cross-module-flows/">Module 14 — Cross-Module Flows</a> — order-to-cash, buy-to-pay, forecast → production → sales</li>
+<li><a href="../../learn/erpnext/operations/05-manufacturing/">Module 05 — Manufacturing</a></li>
+<li><a href="../../learn/erpnext/operations/06-quality/">Module 06 — Quality</a></li>
+<li><a href="../../learn/erpnext/operations/07-projects/">Module 07 — Projects</a></li>
+<li><a href="../../learn/erpnext/people/09-hr/">Module 09 — HR</a></li>
+<li><a href="../../learn/erpnext/people/10-crm/">Module 10 — CRM</a></li>
+</ul>
+<p><strong>Ab aap yeh kar sakein ge:</strong> aik sales order ko quotation se
+payment tak trace karein aur har step par batayein ke kaun sa
+document banta hai aur stock aur accounts mein kya badalta hai.</p>
+<h3 id="stage-3-sahi-tools-chunein">Stage 3 — Sahi tools chunein<a class="headerlink" href="#stage-3-sahi-tools-chunein" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="../choosing-apps/">Choosing Apps</a> — kab app install karni hai aur
+  kab khud banana hai, aur har app aap ko baad mein kya cost deti hai</li>
+<li><a href="../../research/apps-catalog/">Apps Catalog</a> — kya pehle se mojood
+  hai, taake aap woh banane ke paise na dein jo muft mein mil raha hai</li>
+<li><a href="../go-live-checklist/">Go-Live Checklist</a> — aik asal go-live ko
+  kya chahiye: data, permissions, training, cutover</li>
+</ul>
+<p><strong>Ab aap yeh kar sakein ge:</strong> judge kar sakein ke aik requirement
+ke liye nayi app chahiye, chhoti customisation, ya sirf process
+mein tabdeeli — aur bata sakein ke us ko maintain karne ki kya
+cost hogi.</p>
+<h3 id="stage-4-asal-implementations-se-seekhein">Stage 4 — Asal implementations se seekhein<a class="headerlink" href="#stage-4-asal-implementations-se-seekhein" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="../case-studies/">Case Studies</a> — aik masala manufacturer, aik
+  trading/distribution business, aik services company: kya banaya
+  gaya, kya ghalat hua, aur is se kya seekhna hai</li>
+<li><a href="../common-mistakes/">Common Mistakes</a> — woh ghaltiyan jo teams
+  sab se zyada karti hain, taake aap unhein apne project mein
+  pehle se pehchan sakein</li>
+</ul>
+<p><strong>Ab aap yeh kar sakein ge:</strong> teen cheezein bata sakein jo ERPNext
+implementation mein aam tor par ghalat hoti hain, aur aap kya
+mukhtalif karenge.</p>
+<h3 id="stage-5-developers-ke-saath-kaam-karein">Stage 5 — Developers ke saath kaam karein<a class="headerlink" href="#stage-5-developers-ke-saath-kaam-karein" title="Permanent link">&para;</a></h3>
+<p>Code likhne ke liye aap ko code likhna nahi aana chahiye. Inhein
+concepts ke tor par parhein, chalane ki instructions ke tor par nahi:</p>
+<ul>
+<li><a href="../../learn/framework/level-1/04-desk-list-form/">Lesson 04 — Desk, List &amp; Form</a> — users asal mein system mein kaise kaam karte hain, taake aap apni baat un ki zuban mein keh sakein</li>
+<li><a href="../../learn/framework/level-2/10-workflows-assignments/">Lesson 10 — Workflows &amp; Assignments</a> — approvals kaise chalti hain, taake aap aik design kar sakein</li>
+<li><a href="../../learn/framework/level-2/09-permissions-roles/">Lesson 09 — Permissions &amp; Roles</a> — kaun kya dekh sakta hai aur kya kar sakta hai, taake aap sahi access maang sakein</li>
+<li><a href="../../learn/framework/level-3/13-testing/">Lesson 13 — Testing</a> — quality kaise check karte hain, taake aap delivery ko theek se test kar sakein</li>
+</ul>
+<p><strong>Ab aap yeh kar sakein ge:</strong> aik requirement is tarah likh sakein
+ke developer bina guess kiye bana sake — "jab X ho, to system ko Y
+karna chahiye, aur Z ko yeh karne ki ijazat nahi honi chahiye" — aur
+check kar sakein ke jo deliver hua, kya woh is se match karta hai.</p>
+<h3 id="stage-6-jab-cheezein-ghalat-ho-jayein">Stage 6 — Jab cheezein ghalat ho jayein<a class="headerlink" href="#stage-6-jab-cheezein-ghalat-ho-jayein" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="../troubleshooting/">Troubleshooting</a> — is ko "kya ghalat ho
+  sakta hai" ke tor par parhein, khud fix karne ke liye nahi. Aap
+  ko yeh jan'na hai ke kaun se masle chhote hain (atki hui email
+  queue) aur kaun se serious hain (fail hui migration), taake aap
+  urgency judge kar sakein.</li>
+<li><a href="../upgrade-v14-v15-v16/">Upgrade guide</a> — upgrade mein kya
+  hota hai, taake aap is ke liye plan kar sakein, is se hairan
+  hone ke bajaye.</li>
+</ul>
+<h3 id="is-track-ko-asal-implementation-mein-kaise-use-karein">Is track ko asal implementation mein kaise use karein<a class="headerlink" href="#is-track-ko-asal-implementation-mein-kaise-use-karein" title="Permanent link">&para;</a></h3>
+<p>Implementation mein Stage 2 apne zehen mein le kar jayein: flows.
+Jab developer koi solution propose kare, to teen sawal poochein —
+yeh kaun se documents banata hai, stock aur ledger mein kya
+badalta hai, aur hum is ko kaise test karenge. Jab vendor koi app
+propose kare, to pehle <a href="../choosing-apps/">Choosing Apps</a> ke sawal
+aur <a href="../../research/apps-catalog/">Apps Catalog</a> check karein. Aur
+go-live se pehle, <a href="../go-live-checklist/">Go-Live Checklist</a> team
+ke saath chalayein — yeh is liye mojood hai ke asal go-lives is ke
+baghair fail hue hain.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+<h2 id="__comments">Comments</h2>
+<script src="https://giscus.app/client.js"
+        data-repo="irfanzahoor/frappe-research-hub"
+        data-repo-id="R_kgDOV8vy_A"
+        data-category="General"
+        data-category-id="DIC_kwDOV8vy_M4DMEva"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  واپس اوپر جائیں
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Muhammad Irfaan
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "content.action.edit", "content.action.view", "content.code.copy", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "\u06a9\u0644\u0650\u067e \u0628\u0648\u0631\u0688 \u0645\u06cc\u06ba \u0646\u0642\u0644 \u06a9\u0631 \u062f\u06cc\u0627 \u06af\u06cc\u0627", "clipboard.copy": "\u06a9\u0644\u0650\u067e \u0628\u0648\u0631\u0688 \u0645\u06cc\u06ba \u0646\u0642\u0644 \u06a9\u0631\u06cc\u06ba", "search.result.more.one": "\u0627\u0650\u0633 \u0635\u0641\u062d\u06d2 \u067e\u0631 \u0645\u0632\u06cc\u062f \u06f1", "search.result.more.other": "\u0627\u0650\u0633 \u0635\u0641\u062d\u06d2 \u067e\u0631 \u0645\u0632\u06cc\u062f #", "search.result.none": "\u06a9\u0648\u0626\u06cc \u0645\u0644\u062a\u06cc \u062c\u0644\u062a\u06cc \u062f\u0633\u062a\u0627\u0648\u06cc\u0632\u0627\u062a \u0646\u06c1\u06cc\u06ba", "search.result.one": "\u06f1 \u0645\u0644\u062a\u06cc \u062c\u0644\u062a\u06cc \u062f\u0633\u062a\u0627\u0648\u06cc\u0632", "search.result.other": "# \u0645\u0644\u062a\u06cc \u062c\u0644\u062a\u06cc \u062f\u0633\u062a\u0627\u0648\u06cc\u0632\u0627\u062a", "search.result.placeholder": "\u062a\u0644\u0627\u0634 \u0634\u0631\u0648\u0639 \u06a9\u0631\u0646\u06d2 \u06a9\u06d2 \u0644\u0626\u06d2 \u0679\u0627\u0626\u067e \u06a9\u0631\u06cc\u06ba", "search.result.term.missing": "\u06af\u0645\u0634\u062f\u06c1", "select.version": "\u0648\u0631\u0698\u0646 \u06a9\u0627 \u0627\u0646\u062a\u062e\u0627\u0628 \u06a9\u0631\u06cc\u06ba"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+    
+  </body>
+</html>
