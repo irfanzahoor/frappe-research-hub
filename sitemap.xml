@@ -64,6 +64,13 @@
         <xhtml:link rel="alternate" hreflang="ur" href="https://irfanzahoor.github.io/frappe-research-hub/ur/guides/common-mistakes/"/>
     </url>
     <url>
+        <loc>https://irfanzahoor.github.io/frappe-research-hub/guides/glossary/</loc>
+        <lastmod>2026-11-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://irfanzahoor.github.io/frappe-research-hub/guides/glossary/"/>
+        <xhtml:link rel="alternate" hreflang="ur" href="https://irfanzahoor.github.io/frappe-research-hub/ur/guides/glossary/"/>
+    </url>
+    <url>
         <loc>https://irfanzahoor.github.io/frappe-research-hub/guides/go-live-checklist/</loc>
         <lastmod>2026-11-27</lastmod>
         <changefreq>daily</changefreq>
@@ -517,6 +524,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ur" href="https://irfanzahoor.github.io/frappe-research-hub/ur/guides/common-mistakes/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://irfanzahoor.github.io/frappe-research-hub/guides/common-mistakes/"/>
+    </url>
+    <url>
+        <loc>https://irfanzahoor.github.io/frappe-research-hub/ur/guides/glossary/</loc>
+        <lastmod>2026-11-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ur" href="https://irfanzahoor.github.io/frappe-research-hub/ur/guides/glossary/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://irfanzahoor.github.io/frappe-research-hub/guides/glossary/"/>
     </url>
     <url>
         <loc>https://irfanzahoor.github.io/frappe-research-hub/ur/guides/go-live-checklist/</loc>
