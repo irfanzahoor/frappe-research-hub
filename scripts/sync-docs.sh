@@ -10,10 +10,10 @@ set -eu
 cd "$(dirname "$0")/.."
 rm -rf docs
 mkdir -p docs/en docs/ur
-cp -r learn guides research stylesheets docs/en/
+cp -r learn guides research stylesheets javascripts docs/en/
 cp README.md CHANGELOG.md ROADMAP.md CONTRIBUTING.md docs/en/
 cp -r i18n/ur/* docs/ur/
-cp -r stylesheets docs/ur/
+cp -r stylesheets javascripts docs/ur/
 # Also at docs/ root, so the social plugin finds the logo at
 # docs/stylesheets/logo.svg (it resolves theme.logo from docs_dir).
 cp -r stylesheets docs/

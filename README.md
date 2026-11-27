@@ -61,5 +61,6 @@ Research (history +
 66-app catalog) is complete as of 26 Nov 2026. Every lesson and guide
 page has a Comments section (giscus, backed by GitHub Discussions) —
 once the giscus app is installed on the repo, ask a question right
-under the page you are reading. See
+under the page you are reading — and a "Was this page helpful?"
+feedback widget whose Yes/No opens a pre-filled Discussion. See
 [CHANGELOG.md](CHANGELOG.md) and [ROADMAP.md](ROADMAP.md).

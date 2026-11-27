@@ -61,8 +61,43 @@ theme:
   icon:
     repo: fontawesome/brands/github
 
+# Page feedback (Material's built-in widget, partials/feedback.html):
+# "Was this page helpful?" on every content page. The note on each
+# rating links to a pre-filled GitHub Discussion (category "General"),
+# so feedback lands in Discussions with no backend. javascripts/
+# feedback.js wires the widget until an analytics provider is set —
+# Material only wires it from the provider JS, so without this shim
+# the form would stay hidden. Once a provider is configured, the
+# shim does nothing and Material's own handler takes over.
+extra:
+  analytics:
+    # Analytics (Google Analytics 4) is ready to switch on — it only
+    # needs the owner's measurement ID. Uncomment the two lines below
+    # and replace G-XXXXXXXXXX with the real ID from Google Analytics
+    # (Admin → Data Streams → Web). No ID exists on file yet.
+    # provider: google
+    # property: G-XXXXXXXXXX
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks! Tell us what helped in a
+            <a href="https://github.com/irfanzahoor/frappe-research-hub/discussions/new?category=general&amp;title=Helpful%3A%20{title}&amp;body=Page%3A%20https%3A%2F%2Firfanzahoor.github.io%2Ffrappe-research-hub{url}%0A%0AWhat%20helped%20you%20on%20this%20page%3F" target="_blank" rel="noopener">discussion</a>.
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks! Tell us what was unclear in a
+            <a href="https://github.com/irfanzahoor/frappe-research-hub/discussions/new?category=general&amp;title=Needs%20work%3A%20{title}&amp;body=Page%3A%20https%3A%2F%2Firfanzahoor.github.io%2Ffrappe-research-hub{url}%0A%0AWhat%20was%20unclear%20or%20wrong%20on%20this%20page%3F" target="_blank" rel="noopener">discussion</a>.
+
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/feedback.js
 
 markdown_extensions:
   - admonition
@@ -92,6 +127,27 @@ plugins:
         - locale: ur
           name: Roman Urdu
           build: true
+          # Same feedback widget, in Roman Urdu (replaces
+          # extra.analytics wholesale for the ur build).
+          extra:
+            analytics:
+              feedback:
+                title: Kya yeh page helpful tha?
+                ratings:
+                  - icon: material/emoticon-happy-outline
+                    name: Yeh page helpful tha
+                    data: 1
+                    note: >-
+                      Shukriya! Batao kya helpful tha — is
+                      <a href="https://github.com/irfanzahoor/frappe-research-hub/discussions/new?category=general&amp;title=Helpful%3A%20{title}&amp;body=Page%3A%20https%3A%2F%2Firfanzahoor.github.io%2Ffrappe-research-hub{url}%0A%0AIs%20page%20par%20kya%20helpful%20tha%3F" target="_blank" rel="noopener">discussion</a>
+                      mein likho.
+                  - icon: material/emoticon-sad-outline
+                    name: Is page mein behtari chahiye
+                    data: 0
+                    note: >-
+                      Shukriya! Batao kya unclear tha — is
+                      <a href="https://github.com/irfanzahoor/frappe-research-hub/discussions/new?category=general&amp;title=Needs%20work%3A%20{title}&amp;body=Page%3A%20https%3A%2F%2Firfanzahoor.github.io%2Ffrappe-research-hub{url}%0A%0AIs%20page%20par%20kya%20unclear%20ya%20ghalat%20tha%3F" target="_blank" rel="noopener">discussion</a>
+                      mein likho.
   # Social cards (Open Graph images, one per page) in the site's
   # navy/gold brand colours. Needs Pillow + cairosvg in .venv-docs
   # (the logo is an SVG). Cards are generated into site/ at build

@@ -6,6 +6,16 @@ All notable changes to the Frappe Research Hub. Dates are in Asia/Karachi.
 
 ### Added
 
+- **Page feedback + analytics wiring** — every content page has a
+  "Was this page helpful?" widget (Material's built-in feedback,
+  English + Roman Urdu): Yes opens a pre-filled "Helpful: …"
+  Discussion, No opens a "Needs work: …" Discussion, both with the
+  page URL in the body — no backend, no account needed. A small
+  `javascripts/feedback.js` shim wires the widget until an analytics
+  provider is set (Material only wires it from the provider JS).
+  Google Analytics 4 is ready to switch on in `mkdocs.yml`
+  (`extra.analytics`: uncomment `provider: google` + `property:` and
+  paste the measurement ID) — no ID exists on file yet.
 - **Docs website** — the hub now reads as a website at
   https://irfanzahoor.github.io/frappe-research-hub/ (MkDocs Material:
   search, sidebar navigation, dark/light mode, dark-blue brand).
