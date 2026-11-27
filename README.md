@@ -49,5 +49,8 @@ all 14 ERPNext modules, and 8 guides (Common mistakes, Upgrade
 v14 → v15 → v16, Go-live checklist, Choosing apps, Practice project,
 Troubleshooting, Case studies, Cheat sheets).
 Research (history +
-66-app catalog) is complete as of 26 Nov 2026. See
+66-app catalog) is complete as of 26 Nov 2026. Every lesson and guide
+page has a Comments section (giscus, backed by GitHub Discussions) —
+once the giscus app is installed on the repo, ask a question right
+under the page you are reading. See
 [CHANGELOG.md](CHANGELOG.md) and [ROADMAP.md](ROADMAP.md).

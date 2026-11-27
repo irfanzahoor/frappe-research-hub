@@ -22,6 +22,8 @@ docs_dir: docs
 theme:
   name: material
   language: en
+  # Template overrides live here (e.g. partials/comments.html for giscus).
+  custom_dir: overrides
   # Left-to-right for BOTH languages, like English. Material would
   # otherwise render the `ur` locale right-to-left automatically, but
   # Roman Urdu is Latin script and reads like English.

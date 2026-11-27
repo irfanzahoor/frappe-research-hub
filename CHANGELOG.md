@@ -115,9 +115,17 @@ All notable changes to the Frappe Research Hub. Dates are in Asia/Karachi.
   templates (`.github/ISSUE_TEMPLATE/`: lesson-request, bug-report,
   new-app) and a pull request template (`.github/pull_request_template.md`)
   with an EN+UR / links / facts checklist. The Contributing page is
-  already in the docs nav (About → Contributing). Enabling GitHub
-  Discussions still needs the owner in repo Settings — it cannot be
-  done via the API token.
+  already in the docs nav (About → Contributing). GitHub Discussions
+  was then enabled on the repo via the API (the token's Administration
+  permission covers it) — verified `has_discussions: true`.
+- **Page comments (giscus)** — every lesson and guide page now has a
+  Comments section at the bottom, backed by GitHub Discussions
+  (category "General", one discussion per page, `overrides/partials/comments.html`
+  wired through the theme's `custom_dir`). Readers can ask questions
+  right under the lesson they are reading. The giscus GitHub App
+  still needs the owner to install it at https://github.com/apps/giscus
+  on this repo — until then the widget shows a "giscus is not
+  installed on this repository" message instead of a comment box.
 
 ## v1.0 — 2026-11-26
 
